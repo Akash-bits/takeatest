@@ -1,4 +1,4 @@
-var correct=0,wrong=0,unattempted=0,score=0;
+var correct=0,wrong=0,unattempted=0;//score=0;
 var key=['d','c','c','a','a','b','b','b','d','b',
 		 'a','d','c','d','c','c','a','d','a','b',
 		 11,10,175,60,600,'a','a','a','c','a',
@@ -11,6 +11,7 @@ var key=['d','c','c','a','a','b','b','b','d','b',
 
 //$(document).ready(function(){
 	$('.question').hide();
+	$('#timer').hide();
 	$('#buttongroup').hide();
 	$('#instructions').show();
 	$('#start').click(function(){
@@ -18,7 +19,20 @@ var key=['d','c','c','a','a','b','b','b','d','b',
 		$('#q1').show();
 		$('#instructions').hide();
 		$('#buttongroup').show();
+		$('#timer').show();
+		$('#time').html(180);
+
+
 	});
+var time=180;
+	setInterval("updatetime()",60000);
+	function updatetime(){
+		time--;
+		$('#time').html(time);
+		if(time<=0){
+			evaluate();
+		}
+	}
 
 	$('.question #next').click(function(){
 	 current=$(this).parents('form:first').data('question');
@@ -41,25 +55,30 @@ var key=['d','c','c','a','a','b','b','b','d','b',
 function evaluate(){
 	for(i=0;i<75;i++)
 	{n=i+1;
-		var submitted= $('input[name'+n+']:checked').val();
-		if(submitted=key[i])
+		var submitted = $('input[name=q'+n+']:checked').val();
+		if(submitted == key[i])
 			correct++;
-		else if(submitted=undefined)
+		else if(submitted==undefined)
 			unattempted++;
 		else
 			wrong++;
+
+		var score=(correct*4)-wrong*1;
+	
 	}
-	score=correct*4-wrong*1;
-	$('#result').html('<h2>Your score is'+score+'</h2>');
-	$('#question').hide();
+	//alert(correct);
+	var score=(correct*4)-wrong*1;
+	$('#result').html('<h2>Your score is '+score+'</h2>');
+	$('.question').hide();
 	$('#buttongroup').hide();
+	$('#timer').hide();
 
 }
 
 $('#buttongroup .col-3').click(function(){
 	var a = $(this).text();
 	var b= '#q'+a;
-	alert(b);
+	//alert(b);
 	$('.question').hide();
 	$(b).show();
 });
