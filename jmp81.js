@@ -7,6 +7,7 @@ var key=['d','c','c','a','a','b','b','b','d','b',
 		 'a','b','b','b','a','a','b','c','b','d',
 		 'b','c','c','c','b','c','c','d','b','b',
 		 3,18,5,36,30];
+var wa=[];		 
 
 
 //$(document).ready(function(){
@@ -60,18 +61,35 @@ function evaluate(){
 			correct++;
 		else if(submitted==undefined)
 			unattempted++;
-		else
+		else{
 			wrong++;
+				wa.push(n);
+				//alert(n);
+		}
 
 		var score=(correct*4)-wrong*1;
 	
 	}
 	//alert(correct);
 	var score=(correct*4)-wrong*1;
-	$('#result').html('<h2>Your score is '+score+'</h2>');
+	$('#result').html('<h2>Your score is '+score+'</h2><br><br><h3 class="text-danger">Your incorrect attemts</h3>');
 	$('.question').hide();
 	$('#buttongroup').hide();
 	$('#timer').hide();
+	var l= wa.length;
+	for(j=0;j<l;j++)
+	{	var k= j+1;
+		alert('k'+k);
+		var q='#q'+k;
+		var qa=$('input[name=q'+k+']:checked').val();
+		$(q).append('<h2>Your answer was '+qa+' while the correct answer is '+key[j]+'</h2><br><hr><br>');
+		$(q).show();
+		var hidenext = q+' #next';
+		$(hidenext).hide();
+		var clearhide = q+' input[type=reset]';
+		$(clearhide).hide();
+	}
+
 
 }
 

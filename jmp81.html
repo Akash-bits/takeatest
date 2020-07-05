@@ -48,11 +48,12 @@
 
 
 <br><br><br><br>
-<div id="instructions">
+<div id="instructions" class="container justify-content-center">
 	1)This test contains 75 questions.<br>
 	2)Each question gives 4 points when correct ; -1 when wrong and 0 when left unattempted.<br>
-	3)Test duration is 180 minutes.
-	4)For the questions requiring you to type the answer, round the answer to 2 decimal places only.<br><br><br>
+	3)Test duration is 180 minutes.<br>
+	4)For the questions requiring you to type the answer, round the answer to 2 decimal places only.<br>
+	5)Do not ever reload the page or use back and forward history buttons. Use only the buttons in the webpage.<br><br>
 	<h2> All The Best Champ!!!</h2>
 
 
@@ -152,6 +153,9 @@
 	<div class='col-md-6 col-12'>
 	<div class="timer ml-auto col-12" id="timer">Time remaining is <span id="time" class="text-danger"></span>minutes</div>
 
+		<div id="result" class="container justify-content-center">
+		</div>
+
 		<form class="question" id="q1" data-question="1">
 			<h3><img class="img-fluid" src="jmp81/jmp811q.png"></h3>
 			<ul>
@@ -160,6 +164,7 @@
 			<li><label><input name="q1" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp811c.png"></label></li>
 			<li><label><input name="q1" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp811d.png"></label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
@@ -171,6 +176,7 @@
 			<li><label><input name="q2" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp812c.png"></label></li>
 			<li><label><input name="q2" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp812d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -182,6 +188,7 @@
 			<li><label><input name="q3" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp813c.png"></label></li>
 			<li><label><input name="q3" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp813d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -193,6 +200,7 @@
 			<li><label><input name="q4" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp814c.png"></label></li>
 			<li><label><input name="q4" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp814d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -204,6 +212,7 @@
 			<li><label><input name="q5" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp815c.png"></label></li>
 			<li><label><input name="q5" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp815d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -215,6 +224,7 @@
 			<li><label><input name="q6" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp816c.png"></label></li>
 			<li><label><input name="q6" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp816d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 							
@@ -226,6 +236,7 @@
 			<li><label><input name="q7" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp817c.png"></label></li>
 			<li><label><input name="q7" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp817d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>			
 
@@ -237,6 +248,7 @@
 			<li><label><input name="q8" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp818c.png"></label></li>
 			<li><label><input name="q8" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp818d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>												
 
@@ -248,6 +260,7 @@
 			<li><label><input name="q9" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp819c.png"></label></li>
 			<li><label><input name="q9" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp819d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -259,6 +272,7 @@
 			<li><label><input name="q10" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8110c.png"></label></li>
 			<li><label><input name="q10" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8110d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -270,103 +284,113 @@
 			<li><label><input name="q11" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8111c.png"></label></li>
 			<li><label><input name="q11" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8111d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q12" data-question="12">
 			<h3><img class="img-fluid" src="jmp81/jmp8112q.png"></h3>
 			<ul>
-			<li><input name="q12" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8112a.png"></li>
-			<li><input name="q12" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8112b.png"></li>
-			<li><input name="q12" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8112c.png"></li>
-			<li><input name="q12" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8112d.png"></li>
+			<li><label><input name="q12" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8112a.png"></label></li>
+			<li><label><input name="q12" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8112b.png"></label></li>
+			<li><label><input name="q12" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8112c.png"></label></li>
+			<li><label><input name="q12" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8112d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form><form class="question" id="q13" data-question="13">
 			<h3><img class="img-fluid" src="jmp81/jmp8113q.png"></h3>
 			<ul>
-			<li><input name="q13" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8113a.png"></li>
-			<li><input name="q13" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8113b.png"></li>
-			<li><input name="q13" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8113c.png"></li>
-			<li><input name="q13" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8113d.png"></li>
+			<li><label><input name="q13" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8113a.png"></label></li>
+			<li><label><input name="q13" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8113b.png"></label></li>
+			<li><label><input name="q13" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8113c.png"></label></li>
+			<li><label><input name="q13" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8113d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q14" data-question="14">
 			<h3><img class="img-fluid" src="jmp81/jmp8114q.png"></h3>
 			<ul>
-			<li><input name="q14" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8114a.png"></li>
-			<li><input name="q14" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8114b.png"></li>
-			<li><input name="q14" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8114c.png"></li>
-			<li><input name="q14" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8114d.png"></li>
+			<li><label><input name="q14" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8114a.png"></label></li>
+			<li><label><input name="q14" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8114b.png"></label></li>
+			<li><label><input name="q14" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8114c.png"></label></li>
+			<li><label><input name="q14" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8114d.png"></label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q15" data-question="15">
 			<h3><img class="img-fluid" src="jmp81/jmp8115q.png"></h3>
 			<ul>
-			<li><input name="q15" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8115a.png"></li>
-			<li><input name="q15" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8115b.png"></li>
-			<li><input name="q15" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8115c.png"></li>
-			<li><input name="q15" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8115d.png"></li>
+			<li><label><input name="q15" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8115a.png"></label></li>
+			<li><label><input name="q15" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8115b.png"></label></li>
+			<li><label><input name="q15" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8115c.png"></label></li>
+			<li><label><input name="q15" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8115d.png"></label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q16" data-question="16">
 			<h3><img class="img-fluid" src="jmp81/jmp8116q.png"></h3>
 			<ul>
-			<li><input name="q16" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8116a.png"></li>
-			<li><input name="q16" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8116b.png"></li>
-			<li><input name="q16" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8116c.png"></li>
-			<li><input name="q16" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8116d.png"></li>
+			<li><label><input name="q16" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8116a.png"></label></li>
+			<li><label><input name="q16" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8116b.png"></label></li>
+			<li><label><input name="q16" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8116c.png"></label></li>
+			<li><label><input name="q16" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8116d.png"></label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q17" data-question="17">
 			<h3><img class="img-fluid" src="jmp81/jmp8117q.png"></h3>
 			<ul>
-			<li><input name="q17" type="radio" value="a">(a)0.2</li>
-			<li><input name="q17" type="radio" value="b">(b)0.4</li>
-			<li><input name="q17" type="radio" value="c">(c)0.5</li>
-			<li><input name="q17" type="radio" value="d">(d)0.25</li>
+			<li><label><input name="q17" type="radio" value="a">(a)0.2</label></li>
+			<li><label><input name="q17" type="radio" value="b">(b)0.4</label></li>
+			<li><label><input name="q17" type="radio" value="c">(c)0.5</label></li>
+			<li><label><input name="q17" type="radio" value="d">(d)0.25</label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q18" data-question="18">
 			<h3>Question 18: If we need a magnification of 375 from a compound microscope of tube length 150 mm and an objective of focal length 5m, the focal length of the eye-piece, should be close to</h3>
 			<ul>
-			<li><input name="q18" type="radio" value="a">(a)2mm</li>
-			<li><input name="q18" type="radio" value="b">(b)33mm</li>
-			<li><input name="q18" type="radio" value="c">(c)12mm</li>
-			<li><input name="q18" type="radio" value="d">(d)22mm</li>
+			<li><label><input name="q18" type="radio" value="a">(a)2mm</label></li>
+			<li><label><input name="q18" type="radio" value="b">(b)33mm</label></li>
+			<li><label><input name="q18" type="radio" value="c">(c)12mm</label></li>
+			<li><label><input name="q18" type="radio" value="d">(d)22mm</label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q19" data-question="19">
 			<h3>Question 19: A litre of dry air at STP expands adiabatically to a volume of 3 litres. If γ = 1.40, the work done by air is: (3<sup>1.4</sup> = 4.6555) [Take air to be an ideal gas]</h3>
 			<ul>
-			<li><input name="q19" type="radio" value="a">(a)90.5J</li>
-			<li><input name="q19" type="radio" value="b">(b)48J</li>
-			<li><input name="q19" type="radio" value="c">(c)60.7J</li>
-			<li><input name="q19" type="radio" value="d">(d)100.8J</li>
+			<li><label><input name="q19" type="radio" value="a">(a)90.5J</label></li>
+			<li><label><input name="q19" type="radio" value="b">(b)48J</label></li>
+			<li><label><input name="q19" type="radio" value="c">(c)60.7J</label></li>
+			<li><label><input name="q19" type="radio" value="d">(d)100.8J</label></li>
 			</ul><br>
+			<input type="reset" value="clear">
 			<button id="next" class="ml-auto">Next</button>	
 		</form>
 
 		<form class="question" id="q20" data-question="20">
 			<h3><img class="img-fluid" src="jmp81/jmp8120q.png"></h3>
 			<ul>
-			<li><input name="q20" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8120a.png"></li>
-			<li><input name="q20" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8120b.png"></li>
-			<li><input name="q20" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8120c.png"></li>
-			<li><input name="q20" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8120d.png"></li>
+			<li><label><input name="q20" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8120a.png"></label></li>
+			<li><label><input name="q20" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8120b.png"></label></li>
+			<li><label><input name="q20" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8120c.png"></label></li>
+			<li><label><input name="q20" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8120d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -404,220 +428,240 @@
 		<form class="question" id="q26" data-question="26">
 			<h3>Question 26: Amongst the following statements, that which was not proposed by Dalton was Options:</h3>
 			<ul>
-			<li><input name="q26" type="radio" value="a">(a) when gases combine or reproduced in a chemical reaction, they do so in a simple ratio by volume provided all gases are at the same T & P.</li>
-			<li><input name="q26" type="radio" value="b">(b) matter consists of indivisible atoms</li>
-			<li><input name="q26" type="radio" value="c">(c) chemical reactions involve reorganization of atoms. These are neither created nor destroyed in a chemical reaction</li>
-			<li><input name="q26" type="radio" value="d">(d) all the atoms of a given element have identical properties including identical mass. Atoms of different elements differ in mass</li>
+			<li><label><input name="q26" type="radio" value="a">(a) when gases combine or reproduced in a chemical reaction, they do so in a simple ratio by volume provided all gases are at the same T & P.</label></li>
+			<li><label><input name="q26" type="radio" value="b">(b) matter consists of indivisible atoms</label></li>
+			<li><label><input name="q26" type="radio" value="c">(c) chemical reactions involve reorganization of atoms. These are neither created nor destroyed in a chemical reaction</label></li>
+			<li><label><input name="q26" type="radio" value="d">(d) all the atoms of a given element have identical properties including identical mass. Atoms of different elements differ in mass</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q27" data-question="27">
 			<h3>Question 27: A solution of m-chloroaniline, m-chlorophenol and m-chlorobenzoic acid in ethyl acetate was treated initially with a saturated solution of NaHCO3 to give fraction A. The left-over organic phase was extracted with dilute NaOH solution to give fraction B. The final organic layer was labelled as fraction C. Fractions A, B and C contain respectively</h3>
 			<ul>
-			<li><input name="q27" type="radio" value="a">(a) m-chlorobenzoic acid, m-chlorophenol and m-chloroaniline</li>
-			<li><input name="q27" type="radio" value="b">(b) m-chlorophenol, m-chlorobenzoic acid and m-chloroaniline</li>
-			<li><input name="q27" type="radio" value="c">(c) m-chloroaniline, m-chlorobenzoic acid and m-chlorophenol</li>
-			<li><input name="q27" type="radio" value="d">(d) m-chlorobenzoic acid, m-chloroaniline and m-chlorophenol</li>
+			<li><label><input name="q27" type="radio" value="a">(a) m-chlorobenzoic acid, m-chlorophenol and m-chloroaniline</label><label></li>
+			<li><label><input name="q27" type="radio" value="b">(b) m-chlorophenol, m-chlorobenzoic acid and m-chloroaniline</label></li>
+			<li><label><input name="q27" type="radio" value="c">(c) m-chloroaniline, m-chlorobenzoic acid and m-chlorophenol</label></li>
+			<li><label><input name="q27" type="radio" value="d">(d) m-chlorobenzoic acid, m-chloroaniline and m-chlorophenol</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q28" data-question="28">
 			<h3>Question 28: The atomic radius of Ag is closest to Options:</h3>
 			<ul>
-			<li><input name="q28" type="radio" value="a">Au</li>
-			<li><input name="q28" type="radio" value="b">Hg</li>
-			<li><input name="q28" type="radio" value="c">Ni</li>
-			<li><input name="q28" type="radio" value="d">Cu</li>
+			<li><label><input name="q28" type="radio" value="a">Au</label></li>
+			<li><label><input name="q28" type="radio" value="b">Hg</label></li>
+			<li><label><input name="q28" type="radio" value="c">Ni</label></li>
+			<li><label><input name="q28" type="radio" value="d">Cu</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q29" data-question="29">
 			<h3><img class="img-fluid" src="jmp81/jmp8129q.png"></h3>
 			<ul>
-			<li><input name="q29" type="radio" value="a">(a) in laboratory test for phenols</li>
-			<li><input name="q29" type="radio" value="b">(b) Used in protein estimation as an alternative to ninhydrin</li>
-			<li><input name="q29" type="radio" value="c">(c) in acid base titration as an indicator</li>
-			<li><input name="q29" type="radio" value="d">(d) as food grade colourant</li>
+			<li><label><input name="q29" type="radio" value="a">(a) in laboratory test for phenols</label></li></label>
+			<li><label><input name="q29" type="radio" value="b">(b) Used in protein estimation as an alternative to ninhydrin</label></li>
+			<li><label><input name="q29" type="radio" value="c">(c) in acid base titration as an indicator</label></li>
+			<li><label><input name="q29" type="radio" value="d">(d) as food grade colourant</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q30" data-question="30">
 			<h3>Question 30: 1-methyl-ethylene oxide when treated with an excess of HBr produces</h3>
 			<ul>
-			<li><input name="q30" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8130a.png"></li>
-			<li><input name="q30" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8130b.png"></li>
-			<li><input name="q30" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8130c.png"></li>
-			<li><input name="q30" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8130d.png"></li>
+			<li><label><input name="q30" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8130a.png"></label></li>
+			<li><label><input name="q30" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8130b.png"></label></li>
+			<li><label><input name="q30" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8130c.png"></label></li>
+			<li><label><input name="q30" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8130d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q31" data-question="31">
 			<h3>Question 31: Given that the standard potentials (E°) of Cu2+/Cu and Cu+/Cu are 0.34 V and 0.522 V respectively, the E° of Cu2+/Cu+ is</h3>
 			<ul>
-			<li><input name="q31" type="radio" value="a">(a) +0.158 V</li>
-			<li><input name="q31" type="radio" value="b"><(b) –0.182 V </li>
-			<li><input name="q31" type="radio" value="c">(c) 0.182 V</li>
-			<li><input name="q31" type="radio" value="d">(d) –0.158 V</li>
+			<li><label><input name="q31" type="radio" value="a">(a) +0.158 V</label></li>
+			<li><label><input name="q31" type="radio" value="b"><(b) –0.182 V </label></li>
+			<li><label><input name="q31" type="radio" value="c">(c) 0.182 V</label></li>
+			<li><label><input name="q31" type="radio" value="d">(d) –0.158 V</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q32" data-question="32">
 			<h3><img src="jmp81/jmp8132q.png" class="img-fluid"></h3>
 			<ul>
-			<li><input name="q32" type="radio" value="a">(a) (A) < (B) < (C) </li>
-			<li><input name="q32" type="radio" value="b">(b) (B) < (C) < (A)</li>
-			<li><input name="q32" type="radio" value="c">(c) (B) < (A) < (C)</li>
-			<li><input name="q32" type="radio" value="d">(d) (C) < (A) < (B)</li>
+			<li><label><input name="q32" type="radio" value="a">(a) (A) < (B) < (C) </label></li>
+			<li><label><input name="q32" type="radio" value="b">(b) (B) < (C) < (A)</label></li>
+			<li><label><input name="q32" type="radio" value="c">(c) (B) < (A) < (C)</label></li>
+			<li><label><input name="q32" type="radio" value="d">(d) (C) < (A) < (B)</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q33" data-question="33">
 			<h3><img src="jmp81/jmp8133q.png" class="img-fluid"></h3>
 			<ul>
-			<li><input name="q33" type="radio" value="a"><img src="jmp81/jmp8133a.png" class="img-fluid"></li>
-			<li><input name="q33" type="radio" value="b"><img src="jmp81/jmp8133b.png" class="img-fluid"></li>
-			<li><input name="q33" type="radio" value="c"><img src="jmp81/jmp8133c.png" class="img-fluid"></li>
-			<li><input name="q33" type="radio" value="d"><img src="jmp81/jmp8133d.png" class="img-fluid"></li>
+			<li><label><input name="q33" type="radio" value="a"><img src="jmp81/jmp8133a.png" class="img-fluid"></label></li>
+			<li><label><input name="q33" type="radio" value="b"><img src="jmp81/jmp8133b.png" class="img-fluid"></label></li>
+			<li><label><input name="q33" type="radio" value="c"><img src="jmp81/jmp8133c.png" class="img-fluid"></label></li>
+			<li><label><input name="q33" type="radio" value="d"><img src="jmp81/jmp8133d.png" class="img-fluid"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q34" data-question="34">
 			<h3>Question 34: At 35°C, the vapour pressure of CS2 is 512 mm Hg and that of acetone is 344 mm Hg. A solution of CS2 in acetone has a total vapour pressure of 600 mm Hg. The false statement amongst the following is</h3>
 			<ul>
-			<li><input name="q34" type="radio" value="a">(a) heat must be absorbed in in order to produce the solution at 35°C</li>
-			<li><input name="q34" type="radio" value="b">(b) Raoult’s law is not obeyed by this system</li>
-			<li><input name="q34" type="radio" value="c">(c) a mixture of 100 ml CS2 and 100 ml acetone has a volume of &lt;200 ml </li>
-			<li><input name="q34" type="radio" value="d">(d) CS2 and acetone are less attracted to each other than to themselves</li>
+			<li><label><input name="q34" type="radio" value="a">(a) heat must be absorbed in in order to produce the solution at 35°C</label></li>
+			<li><label><input name="q34" type="radio" value="b">(b) Raoult’s law is not obeyed by this system</label></li>
+			<li><label><input name="q34" type="radio" value="c">(c) a mixture of 100 ml CS2 and 100 ml acetone has a volume of &lt;200 ml </label></li>
+			<li><label><input name="q34" type="radio" value="d">(d) CS2 and acetone are less attracted to each other than to themselves</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q35" data-question="35">
 			<h3>Question 35: Oxidation number of potassium in K2O, K2O2 and KO2, respectively is </h3>
 			<ul>
-			<li><input name="q35" type="radio" value="a">(a) +1, +2 and +4</li>
-			<li><input name="q35" type="radio" value="b">(b) +1, +4 and +2</li>
-			<li><input name="q35" type="radio" value="c">(c) +1, +1 and +1</li>
-			<li><input name="q35" type="radio" value="d">(d) +2, +1 and +1⁄2</li>
+			<li><label><input name="q35" type="radio" value="a">(a) +1, +2 and +4</label></li>
+			<li><label><input name="q35" type="radio" value="b">(b) +1, +4 and +2</label></li>
+			<li><label><input name="q35" type="radio" value="c">(c) +1, +1 and +1</label></li>
+			<li><label><input name="q35" type="radio" value="d">(d) +2, +1 and +1⁄2</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q36" data-question="36">
 			<h3>Question 36: The dipole moments of CCl4, CHCl3 and CH4 are in order Options:</h3>
 			<ul>
-			<li><input name="q36" type="radio" value="a">(a) CH4 < CCl4 < CHCl3</li>
-			<li><input name="q36" type="radio" value="b">(b) CCl4 < CH4 < CHCl3</li>
-			<li><input name="q36" type="radio" value="c">(c) CHCl3 < CH4 = CCl4</li>
-			<li><input name="q36" type="radio" value="d">(d) CH4 = CCl4 < CHCl3</li>
+			<li><label><input name="q36" type="radio" value="a">(a) CH4 < CCl4 < CHCl3</label></li>
+			<li><label><input name="q36" type="radio" value="b">(b) CCl4 < CH4 < CHCl3</label></li>
+			<li><label><input name="q36" type="radio" value="c">(c) CHCl3 < CH4 = CCl4</label></li>
+			<li><label><input name="q36" type="radio" value="d">(d) CH4 = CCl4 < CHCl3</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q37" data-question="37">
 			<h3>Question 37: In comparison to the Zeolite process for the removal of permanent hardness, the synthetic resins method is</h3>
 			<ul>
-			<li><input name="q37" type="radio" value="a">(a) more efficient as it can exchange both cations as well as anions</li>
-			<li><input name="q37" type="radio" value="b">(b) less efficient as it exchanges only anions</li>
-			<li><input name="q37" type="radio" value="c">(c) more efficient as it can exchange only cations</li>
-			<li><input name="q37" type="radio" value="d">(d) less efficient as the reverse cannot be regenerated</li>
+			<li><label><input name="q37" type="radio" value="a">(a) more efficient as it can exchange both cations as well as anions</label></li>
+			<li><label><input name="q37" type="radio" value="b">(b) less efficient as it exchanges only anions</label></li>
+			<li><label><input name="q37" type="radio" value="c">(c) more efficient as it can exchange only cations</label></li>
+			<li><label><input name="q37" type="radio" value="d">(d) less efficient as the reverse cannot be regenerated</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q38" data-question="38">
 			<h3>Question 38: The theory that can completely/properly explain the nature of bonding in [Ni(CO)4] is</h3>
 			<ul>
-			<li><input name="q38" type="radio" value="a">(a) Crystal field theory</li>
-			<li><input name="q38" type="radio" value="b">(b) Werner’s theory</li>
-			<li><input name="q38" type="radio" value="c">(c) Molecular orbital theory</li>
-			<li><input name="q38" type="radio" value="d">(d) Valence bond theory</li>
+			<li><label><input name="q38" type="radio" value="a">(a) Crystal field theory</label></li>
+			<li><label><input name="q38" type="radio" value="b">(b) Werner’s theory</label></li>
+			<li><label><input name="q38" type="radio" value="c">(c) Molecular orbital theory</label></li>
+			<li><label><input name="q38" type="radio" value="d">(d) Valence bond theory</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q39" data-question="39">
 			<h3>Question 39: The IUPAC name of the complex [Pt(NH3)2Cl(CH3NH2)] is Options:</h3>
 			<ul>
-			<li><input name="q39" type="radio" value="a">(a) Bisammine(methanamine)chloridoplatinum(II)chloride</li>
-			<li><input name="q39" type="radio" value="b">(b) Diammine(methanamine)chloridoplatinum(II)chloride</li>
-			<li><input name="q39" type="radio" value="c">(c) Diamminechlorido(methanamine)platinum(II)chloride </li>
-			<li><input name="q39" type="radio" value="d">(d) Diamminechlorido(amminomethane)platinum(II)chloride</li>
+			<li><label><input name="q39" type="radio" value="a">(a) Bisammine(methanamine)chloridoplatinum(II)chloride</label></li>
+			<li><label><input name="q39" type="radio" value="b">(b) Diammine(methanamine)chloridoplatinum(II)chloride</label></li>
+			<li><label><input name="q39" type="radio" value="c">(c) Diamminechlorido(methanamine)platinum(II)chloride </label></li>
+			<li><label><input name="q39" type="radio" value="d">(d) Diamminechlorido(amminomethane)platinum(II)chloride</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q40" data-question="40">
 			<h3>Question 40: The number of orbitals associated with quantum numbers n = 5, ms = +1⁄2 is </h3>
 			<ul>
-			<li><input name="q40" type="radio" value="a">(a) 11</li>
-			<li><input name="q40" type="radio" value="b">(b) 25</li>
-			<li><input name="q40" type="radio" value="c">(c) 50</li>
-			<li><input name="q40" type="radio" value="d">(d) 15</li>
+			<li><label><input name="q40" type="radio" value="a">(a) 11</label></li>
+			<li><label><input name="q40" type="radio" value="b">(b) 25</label></li>
+			<li><label><input name="q40" type="radio" value="c">(c) 50</label></li>
+			<li><label><input name="q40" type="radio" value="d">(d) 15</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q41" data-question="41">
 			<h3>Question 41: The electron gain enthalpy (in kJ/mol) of fluorine, chlorine, bromine, iodine respectively is </h3>
 			<ul>
-			<li><input name="q41" type="radio" value="a">(a) -296, - 325, -333, -349</li>
-			<li><input name="q41" type="radio" value="b">(b) -333, -349, -325, -296</li>
-			<li><input name="q41" type="radio" value="c">(c) -349, -333, -325, -296</li>
-			<li><input name="q41" type="radio" value="d"> (d) -333, -325, -349, -296</li>
+			<li><label><input name="q41" type="radio" value="a">(a) -296, - 325, -333, -349</label></li>
+			<li><label><input name="q41" type="radio" value="b">(b) -333, -349, -325, -296</label></li>
+			<li><label><input name="q41" type="radio" value="c">(c) -349, -333, -325, -296</label></li>
+			<li><label><input name="q41" type="radio" value="d"> (d) -333, -325, -349, -296</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q42" data-question="42">
 			<h3><img class="img-fluid" src="jmp81/jmp8142q.png"></h3>
 			<ul>
-			<li><input name="q42" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8142a.png"></li>
-			<li><input name="q42" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8142b.png"></li>
-			<li><input name="q42" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8142c.png"></li>
-			<li><input name="q42" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8142d.png"></li>
+			<li><label><input name="q42" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8142a.png"></label></li>
+			<li><label><input name="q42" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8142b.png"></label></li>
+			<li><label><input name="q42" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8142c.png"></label></li>
+			<li><label><input name="q42" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8142d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q43" data-question="43">
 			<h3>Question 43: The purest form of commercial iron is Options:</h3>
 			<ul>
-			<li><input name="q43" type="radio" value="a">(a) cast iron</li>
-			<li><input name="q43" type="radio" value="b">(b) scrap iron and pig iron</li>
-			<li><input name="q43" type="radio" value="c">(c) pig iron</li>
-			<li><input name="q43" type="radio" value="d">(d) wrought iron</li>
+			<li><label><input name="q43" type="radio" value="a">(a) cast iron</label></li>
+			<li><label><input name="q43" type="radio" value="b">(b) scrap iron and pig iron</label></li>
+			<li><label><input name="q43" type="radio" value="c">(c) pig iron</label></li>
+			<li><label><input name="q43" type="radio" value="d">(d) wrought iron</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q44" data-question="44">
 			<h3>Question 44: The relative strength of interionic/intermolecular forces is decreasing order is Options:</h3>
 			<ul>
-			<li><input name="q44" type="radio" value="a">(a) dipole-dipole > ion-dipole > ion-ion</li>
-			<li><input name="q44" type="radio" value="b">(b) ion-ion > ion-dipole > dipole-dipole</li>
-			<li><input name="q44" type="radio" value="c">(c) ion-dipole > dipole-dipole > ion-ion</li>
-			<li><input name="q44" type="radio" value="d">(d) ion-dipole > ion-ion > dipole-dipole</li>
+			<li><label><input name="q44" type="radio" value="a">(a) dipole-dipole > ion-dipole > ion-ion</label></li>
+			<li><label><input name="q44" type="radio" value="b">(b) ion-ion > ion-dipole > dipole-dipole</label></li>
+			<li><label><input name="q44" type="radio" value="c">(c) ion-dipole > dipole-dipole > ion-ion</label></li>
+			<li><label><input name="q44" type="radio" value="d">(d) ion-dipole > ion-ion > dipole-dipole</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q45" data-question="45">
 			<h3><img class="img-fluid" src="jmp81/jmp8145q.png"></h3>
 			<ul>
-			<li><input name="q45" type="radio" value="a">(a) (i) and (iv)</li>
-			<li><input name="q45" type="radio" value="b">(b) (i), (iii) and (iv) </li>
-			<li><input name="q45" type="radio" value="c">(c) (iv) only</li>
-			<li><input name="q45" type="radio" value="d">(d) (iii) only</li>
+			<li><label><input name="q45" type="radio" value="a">(a) (i) and (iv)</label></li>
+			<li><label><input name="q45" type="radio" value="b">(b) (i), (iii) and (iv) </label></li>
+			<li><label><input name="q45" type="radio" value="c">(c) (iv) only</label></li>
+			<li><label><input name="q45" type="radio" value="d">(d) (iii) only</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -655,11 +699,12 @@
 		<form class="question" id="q51" data-question="51">
 			<h3>Question 51: Let P be a plane passing through the points (2, 1, 0), (4, 1, 1) and (5, 0, 1) and R be any point (2, 1, 6). Then the image of R in the plane P is</h3>
 			<ul>
-			<li><input name="q51" type="radio" value="a">(a) (6, 5, –2)</li>
-			<li><input name="q51" type="radio" value="b">(b) (4, 3, 2)</li>
-			<li><input name="q51" type="radio" value="c">(c) (6, 5, 2)</li>
-			<li><input name="q51" type="radio" value="d"> (d) (3, 4, –2)</li>
+			<li><label><input name="q51" type="radio" value="a">(a) (6, 5, –2)</label></li>
+			<li><label><input name="q51" type="radio" value="b">(b) (4, 3, 2)</label></li>
+			<li><label><input name="q51" type="radio" value="c">(c) (6, 5, 2)</label></li>
+			<li><label><input name="q51" type="radio" value="d"> (d) (3, 4, –2)</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -669,199 +714,217 @@
 2x + 4cy + cz = 0
 where a,b,c ∈ R are non-zero and distinct; has non-zero solution then</h3>
 			<ul>
-			<li><input name="q52" type="radio" value="a">(a) a, b, c are in A.P.</li>
-			<li><input name="q52" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8152b.png"></li>
-			<li><input name="q52" type="radio" value="c">(c) a + b + c = 0</li>
-			<li><input name="q52" type="radio" value="d">(d) a, b, c are in G.P.</li>
+			<li><label><input name="q52" type="radio" value="a">(a) a, b, c are in A.P.</label></li>
+			<li><label><input name="q52" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8152b.png"></label></li>
+			<li><label><input name="q52" type="radio" value="c">(c) a + b + c = 0</label></li>
+			<li><label><input name="q52" type="radio" value="d">(d) a, b, c are in G.P.</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q53" data-question="53">
 			<h3><img class="img-fluid" src="jmp81/jmp8153q.png"></h3>
 			<ul>
-			<li><input name="q53" type="radio" value="a">(a)32</li>
-			<li><input name="q53" type="radio" value="b">(b)63</li>
-			<li><input name="q53" type="radio" value="c">(c)65</li>
-			<li><input name="q53" type="radio" value="d">(d)60</li>
+			<li><label><input name="q53" type="radio" value="a">(a)32</label></li>
+			<li><label><input name="q53" type="radio" value="b">(b)63</label></li>
+			<li><label><input name="q53" type="radio" value="c">(c)65</label></li>
+			<li><label><input name="q53" type="radio" value="d">(d)60</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q54" data-question="54">
 			<h3><img class="img-fluid" src="jmp81/jmp8154q.png"></h3>
 			<ul>
-			<li><input name="q54" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8154a.png"></li>
-			<li><input name="q54" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8154b.png"></li>
-			<li><input name="q54" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8154c.png"></li>
-			<li><input name="q54" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8154d.png"></li>
+			<li><label><input name="q54" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8154a.png"></label></li>
+			<li><label><input name="q54" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8154b.png"></label></li>
+			<li><label><input name="q54" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8154c.png"></label></li>
+			<li><label><input name="q54" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8154d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q55" data-question="55">
 			<h3><img class="img-fluid" src="jmp81/jmp8155q.png"></h3>
 			<ul>
-			<li><input name="q55" type="radio" value="a">(a)4</li>
-			<li><input name="q55" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8155b.png"></li>
-			<li><input name="q55" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8155c.png"></li>
-			<li><input name="q55" type="radio" value="d">(d)-4</li>
+			<li><label><input name="q55" type="radio" value="a">(a)4</label></li>
+			<li><label><input name="q55" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8155b.png"></label></li>
+			<li><label><input name="q55" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8155c.png"></label></li>
+			<li><label><input name="q55" type="radio" value="d">(d)-4</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q56" data-question="56">
 			<h3><img class="img-fluid" src="jmp81/jmp8156q.png"></h3>
 			<ul>
-			<li><input name="q56" type="radio" value="a">A<sup>3</sup></li>
-			<li><input name="q56" type="radio" value="b">A<sup>2</sup></li>
-			<li><input name="q56" type="radio" value="c">I<sub>3</sub></li>
-			<li><input name="q56" type="radio" value="d">A</li>
+			<li><label><input name="q56" type="radio" value="a">A<sup>3</sup></label></li>
+			<li><label><input name="q56" type="radio" value="b">A<sup>2</sup></label></li>
+			<li><label><input name="q56" type="radio" value="c">I<sub>3</sub></label></li>
+			<li><label><input name="q56" type="radio" value="d">A</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q57" data-question="57">
 			<h3>Question 57: If the distance between the foci of an ellipse is 6 and the distance between its directrices is 12, then the length of its latus rectum is</h3>
 			<ul>
-			<li><input name="q57" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8157a.png"></li>
-			<li><input name="q57" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8157b.png"></li>
-			<li><input name="q57" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8157c.png"></li>
-			<li><input name="q57" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8157d.png"></li>
+			<li><label><input name="q57" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8157a.png"></label></li>
+			<li><label><input name="q57" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8157b.png"></label></li>
+			<li><label><input name="q57" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8157c.png"></label></li>
+			<li><label><input name="q57" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8157d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q58" data-question="58">
 			<h3>Question 58: If y = mx + 4 is a tangent to both the parabolas. y<sup>2</sup> = 4x and x<sup>2</sup> = 2by, then b is equal to</h3>
 			<ul>
-			<li><input name="q58" type="radio" value="a">-64</li>
-			<li><input name="q58" type="radio" value="b">-32</li>
-			<li><input name="q58" type="radio" value="c">-128</li>
-			<li><input name="q58" type="radio" value="d">128</li>
+			<li><label><input name="q58" type="radio" value="a">-64</label></li>
+			<li><label><input name="q58" type="radio" value="b">-32</label></li>
+			<li><label><input name="q58" type="radio" value="c">-128</label></li>
+			<li><label><input name="q58" type="radio" value="d">128</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q59" data-question="59">
 			<h3><img class="img-fluid" src="jmp81/jmp815q.png"></h3>
 			<ul>
-			<li><input name="q59" type="radio" value="a">(a)2e</li>
-			<li><input name="q59" type="radio" value="b">(b)1+log<sub>e</sub>2</li>
-			<li><input name="q59" type="radio" value="c">(c)log<sub>e</sub>@</li>
-			<li><input name="q59" type="radio" value="d">(d)@+log<sub>e</sub>2</li>
+			<li><label><input name="q59" type="radio" value="a">(a)2e</label></li>
+			<li><label><input name="q59" type="radio" value="b">(b)1+log<sub>e</sub>2</label></li>
+			<li><label><input name="q59" type="radio" value="c">(c)log<sub>e</sub>2</label></li>
+			<li><label><input name="q59" type="radio" value="d">(d)@+log<sub>e</sub>2</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q60" data-question="60">
 			<h3>Question 60: Total number of 6 digit numbers in which only and all the five digits 1, 3, 5, 7 and 9 appears is</h3>
 			<ul>
-			<li><input name="q60" type="radio" value="a">(a)5<sup>6</sup></li>
-			<li><input name="q60" type="radio" value="b">(b)0.5*(6!)</li>
-			<li><input name="q60" type="radio" value="c">(c)6!</li>
-			<li><input name="q60" type="radio" value="d">(d)2.5(6!)</li>
+			<li><label><input name="q60" type="radio" value="a">(a)5<sup>6</sup></label></li>
+			<li><label><input name="q60" type="radio" value="b">(b)0.5*(6!)</label></li>
+			<li><label><input name="q60" type="radio" value="c">(c)6!</label></li>
+			<li><label><input name="q60" type="radio" value="d">(d)2.5(6!)</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q61" data-question="61">
 			<h3>Question 61: Five numbers are in A.P., whose sum is 25 and product is 2520. If one of these five numbers is –1/2, then the greatest number amongst them is</h3>
 			<ul>
-			<li><input name="q61" type="radio" value="a">(a)10.5</li>
-			<li><input name="q61" type="radio" value="b">(b)16</li>
-			<li><input name="q61" type="radio" value="c">(c)27</li>
-			<li><input name="q61" type="radio" value="d">(d)7</li>
+			<li><label><input name="q61" type="radio" value="a">(a)10.5</label></li>
+			<li><label><input name="q61" type="radio" value="b">(b)16</label></li>
+			<li><label><input name="q61" type="radio" value="c">(c)27</label></li>
+			<li><label><input name="q61" type="radio" value="d">(d)7</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q62" data-question="62">
 			<h3><img class="img-fluid" src="jmp81/jmp8162q.png"></h3>
 			<ul>
-			<li><input name="q62" type="radio" value="a"> p </li>
-			<li><input name="q62" type="radio" value="b"> q </li>
-			<li><input name="q62" type="radio" value="c"> ~p </li>
-			<li><input name="q62" type="radio" value="d"> ~q </li>
+			<li><label><input name="q62" type="radio" value="a"> p </label></li>
+			<li><label><input name="q62" type="radio" value="b"> q </label></li>
+			<li><label><input name="q62" type="radio" value="c"> ~p </label></li>
+			<li><label><input name="q62" type="radio" value="d"> ~q </label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q63" data-question="63">
 			<h3><img class="img-fluid" src="jmp81/jmp8163q.png"></h3>
 			<ul>
-			<li><input name="q63" type="radio" value="a">(a) 10&radic;2</li>
-			<li><input name="q63" type="radio" value="b">(b) 5&radic;2</li>
-			<li><input name="q63" type="radio" value="c">(c) 10</li>
-			<li><input name="q63" type="radio" value="d">(d) 5</li>
+			<li><label><input name="q63" type="radio" value="a">(a) 10&radic;2</label></li>
+			<li><label><input name="q63" type="radio" value="b">(b) 5&radic;2</label></li>
+			<li><label><input name="q63" type="radio" value="c">(c) 10</label></li>
+			<li><label><input name="q63" type="radio" value="d">(d) 5</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q63" data-question="63">
 			<h3><img class="img-fluid" src="jmp81/jmp816q.png"></h3>
 			<ul>
-			<li><input name="q63" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp816a.png"></li>
-			<li><input name="q63" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp816b.png"></li>
-			<li><input name="q63" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp816c.png"></li>
-			<li><input name="q63" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp816d.png"></li>
+			<li><label><input name="q63" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp816a.png"></label></li>
+			<li><label><input name="q63" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp816b.png"></label></li>
+			<li><label><input name="q63" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp816c.png"></label></li>
+			<li><label><input name="q63" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp816d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q64" data-question="64">
 			<h3>Question 64: If g(x) = x<sup>2</sup> + x –1 and (gof)(x) = 4x<sup>2</sup> – 10x + 5, then f(1.25)  is equal to </h3>
 			<ul>
-			<li><input name="q64" type="radio" value="a">(a) 0.5</li>
-			<li><input name="q64" type="radio" value="b">(b) -1.5</li>
-			<li><input name="q64" type="radio" value="c">(c) -0.5</li>
-			<li><input name="q64" type="radio" value="d">(d) 1.5</li>
+			<li><label><input name="q64" type="radio" value="a">(a) 0.5</label></li>
+			<li><label><input name="q64" type="radio" value="b">(b) -1.5</label></li>
+			<li><label><input name="q64" type="radio" value="c">(c) -0.5</label></li>
+			<li><label><input name="q64" type="radio" value="d">(d) 1.5</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q65" data-question="65">
 			<h3><img class="img-fluid" src="jmp81/jmp8165q.png"></h3>
 			<ul>
-			<li><input name="q65" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8165a.png"></li>
-			<li><input name="q65" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8165b.png"></li>
-			<li><input name="q65" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8165c.png"></li>
-			<li><input name="q65" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8165d.png"></li>
+			<li><label><input name="q65" type="radio" value="a"><img class="img-fluid" src="jmp81/jmp8165a.png"></label></li>
+			<li><label><input name="q65" type="radio" value="b"><img class="img-fluid" src="jmp81/jmp8165b.png"></label></li>
+			<li><label><input name="q65" type="radio" value="c"><img class="img-fluid" src="jmp81/jmp8165c.png"></label></li>
+			<li><label><input name="q65" type="radio" value="d"><img class="img-fluid" src="jmp81/jmp8165d.png"></label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q66" data-question="66">
 			<h3><img class="img-fluid" src="jmp81/jmp8166q.png"></h3>
 			<ul>
-			<li><input name="q66" type="radio" value="a">(a) Straight line whose slope is -2⁄3</li>
-			<li><input name="q66" type="radio" value="b">(b) Straight line whose slope is 3/2 </li>
-			<li><input name="q66" type="radio" value="c">(c) circle whose diameter is √5/2</li>
-			<li><input name="q66" type="radio" value="d">
-(d) circle whose centre is at (-1⁄2, -3/2)</li>
+			<li><label><input name="q66" type="radio" value="a">(a) Straight line whose slope is -2⁄3</label></li>
+			<li><label><input name="q66" type="radio" value="b">(b) Straight line whose slope is 3/2 </label></li>
+			<li><label><input name="q66" type="radio" value="c">(c) circle whose diameter is √5/2</label></li>
+			<li><label><input name="q66" type="radio" value="d">
+(d) circle whose centre is at (-1⁄2, -3/2)</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q67" data-question="67">
 			<h3>Question 67: The area of the region enclosed by the circle x2 + y2 = 2 which is not common to the region bounded by the parabola y2 = x and the straight line y = x, is</h3>
 			<ul>
-			<li><input name="q67" type="radio" value="a">(a) (6&Pi;-1)/3</li>
-			<li><input name="q67" type="radio" value="b">(b) (12&pi;-1)/3</li>
-			<li><input name="q67" type="radio" value="c">(c) (12&pi;-1)/6</li>
-			<li><input name="q67" type="radio" value="d">(d) (24&pi;-1)/6</li>
+			<li><label><input name="q67" type="radio" value="a">(a) (6&Pi;-1)/3</label></li>
+			<li><label><input name="q67" type="radio" value="b">(b) (12&pi;-1)/3</label></li>
+			<li><label><input name="q67" type="radio" value="c">(c) (12&pi;-1)/6</label></li>
+			<li><label><input name="q67" type="radio" value="d">(d) (24&pi;-1)/6</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q68" data-question="68">
 			<h3>Question 68: An unbiased coin is tossed 5 times. Suppose that a variable X is assigned the value k when k consecutive heads are obtained for k = 3, 4, 5, otherwise X takes the value -1. Then the expected value of X is</h3>
 			<ul>
-			<li><input name="q68" type="radio" value="a">(a) 3/16</li>
-			<li><input name="q68" type="radio" value="b">(b) -1/8</li>
-			<li><input name="q68" type="radio" value="c">(c) -3/16</li>
-			<li><input name="q68" type="radio" value="d">(d) 1/8</li>
+			<li><label><input name="q68" type="radio" value="a">(a) 3/16</label></li>
+			<li><label><input name="q68" type="radio" value="b">(b) -1/8</label></li>
+			<li><label><input name="q68" type="radio" value="c">(c) -3/16</label></li>
+			<li><label><input name="q68" type="radio" value="d">(d) 1/8</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -870,22 +933,24 @@ where a,b,c ∈ R are non-zero and distinct; has non-zero solution then</h3>
   (−7, 0). If f (−7)= −3 and f'(x)<= 2, for all x in (-7,0), then for all such functions
 f , f (−1)+ f (0) lies in the interval</h3>
 			<ul>
-			<li><input name="q69" type="radio" value="a">(a) (-6,20)</li>
-			<li><input name="q69" type="radio" value="b">(b) [-infinity, 20]</li>
-			<li><input name="q69" type="radio" value="c">(c) (-infinity, 11]</li>
-			<li><input name="q69" type="radio" value="d">(d) [-3,11)</li>
+			<li><label><input name="q69" type="radio" value="a">(a) (-6,20)</label></li>
+			<li><label><input name="q69" type="radio" value="b">(b) [-infinity, 20]</label></li>
+			<li><label><input name="q69" type="radio" value="c">(c) (-infinity, 11]</label></li>
+			<li><label><input name="q69" type="radio" value="d">(d) [-3,11)</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
 		<form class="question" id="q70" data-question="70">
 			<h3><img class="img-fluid" src="jmp81/jmp8170q.png"></h3>
 			<ul>
-			<li><input name="q70" type="radio" value="a">(a) 4/3</li>
-			<li><input name="q70" type="radio" value="b">(b) 2/3</li>
-			<li><input name="q70" type="radio" value="c">(c) 1/3</li>
-			<li><input name="q70" type="radio" value="d">(d) 3/2</li>
+			<li><label><input name="q70" type="radio" value="a">(a) 4/3</label></li>
+			<li><label><input name="q70" type="radio" value="b">(b) 2/3</label></li>
+			<li><label><input name="q70" type="radio" value="c">(c) 1/3</label></li>
+			<li><label><input name="q70" type="radio" value="d">(d) 3/2</label></li>
 			</ul>
+			<input type="reset" value="clear">
 			<button id="next">Next</button>	
 		</form>
 
@@ -927,7 +992,7 @@ m even natural numbers is 16, then m + n is equal to______</h3>
 </div>
 
 
-<div id="result">
+<div id="result" class="container justify-content-center">
 </div>
 
 
