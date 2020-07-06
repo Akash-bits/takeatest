@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take A Test</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='jmp72https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+	<style>
+	ul li {
+		list-style-type: none;
+	}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-dark" style="z-index: 0;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon bg-light">=</span></button>
+	<a class="navbar-brand text-light">Take<span style="font-size:1.8em; ">A</span>Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>	
+
+<div class="container bg-dark" style="visibility: hidden;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon"></span></button>
+	<a class="navbar-brand text-light">Take a Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>
+
+
+<br><br><br><br>
+<div id="instructions" class="container justify-content-center">
+	1)This test contains 75 questions.<br>
+	2)Each question gives 4 points when correct ; -1 when wrong and 0 when left unattempted.<br>
+	3)Test duration is 180 minutes.<br>
+	4)For the questions requiring you to type the answer, round the answer to 2 decimal places only and there is no negative marking for these questions.<br>
+	5)Do not ever reload the page or use back and forward history buttons. Use only the buttons in the webpage.<br>
+	6)You can submit your test at the last question otherwise the test gets submitted automatically after the test time runs out.<br>
+	<h2> All The Best Champ!!!</h2>
+
+
+	<button id="start">Start Test</button>
+</div>
+
+	<div class="row">
+		<div name="btngrp" class="col-md-3 col-12">
+			<div class="container" id="buttongroup">
+				<div class="row">
+
+				<button class="col-3" id="1">1</button>
+				<button class="col-3" id="2">2</button>
+				<button class="col-3" id="3">3</button>
+				<button class="col-3" id="4">4</button>
+				<button class="col-3" id="5">5</button>
+				<button class="col-3" id="6">6</button>
+				<button class="col-3" id="7">7</button>
+				<button class="col-3" id="8">8</button>
+				<button class="col-3" id="9">9</button>
+				<button class="col-3" id="10">10</button>
+				<button class="col-3" id="11">11</button>
+				<button class="col-3" id="12">12</button>
+				<button class="col-3" id="13">13</button>
+				<button class="col-3" id="14">14</button>
+				<button class="col-3" id="15">15</button>
+				<button class="col-3" id="16">16</button>
+				<button class="col-3" id="17">17</button>
+				<button class="col-3" id="18">18</button>
+				<button class="col-3" id="19">19</button>
+				<button class="col-3" id="20">20</button>
+				<button class="col-3" id="21">21</button>
+				<button class="col-3" id="22">22</button>
+				<button class="col-3" id="23">23</button>
+				<button class="col-3" id="24">24</button>
+				<button class="col-3" id="25">25</button>
+				<button class="col-3" id="26">26</button>
+				<button class="col-3" id="27">27</button>
+				<button class="col-3" id="28">28</button>
+				<button class="col-3" id="29">29</button>
+				<button class="col-3" id="30">30</button>
+				<button class="col-3" id="31">31</button>
+				<button class="col-3" id="32">32</button>
+				<button class="col-3" id="33">33</button>
+				<button class="col-3" id="34">34</button>
+				<button class="col-3" id="35">35</button>
+				<button class="col-3" id="36">36</button>
+				<button class="col-3" id="37">37</button>
+				<button class="col-3" id="38">38</button>
+				<button class="col-3">39</button>
+				<button class="col-3">40</button>
+				<button class="col-3">41</button>
+				<button class="col-3">42</button>
+				<button class="col-3">43</button>
+				<button class="col-3">44</button>
+				<button class="col-3">45</button>
+				<button class="col-3">46</button>
+				<button class="col-3">47</button>
+				<button class="col-3">48</button>
+				<button class="col-3">49</button>
+				<button class="col-3">50</button>
+				<button class="col-3">51</button>
+				<button class="col-3">52</button>
+				<button class="col-3">53</button>
+				<button class="col-3">54</button>
+				<button class="col-3">55</button>
+				<button class="col-3">56</button>
+				<button class="col-3">57</button>
+				<button class="col-3">58</button>
+				<button class="col-3">59</button>
+				<button class="col-3">60</button>
+				<button class="col-3">61</button>
+				<button class="col-3">62</button>
+				<button class="col-3">63</button>
+				<button class="col-3">64</button>
+				<button class="col-3">65</button>
+				<button class="col-3">66</button>
+				<button class="col-3">67</button>
+				<button class="col-3">68</button>
+				<button class="col-3">69</button>
+				<button class="col-3">70</button>
+				<button class="col-3">71</button>
+				<button class="col-3">72</button>
+				<button class="col-3">73</button>
+				<button class="col-3">74</button>
+				<button class="col-3">75</button>
+				
+				</div>	
+			</div>	
+		</div>
+
+
+
+		<div class='col-md-6 col-12'>
+	<div class="timer ml-auto col-12" id="timer">Time remaining is <span id="time" class="text-danger"></span>minutes</div>
+
+		<div id="result" class="container justify-content-center">
+		</div>
+
+		<form class="question" id="q1" data-question="1">
+			<h3><img class="img-fluid" src="jmp721q.png"></h3>
+			<ul>
+			<li><label><input name="q1" type="radio" value="a"><img class="img-fluid" src="jmp721a.png"></label></li>
+			<li><label><input name="q1" type="radio" value="b"><img class="img-fluid" src="jmp721b.png"></label></li>
+			<li><label><input name="q1" type="radio" value="c"><img class="img-fluid" src="jmp721c.png"></label></li>
+			<li><label><input name="q1" type="radio" value="d"><img class="img-fluid" src="jmp721d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q2" data-question="2">
+			<h3><img class="img-fluid" src="jmp722q.png"></h3>
+			<ul>
+			<li><label><input name="q2" type="radio" value="a"><img class="img-fluid" src="jmp722a.png"></label></li>
+			<li><label><input name="q2" type="radio" value="b"><img class="img-fluid" src="jmp722b.png"></label></li>
+			<li><label><input name="q2" type="radio" value="c"><img class="img-fluid" src="jmp722c.png"></label></li>
+			<li><label><input name="q2" type="radio" value="d"><img class="img-fluid" src="jmp722d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q3" data-question="3">
+			<h3><img class="img-fluid" src="jmp723q.png"></h3>
+			<ul>
+			<li><label><input name="q3" type="radio" value="a"><img class="img-fluid" src="jmp723a.png"></label></li>
+			<li><label><input name="q3" type="radio" value="b"><img class="img-fluid" src="jmp723b.png"></label></li>
+			<li><label><input name="q3" type="radio" value="c"><img class="img-fluid" src="jmp723c.png"></label></li>
+			<li><label><input name="q3" type="radio" value="d"><img class="img-fluid" src="jmp723d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q4" data-question="4">
+			<h3><div></div><img class="img-fluid" src="jmp724q.png"></h3>
+			<ul>
+			<li><label><input name="q4" type="radio" value="a"><img class="img-fluid" src="jmp724a.png"></label></li>
+			<li><label><input name="q4" type="radio" value="b"><img class="img-fluid" src="jmp724b.png"></label></li>
+			<li><label><input name="q4" type="radio" value="c"><img class="img-fluid" src="jmp724c.png"></label></li>
+			<li><label><input name="q4" type="radio" value="d"><img class="img-fluid" src="jmp724d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q5" data-question="5">
+			<h3><img class="img-fluid" src="jmp725q.png"></h3>
+			<ul>
+			<li><label><input name="q5" type="radio" value="a"><img class="img-fluid" src="jmp725a.png"></label></li>
+			<li><label><input name="q5" type="radio" value="b"><img class="img-fluid" src="jmp725b.png"></label></li>
+			<li><label><input name="q5" type="radio" value="c"><img class="img-fluid" src="jmp725c.png"></label></li>
+			<li><label><input name="q5" type="radio" value="d"><img class="img-fluid" src="jmp725d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q6" data-question="6">
+			<h3><img class="img-fluid" src="jmp726q.png"></h3>
+			<ul>
+			<li><label><input name="q6" type="radio" value="a"><img class="img-fluid" src="jmp726a.png"></label></li>
+			<li><label><input name="q6" type="radio" value="b"><img class="img-fluid" src="jmp726b.png"></label></li>
+			<li><label><input name="q6" type="radio" value="c"><img class="img-fluid" src="jmp726c.png"></label></li>
+			<li><label><input name="q6" type="radio" value="d"><img class="img-fluid" src="jmp726d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q7" data-question="7">
+			<h3><img class="img-fluid" src="jmp727q.png"></h3>
+			<ul>
+			<li><label><input name="q7" type="radio" value="a"><img class="img-fluid" src="jmp727a.png"></label></li>
+			<li><label><input name="q7" type="radio" value="b"><img class="img-fluid" src="jmp727b.png"></label></li>
+			<li><label><input name="q7" type="radio" value="c"><img class="img-fluid" src="jmp727c.png"></label></li>
+			<li><label><input name="q7" type="radio" value="d"><img class="img-fluid" src="jmp727d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q8" data-question="8">
+			<h3><img class="img-fluid" src="jmp728q.png"> the force acting on it due to the wave is</h3>
+			<ul>
+			<li><label><input name="q8" type="radio" value="a"><img class="img-fluid" src="jmp728a.png"></label></li>
+			<li><label><input name="q8" type="radio" value="b"><img class="img-fluid" src="jmp728b.png"></label></li>
+			<li><label><input name="q8" type="radio" value="c"><img class="img-fluid" src="jmp728c.png"></label></li>
+			<li><label><input name="q8" type="radio" value="d"><img class="img-fluid" src="jmp728d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q9" data-question="9">
+			<h3><img class="img-fluid" src="jmp729q.png"></h3>
+			<ul>
+			<li><label><input name="q9" type="radio" value="a"><img class="img-fluid" src="jmp729a.png"></label></li>
+			<li><label><input name="q9" type="radio" value="b"><img class="img-fluid" src="jmp729b.png"></label></li>
+			<li><label><input name="q9" type="radio" value="c"><img class="img-fluid" src="jmp729c.png"></label></li>
+			<li><label><input name="q9" type="radio" value="d"><img class="img-fluid" src="jmp729d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q10" data-question="10">
+			<h3><img class="img-fluid" src="jmp7210q.png"></h3>
+			<ul>
+			<li><label><input name="q10" type="radio" value="a"><img class="img-fluid" src="jmp7210a.png"></label></li>
+			<li><label><input name="q10" type="radio" value="b"><img class="img-fluid" src="jmp7210b.png"></label></li>
+			<li><label><input name="q10" type="radio" value="c"><img class="img-fluid" src="jmp7210c.png"></label></li>
+			<li><label><input name="q10" type="radio" value="d"><img class="img-fluid" src="jmp7210d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q11" data-question="11">
+			<h3><img class="img-fluid" src="jmp7211q.png"></h3>
+			<ul>
+			<li><label><input name="q11" type="radio" value="a"><img class="img-fluid" src="jmp7211a.png"></label></li>
+			<li><label><input name="q11" type="radio" value="b"><img class="img-fluid" src="jmp7211b.png"></label></li>
+			<li><label><input name="q11" type="radio" value="c"><img class="img-fluid" src="jmp7211c.png"></label></li>
+			<li><label><input name="q11" type="radio" value="d"><img class="img-fluid" src="jmp7211d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q12" data-question="12">
+			<h3>Question 12: The figure gives experimentally measured B vs. H variation in a ferromagnetic material. The retentivity, co-ercivity and saturation, respectively, of the material are<img class="img-fluid" src="jmp7212q.png"></h3>
+			<ul>
+			<li><label><input name="q12" type="radio" value="a"><img class="img-fluid" src="jmp7212a.png"></label></li>
+			<li><label><input name="q12" type="radio" value="b"><img class="img-fluid" src="jmp7212b.png"></label></li>
+			<li><label><input name="q12" type="radio" value="c"><img class="img-fluid" src="jmp7212c.png"></label></li>
+			<li><label><input name="q12" type="radio" value="d"><img class="img-fluid" src="jmp7212d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q13" data-question="13">
+			<h3><img class="img-fluid" src="jmp7213q.png"></h3>
+			<ul>
+			<li><label><input name="q13" type="radio" value="a"><img class="img-fluid" src="jmp7213a.png"></label></li>
+			<li><label><input name="q13" type="radio" value="b"><img class="img-fluid" src="jmp7213b.png"></label></li>
+			<li><label><input name="q13" type="radio" value="c"><img class="img-fluid" src="jmp7213c.png"></label></li>
+			<li><label><input name="q13" type="radio" value="d"><img class="img-fluid" src="jmp7213d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q14" data-question="14">
+			<h3><img class="img-fluid" src="jmp7214q.png"></h3>
+			<ul>
+			<li><label><input name="q14" type="radio" value="a"><img class="img-fluid" src="jmp7214a.png"></label></li>
+			<li><label><input name="q14" type="radio" value="b"><img class="img-fluid" src="jmp7214b.png"></label></li>
+			<li><label><input name="q14" type="radio" value="c"><img class="img-fluid" src="jmp7214c.png"></label></li>
+			<li><label><input name="q14" type="radio" value="d"><img class="img-fluid" src="jmp7214d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q15" data-question="15">
+			<h3><img class="img-fluid" src="jmp7215q.png"></h3>
+			<ul>
+			<li><label><input name="q15" type="radio" value="a"><img class="img-fluid" src="jmp7215a.png"></label></li>
+			<li><label><input name="q15" type="radio" value="b"><img class="img-fluid" src="jmp7215b"></label></li>
+			<li><label><input name="q15" type="radio" value="c"><img class="img-fluid" src="jmp7215c.png"></label></li>
+			<li><label><input name="q15" type="radio" value="d"><img class="img-fluid" src="jmp7215d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q16" data-question="16">
+			<h3><img class="img-fluid" src="jmp7216q.png"></h3>
+			<ul>
+			<li><label><input name="q16" type="radio" value="a"><img class="img-fluid" src="jmp7216a.png"></label></li>
+			<li><label><input name="q16" type="radio" value="b"><img class="img-fluid" src="jmp7216b.png"></label></li>
+			<li><label><input name="q16" type="radio" value="c"><img class="img-fluid" src="jmp7216c.png"></label></li>
+			<li><label><input name="q16" type="radio" value="d"><img class="img-fluid" src="jmp7216d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q17" data-question="17">
+			<h3><img class="img-fluid" src="jmp7217q.png"></h3>
+			<ul>
+			<li><label><input name="q17" type="radio" value="a"><img class="img-fluid" src="jmp7217a.png"></label></li>
+			<li><label><input name="q17" type="radio" value="b"><img class="img-fluid" src="jmp7217b.png"></label></li>
+			<li><label><input name="q17" type="radio" value="c"><img class="img-fluid" src="jmp7217c.png"></label></li>
+			<li><label><input name="q17" type="radio" value="d"><img class="img-fluid" src="jmp7217d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q18" data-question="18">
+			<h3>Potential difference between A and B is<img class="img-fluid" src="jmp7218q.png"></h3>
+			<ul>
+			<li><label><input name="q18" type="radio" value="a"><img class="img-fluid" src="jmp7218a.png"></label></li>
+			<li><label><input name="q18" type="radio" value="b"><img class="img-fluid" src="jmp7218b.png"></label></li>
+			<li><label><input name="q18" type="radio" value="c"><img class="img-fluid" src="jmp7218c.png"></label></li>
+			<li><label><input name="q18" type="radio" value="d"><img class="img-fluid" src="jmp7218d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q19" data-question="19">
+			<h3>Question 19: An electron (of mass m) and a photon have the same energy E in the range of a few eV. The ratio of the de-Broglie wavelength associated with the electron and the wavelength of the photon is (c = speed of light in vacuum)</h3>
+			<ul>
+			<li><label><input name="q19" type="radio" value="a"><img class="img-fluid" src="jmp7219a.png"></label></li>
+			<li><label><input name="q19" type="radio" value="b"><img class="img-fluid" src="jmp7219b.png"></label></li>
+			<li><label><input name="q19" type="radio" value="c"><img class="img-fluid" src="jmp7219c.png"></label></li>
+			<li><label><input name="q19" type="radio" value="d"><img class="img-fluid" src="jmp7219d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q20" data-question="20">
+			<h3><img class="img-fluid" src="jmp7220q.png"></h3>
+			<ul>
+			<li><label><input name="q20" type="radio" value="a"><img class="img-fluid" src="jmp7220a.png"></label></li>
+			<li><label><input name="q20" type="radio" value="b"><img class="img-fluid" src="jmp7220b.png"></label></li>
+			<li><label><input name="q20" type="radio" value="c"><img class="img-fluid" src="jmp7220c.png"></label></li>
+			<li><label><input name="q20" type="radio" value="d"><img class="img-fluid" src="jmp7220d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q21" data-question="21">
+		<h3><img class="img-fluid" src="jmp7221q.png">
+		</h3>
+		Answer<input type="text" name="q21">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q22" data-question="22">
+		<h3><img class="img-fluid" src="jmp7222q.png"></h3>
+		Answer<input type="text" name="q22">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q23" data-question="23">
+		<h3><img class="img-fluid" src="jmp7223q.png"></h3>
+		Answer<input type="text" name="q23">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q24" data-question="24">
+		<h3><img class="img-fluid" src="jmp7224q.png"></h3>
+		Answer<input type="text" name="q24">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q25" data-question="25">
+		<h3><img class="img-fluid" src="jmp7225q.png"></h3>
+		Answer<input type="text" name="q25">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q26" data-question="26">
+			<h3><img class="img-fluid" src="jmp7226q.png"></h3>
+			<ul>
+			<li><label><input name="q26" type="radio" value="a"><img class="img-fluid" src="jmp7226a.png"></label></li>
+			<li><label><input name="q26" type="radio" value="b"><img class="img-fluid" src="jmp7226b.png"></label></li>
+			<li><label><input name="q26" type="radio" value="c"><img class="img-fluid" src="jmp7226c.png"></label></li>
+			<li><label><input name="q26" type="radio" value="d"><img class="img-fluid" src="jmp7226d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q27" data-question="27">
+			<h3><img class="img-fluid" src="jmp7227q.png"></h3>
+			<ul>
+			<li><label><input name="q27" type="radio" value="a"><img class="img-fluid" src="jmp7227a.png"></label></li>
+			<li><label><input name="q27" type="radio" value="b"><img class="img-fluid" src="jmp7227b.png"></label></li>
+			<li><label><input name="q27" type="radio" value="c"><img class="img-fluid" src="jmp7227c.png"></label></li>
+			<li><label><input name="q27" type="radio" value="d"><img class="img-fluid" src="jmp7227d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q28" data-question="28">
+			<h3><img class="img-fluid" src="jmp7228q.png"></h3>
+			<ul>
+			<li><label><input name="q28" type="radio" value="a"><img class="img-fluid" src="jmp7228a.png"></label></li>
+			<li><label><input name="q28" type="radio" value="b"><img class="img-fluid" src="jmp7228b.png"></label></li>
+			<li><label><input name="q28" type="radio" value="c"><img class="img-fluid" src="jmp7228c.png"></label></li>
+			<li><label><input name="q28" type="radio" value="d"><img class="img-fluid" src="jmp7228d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q29" data-question="29">
+			<h3><img class="img-fluid" src="jmp7229q.png"></h3>
+			<ul>
+			<li><label><input name="q29" type="radio" value="a"><img class="img-fluid" src="jmp7229a.png"></label></li>
+			<li><label><input name="q29" type="radio" value="b"><img class="img-fluid" src="jmp7229b.png"></label></li>
+			<li><label><input name="q29" type="radio" value="c"><img class="img-fluid" src="jmp7229c.png"></label></li>
+			<li><label><input name="q29" type="radio" value="d"><img class="img-fluid" src="jmp7229d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q30" data-question="30">
+			<h3><img class="img-fluid" src="jmp7230q.png"></h3>
+			<ul>
+			<li><label><input name="q30" type="radio" value="a"><img class="img-fluid" src="jmp7230a.png"></label></li>
+			<li><label><input name="q30" type="radio" value="b"><img class="img-fluid" src="jmp7230b.png"></label></li>
+			<li><label><input name="q30" type="radio" value="c"><img class="img-fluid" src="jmp7230c.png"></label></li>
+			<li><label><input name="q30" type="radio" value="d"><img class="img-fluid" src="jmp7230d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q31" data-question="31">
+			<h3><img class="img-fluid" src="jmp7231q.png"></h3>
+			<ul>
+			<li><label><input name="q31" type="radio" value="a"><img class="img-fluid" src="jmp7231a.png"></label></li>
+			<li><label><input name="q31" type="radio" value="b"><img class="img-fluid" src="jmp7231b.png"></label></li>
+			<li><label><input name="q31" type="radio" value="c"><img class="img-fluid" src="jmp7231c.png"></label></li>
+			<li><label><input name="q31" type="radio" value="d"><img class="img-fluid" src="jmp7231d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q32" data-question="32">
+			<h3><img class="img-fluid" src="jmp7232q.png"></h3>
+			<ul>
+			<li><label><input name="q32" type="radio" value="a"><img class="img-fluid" src="jmp7232a.png"></label></li>
+			<li><label><input name="q32" type="radio" value="b"><img class="img-fluid" src="jmp7232b.png"></label></li>
+			<li><label><input name="q32" type="radio" value="c"><img class="img-fluid" src="jmp7232c.png"></label></li>
+			<li><label><input name="q32" type="radio" value="d"><img class="img-fluid" src="jmp7232d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q33" data-question="33">
+			<h3><img class="img-fluid" src="jmp7233q.png"></h3>
+			<ul>
+			<li><label><input name="q33" type="radio" value="a"><img class="img-fluid" src="jmp7233a.png"></label></li>
+			<li><label><input name="q33" type="radio" value="b"><img class="img-fluid" src="jmp7233b.png"></label></li>
+			<li><label><input name="q33" type="radio" value="c"><img class="img-fluid" src="jmp7233c.png"></label></li>
+			<li><label><input name="q33" type="radio" value="d"><img class="img-fluid" src="jmp7233d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q34" data-question="34">
+			<h3><img class="img-fluid" src="jmp7234q.png"></h3>
+			<ul>
+			<li><label><input name="q34" type="radio" value="a"><img class="img-fluid" src="jmp7234a.png"></label></li>
+			<li><label><input name="q34" type="radio" value="b"><img class="img-fluid" src="jmp7234b.png"></label></li>
+			<li><label><input name="q34" type="radio" value="c"><img class="img-fluid" src="jmp7234c.png"></label></li>
+			<li><label><input name="q34" type="radio" value="d"><img class="img-fluid" src="jmp7234d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q35" data-question="35">
+			<h3><img class="img-fluid" src="jmp7235q.png"></h3>
+			<ul>
+			<li><label><input name="q35" type="radio" value="a"><img class="img-fluid" src="jmp7235a.png"></label></li>
+			<li><label><input name="q35" type="radio" value="b"><img class="img-fluid" src="jmp7235b.png"></label></li>
+			<li><label><input name="q35" type="radio" value="c"><img class="img-fluid" src="jmp7235c.png"></label></li>
+			<li><label><input name="q35" type="radio" value="d"><img class="img-fluid" src="jmp7235d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q36" data-question="36">
+			<h3><img class="img-fluid" src="jmp7236q.png"></h3>
+			<ul>
+			<li><label><input name="q36" type="radio" value="a"><img class="img-fluid" src="jmp7236a.png"></label></li>
+			<li><label><input name="q36" type="radio" value="b"><img class="img-fluid" src="jmp7236b.png"></label></li>
+			<li><label><input name="q36" type="radio" value="c"><img class="img-fluid" src="jmp7236c.png"></label></li>
+			<li><label><input name="q36" type="radio" value="d"><img class="img-fluid" src="jmp7236d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q37" data-question="37">
+			<h3><img class="img-fluid" src="jmp7237q.png"></h3>
+			<ul>
+			<li><label><input name="q37" type="radio" value="a"><img class="img-fluid" src="jmp7237a.png"></label></li>
+			<li><label><input name="q37" type="radio" value="b"><img class="img-fluid" src="jmp7237b.png"></label></li>
+			<li><label><input name="q37" type="radio" value="c"><img class="img-fluid" src="jmp7237c.png"></label></li>
+			<li><label><input name="q37" type="radio" value="d"><img class="img-fluid" src="jmp7237d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q38" data-question="38">
+			<h3><img class="img-fluid" src="jmp7238q.png"><img class="img-fluid" src="jmp7238q2.png"></h3>
+			<ul>
+			<li><label><input name="q38" type="radio" value="a"><img class="img-fluid" src="jmp7238a.png"></label></li>
+			<li><label><input name="q38" type="radio" value="b"><img class="img-fluid" src="jmp7238b.png"></label></li>
+			<li><label><input name="q38" type="radio" value="c"><img class="img-fluid" src="jmp7238c.png"></label></li>
+			<li><label><input name="q38" type="radio" value="d"><img class="img-fluid" src="jmp7238d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q39" data-question="39">
+			<h3><img class="img-fluid" src="jmp7239q.png"></h3>
+			<ul>
+			<li><label><input name="q39" type="radio" value="a"><img class="img-fluid" src="jmp7239a.png"></label></li>
+			<li><label><input name="q39" type="radio" value="b"><img class="img-fluid" src="jmp7239b.png"></label></li>
+			<li><label><input name="q39" type="radio" value="c"><img class="img-fluid" src="jmp7239c.png"></label></li>
+			<li><label><input name="q39" type="radio" value="d"><img class="img-fluid" src="jmp7239d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q40" data-question="40">
+			<h3><img class="img-fluid" src="jmp7240q.png"></h3>
+			<ul>
+			<li><label><input name="q40" type="radio" value="a"><img class="img-fluid" src="jmp7240a.png"></label></li>
+			<li><label><input name="q40" type="radio" value="b"><img class="img-fluid" src="jmp7240b.png"></label></li>
+			<li><label><input name="q40" type="radio" value="c"><img class="img-fluid" src="jmp7240c.png"></label></li>
+			<li><label><input name="q40" type="radio" value="d"><img class="img-fluid" src="jmp7240d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q41" data-question="41">
+			<h3><img class="img-fluid" src="jmp7241q.png"></h3>
+			<ul>
+			<li><label><input name="q41" type="radio" value="a"><img class="img-fluid" src="jmp7241a.png"></label></li>
+			<li><label><input name="q41" type="radio" value="b"><img class="img-fluid" src="jmp7241b.png"></label></li>
+			<li><label><input name="q41" type="radio" value="c"><img class="img-fluid" src="jmp7241c.png"></label></li>
+			<li><label><input name="q41" type="radio" value="d"><img class="img-fluid" src="jmp7241d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q42" data-question="42">
+			<h3><img class="img-fluid" src="jmp7242q.png"></h3>
+			<ul>
+			<li><label><input name="q42" type="radio" value="a"><img class="img-fluid" src="jmp7242a.png"></label></li>
+			<li><label><input name="q42" type="radio" value="b"><img class="img-fluid" src="jmp7242b.png"></label></li>
+			<li><label><input name="q42" type="radio" value="c"><img class="img-fluid" src="jmp7242c.png"></label></li>
+			<li><label><input name="q42" type="radio" value="d"><img class="img-fluid" src="jmp7242d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q43" data-question="43">
+			<h3><img class="img-fluid" src="jmp7243q.png"></h3>
+			<ul>
+			<li><label><input name="q43" type="radio" value="a"><img class="img-fluid" src="jmp7243a.png"></label></li>
+			<li><label><input name="q43" type="radio" value="b"><img class="img-fluid" src="jmp7243b.png"></label></li>
+			<li><label><input name="q43" type="radio" value="c"><img class="img-fluid" src="jmp7243c.png"></label></li>
+			<li><label><input name="q43" type="radio" value="d"><img class="img-fluid" src="jmp7243d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q44" data-question="44">
+			<h3><img class="img-fluid" src="jmp7244q.png"></h3>
+			<ul>
+			<li><label><input name="q44" type="radio" value="a"><img class="img-fluid" src="jmp7244a.png"></label></li>
+			<li><label><input name="q44" type="radio" value="b"><img class="img-fluid" src="jmp7244b.png"></label></li>
+			<li><label><input name="q44" type="radio" value="c"><img class="img-fluid" src="jmp7244c.png"></label></li>
+			<li><label><input name="q44" type="radio" value="d"><img class="img-fluid" src="jmp7244d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q45" data-question="45">
+			<h3><img class="img-fluid" src="jmp7245q.png"></h3>
+			<ul>
+			<li><label><input name="q45" type="radio" value="a"><img class="img-fluid" src="jmp7245a.png"></label></li>
+			<li><label><input name="q45" type="radio" value="b"><img class="img-fluid" src="jmp7245b.png"></label></li>
+			<li><label><input name="q45" type="radio" value="c"><img class="img-fluid" src="jmp7245c.png"></label></li>
+			<li><label><input name="q4" type="radio" value="d"><img class="img-fluid" src="jmp7245d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q46" data-question="46">
+		<h3><img class="img-fluid" src="jmp7246q.png"></h3>
+		Answer<input type="text" name="q46">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q47" data-question="47">
+		<h3><img class="img-fluid" src="jmp7247q.png"></h3>
+		Answer<input type="text" name="q47">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q48" data-question="48">
+		<h3><img class="img-fluid" src="jmp7248q.png"></h3>
+		Answer<input type="text" name="q48">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q49" data-question="49">
+		<h3><img class="img-fluid" src="jmp7249q.png"></h3>
+		Answer<input type="text" name="q49">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q50" data-question="50">
+		<h3><img class="img-fluid" src="jmp7250q.png"></h3>
+		Answer<input type="text" name="q50">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q51" data-question="51">
+			<h3><img class="img-fluid" src="jmp51q.png"></h3>
+			<ul>
+			<li><label><input name="q51" type="radio" value="a"><img class="img-fluid" src="jmp51a.png"></label></li>
+			<li><label><input name="q51" type="radio" value="b"><img class="img-fluid" src="jmp51b.png"></label></li>
+			<li><label><input name="q51" type="radio" value="c"><img class="img-fluid" src="jmp51c.png"></label></li>
+			<li><label><input name="q51" type="radio" value="d"><img class="img-fluid" src="jmp51d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q52" data-question="52">
+			<h3><img class="img-fluid" src="jmp52q.png"></h3>
+			<ul>
+			<li><label><input name="q52" type="radio" value="a"><img class="img-fluid" src="jmp52a.png"></label></li>
+			<li><label><input name="q52" type="radio" value="b"><img class="img-fluid" src="jmp52b.png"></label></li>
+			<li><label><input name="q52" type="radio" value="c"><img class="img-fluid" src="jmp52c.png"></label></li>
+			<li><label><input name="q52" type="radio" value="d"><img class="img-fluid" src="jmp52d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q53" data-question="53">
+			<h3><img class="img-fluid" src="jmp53q.png"></h3>
+			<ul>
+			<li><label><input name="q53" type="radio" value="a"><img class="img-fluid" src="jmp53a.png"></label></li>
+			<li><label><input name="q53" type="radio" value="b"><img class="img-fluid" src="jmp53b.png"></label></li>
+			<li><label><input name="q53" type="radio" value="c"><img class="img-fluid" src="jmp53c.png"></label></li>
+			<li><label><input name="q53" type="radio" value="d"><img class="img-fluid" src="jmp53d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q54" data-question="54">
+			<h3><img class="img-fluid" src="jmp54q.png"></h3>
+			<ul>
+			<li><label><input name="q54" type="radio" value="a"><img class="img-fluid" src="jmp54a.png"></label></li>
+			<li><label><input name="q54" type="radio" value="b"><img class="img-fluid" src="jmp54b.png"></label></li>
+			<li><label><input name="q54" type="radio" value="c"><img class="img-fluid" src="jmp54c.png"></label></li>
+			<li><label><input name="q54" type="radio" value="d"><img class="img-fluid" src="jmp54d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q55" data-question="55">
+			<h3><img class="img-fluid" src="jmp55q.png"></h3>
+			<ul>
+			<li><label><input name="q55" type="radio" value="a"><img class="img-fluid" src="jmp55a.png"></label></li>
+			<li><label><input name="q55" type="radio" value="b"><img class="img-fluid" src="jmp55b.png"></label></li>
+			<li><label><input name="q55" type="radio" value="c"><img class="img-fluid" src="jmp55c.png"></label></li>
+			<li><label><input name="q55" type="radio" value="d"><img class="img-fluid" src="jmp55d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q56" data-question="56">
+			<h3><img class="img-fluid" src="jmp56q.png"></h3>
+			<ul>
+			<li><label><input name="q56" type="radio" value="a"><img class="img-fluid" src="jmp56a.png"></label></li>
+			<li><label><input name="q56" type="radio" value="b"><img class="img-fluid" src="jmp56b.png"></label></li>
+			<li><label><input name="q56" type="radio" value="c"><img class="img-fluid" src="jmp56c.png"></label></li>
+			<li><label><input name="q56" type="radio" value="d"><img class="img-fluid" src="jmp56d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q57" data-question="57">
+			<h3><img class="img-fluid" src="jmp57q.png"></h3>
+			<ul>
+			<li><label><input name="q57" type="radio" value="a"><img class="img-fluid" src="jmp57a.png"></label></li>
+			<li><label><input name="q57" type="radio" value="b"><img class="img-fluid" src="jmp57b.png"></label></li>
+			<li><label><input name="q57" type="radio" value="c"><img class="img-fluid" src="jmp57c.png"></label></li>
+			<li><label><input name="q57" type="radio" value="d"><img class="img-fluid" src="jmp57d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q58" data-question="58">
+			<h3><img class="img-fluid" src="jmp58q.png"></h3>
+			<ul>
+			<li><label><input name="q58" type="radio" value="a"><img class="img-fluid" src="jmp58a.png"></label></li>
+			<li><label><input name="q58" type="radio" value="b"><img class="img-fluid" src="jmp58b.png"></label></li>
+			<li><label><input name="q58" type="radio" value="c"><img class="img-fluid" src="jmp58c.png"></label></li>
+			<li><label><input name="q58" type="radio" value="d"><img class="img-fluid" src="jmp58d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q59" data-question="59">
+			<h3><img class="img-fluid" src="jmp59q.png"></h3>
+			<ul>
+			<li><label><input name="q59" type="radio" value="a"><img class="img-fluid" src="jmp59a.png"></label></li>
+			<li><label><input name="q59" type="radio" value="b"><img class="img-fluid" src="jmp59b.png"></label></li>
+			<li><label><input name="q59" type="radio" value="c"><img class="img-fluid" src="jmp59c.png"></label></li>
+			<li><label><input name="q59" type="radio" value="d"><img class="img-fluid" src="jmp59d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q60" data-question="60">
+			<h3><img class="img-fluid" src="jmp60q.png"></h3>
+			<ul>
+			<li><label><input name="q60" type="radio" value="a"><img class="img-fluid" src="jmp60a.png"></label></li>
+			<li><label><input name="q60" type="radio" value="b"><img class="img-fluid" src="jmp60b.png"></label></li>
+			<li><label><input name="q60" type="radio" value="c"><img class="img-fluid" src="jmp60c.png"></label></li>
+			<li><label><input name="q60" type="radio" value="d"><img class="img-fluid" src="jmp60d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q61" data-question="61">
+			<h3><img class="img-fluid" src="jmp61q.png"></h3>
+			<ul>
+			<li><label><input name="q61" type="radio" value="a"><img class="img-fluid" src="jmp61a.png"></label></li>
+			<li><label><input name="q61" type="radio" value="b"><img class="img-fluid" src="jmp61b.png"></label></li>
+			<li><label><input name="q61" type="radio" value="c"><img class="img-fluid" src="jmp61c.png"></label></li>
+			<li><label><input name="q61" type="radio" value="d"><img class="img-fluid" src="jmp61d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q62" data-question="62">
+			<h3><img class="img-fluid" src="jmp62q.png"></h3>
+			<ul>
+			<li><label><input name="q62" type="radio" value="a"><img class="img-fluid" src="jmp62a.png"></label></li>
+			<li><label><input name="q62" type="radio" value="b"><img class="img-fluid" src="jmp62b.png"></label></li>
+			<li><label><input name="q62" type="radio" value="c"><img class="img-fluid" src="jmp62c.png"></label></li>
+			<li><label><input name="q62" type="radio" value="d"><img class="img-fluid" src="jmp62d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q63" data-question="63">
+			<h3><img class="img-fluid" src="jmp63q.png"></h3>
+			<ul>
+			<li><label><input name="q63" type="radio" value="a"><img class="img-fluid" src="jmp63a.png"></label></li>
+			<li><label><input name="q63" type="radio" value="b"><img class="img-fluid" src="jmp63b.png"></label></li>
+			<li><label><input name="q63" type="radio" value="c"><img class="img-fluid" src="jmp63c.png"></label></li>
+			<li><label><input name="q63" type="radio" value="d"><img class="img-fluid" src="jmp63d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q64" data-question="64">
+			<h3><img class="img-fluid" src="jmp64q.png"></h3>
+			<ul>
+			<li><label><input name="q64" type="radio" value="a"><img class="img-fluid" src="jmp64a.png"></label></li>
+			<li><label><input name="q64" type="radio" value="b"><img class="img-fluid" src="jmp64b.png"></label></li>
+			<li><label><input name="q64" type="radio" value="c"><img class="img-fluid" src="jmp64c.png"></label></li>
+			<li><label><input name="q64" type="radio" value="d"><img class="img-fluid" src="jmp64d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q65" data-question="65">
+			<h3><img class="img-fluid" src="jmp65q.png"></h3>
+			<ul>
+			<li><label><input name="q65" type="radio" value="a"><img class="img-fluid" src="jmp65a.png"></label></li>
+			<li><label><input name="q65" type="radio" value="b"><img class="img-fluid" src="jmp65b.png"></label></li>
+			<li><label><input name="q65" type="radio" value="c"><img class="img-fluid" src="jmp65c.png"></label></li>
+			<li><label><input name="q65" type="radio" value="d"><img class="img-fluid" src="jmp65d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q66" data-question="66">
+			<h3><img class="img-fluid" src="jmp66q.png"></h3>
+			<ul>
+			<li><label><input name="q66" type="radio" value="a"><img class="img-fluid" src="jmp66a.png"></label></li>
+			<li><label><input name="q66" type="radio" value="b"><img class="img-fluid" src="jmp66b.png"></label></li>
+			<li><label><input name="q66" type="radio" value="c"><img class="img-fluid" src="jmp66c.png"></label></li>
+			<li><label><input name="q66" type="radio" value="d"><img class="img-fluid" src="jmp66d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q67" data-question="67">
+			<h3><img class="img-fluid" src="jmp67q.png"></h3>
+			<ul>
+			<li><label><input name="q67" type="radio" value="a"><img class="img-fluid" src="jmp67a.png"></label></li>
+			<li><label><input name="q67" type="radio" value="b"><img class="img-fluid" src="jmp67b.png"></label></li>
+			<li><label><input name="q67" type="radio" value="c"><img class="img-fluid" src="jmp67c.png"></label></li>
+			<li><label><input name="q67" type="radio" value="d"><img class="img-fluid" src="jmp67d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q68" data-question="68">
+			<h3><img class="img-fluid" src="jmp68q.png"></h3>
+			<ul>
+			<li><label><input name="q68" type="radio" value="a"><img class="img-fluid" src="jmp68a.png"></label></li>
+			<li><label><input name="q68" type="radio" value="b"><img class="img-fluid" src="jmp68b.png"></label></li>
+			<li><label><input name="q68" type="radio" value="c"><img class="img-fluid" src="jmp68c.png"></label></li>
+			<li><label><input name="q68" type="radio" value="d"><img class="img-fluid" src="jmp68d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q69" data-question="69">
+			<h3><img class="img-fluid" src="jmp69q.png"></h3>
+			<ul>
+			<li><label><input name="q69" type="radio" value="a"><img class="img-fluid" src="jmp69a.png"></label></li>
+			<li><label><input name="q69" type="radio" value="b"><img class="img-fluid" src="jmp69b.png"></label></li>
+			<li><label><input name="q69" type="radio" value="c"><img class="img-fluid" src="jmp69c.png"></label></li>
+			<li><label><input name="q69" type="radio" value="d"><img class="img-fluid" src="jmp69d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q70" data-question="70">
+			<h3><img class="img-fluid" src="jmp70q.png"></h3>
+			<ul>
+			<li><label><input name="q70" type="radio" value="a"><img class="img-fluid" src="jmp70a.png"></label></li>
+			<li><label><input name="q70" type="radio" value="b"><img class="img-fluid" src="jmp70b.png"></label></li>
+			<li><label><input name="q70" type="radio" value="c"><img class="img-fluid" src="jmp70c.png"></label></li>
+			<li><label><input name="q70" type="radio" value="d"><img class="img-fluid" src="jmp70d.png"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q71" data-question="71">
+		<h3><img class="img-fluid" src="jmp71q.png"></h3>
+		Answer<input type="text" name="q71">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q72" data-question="72">
+		<h3><img class="img-fluid" src="jmp72q.png"></h3>
+		Answer<input type="text" name="q72">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q73" data-question="73">
+		<h3><img class="img-fluid" src="jmp73q.png"></h3>
+		Answer<input type="text" name="q73">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q74" data-question="74">
+		<h3><img class="img-fluid" src="jmp74q.png"></h3>
+		Answer<input type="text" name="q74">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q75" data-question="75">
+		<h3><img class="img-fluid" src="jmp75q.png"></h3>
+		Answer<input type="text" name="q75">
+		<button id="next">Submit Test</button>	
+		</form>
+
+		</h3></h3></form></div>
+
+	</div>	
+</div>
+
+
+<div id="result" class="container justify-content-center">
+</div>
+
+
+<script src="jmp72.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

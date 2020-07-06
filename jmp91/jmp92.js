@@ -1,12 +1,12 @@
 var correct=0,wrong=0,unattempted=0;//score=0;
-var key=['d','c','c','a','a','b','b','b','d','b',
-		 'a','d','c','d','c','c','a','d','a','b',
-		 11,10,175,60,600,'a','a','a','c','a',
-		 'a','c','a','c','c','d','a','c','c','b',
-		 'b','a','d','b','d',-2.7,23.03,2,10.5,1.67,
-		 'a','b','b','b','a','a','b','c','b','d',
-		 'b','c','c','c','b','c','c','d','b','b',
-		 3,18,5,36,30];
+var key=['d','d','b','b','a','d','d','d','c','d',
+		 'b','d','d','b','a','c','b','b','c','a',
+		 40,750,1819,48,40,'a','a','d','b','a',
+		 'a','d','b','b','c','c','a','c','c','b',
+		 'b','d','c','d','c',12,3.98,2.17,10,66.65,
+		 'd','a','c','a','d','a','c','c','a','b',
+		 'a','b','b','b','a','a','d','c','c','b',
+		 14,3,30,36,51];
 var wa=[];		 
 
 
@@ -42,7 +42,7 @@ var time=180;
 	 //alert(next);
 	$('.question').hide();
 	$('instructions').hide();
-	if(next<=75)
+	if(next<75)
 	$('#q'+next+'').show(300);
 	else{
 		evaluate();
@@ -65,11 +65,6 @@ function evaluate(){
 			wrong++;
 				wa.push(n);
 				//alert(n);
-		}
-		if((n>20&&n<26) || (n>45&&n<51) || (n>70&&n<76)){
-			var qwerty=$('input[name=q'+n+']').val();
-			if(qwerty==key[i])
-				correct++;
 		}
 
 		var score=(correct*4)-wrong*1;

@@ -1,12 +1,12 @@
 var correct=0,wrong=0,unattempted=0;//score=0;
-var key=['d','c','c','a','a','b','b','b','d','b',
-		 'a','d','c','d','c','c','a','d','a','b',
-		 11,10,175,60,600,'a','a','a','c','a',
-		 'a','c','a','c','c','d','a','c','c','b',
-		 'b','a','d','b','d',-2.7,23.03,2,10.5,1.67,
-		 'a','b','b','b','a','a','b','c','b','d',
-		 'b','c','c','c','b','c','c','d','b','b',
-		 3,18,5,36,30];
+var key=['d','b','d','b','a','a','c','a','d','a',
+		 'b','d','a','b','d','a','b','d','c','d',
+		 12,4,3,15,10,'d','b','a','b','d',
+		 'c','d','b','d','d','d','c','a','c','b',
+		 'c','d','b','c','d',5.66,1.74,100,37.8,14,
+		 'b','d','b','a','b','d','c','d','a','d',
+		 'd','c','c','b','c','a','c','c','d','b',
+		 8,8,615,3,1];
 var wa=[];		 
 
 
@@ -84,7 +84,7 @@ function evaluate(){
 	var l= wa.length;
 	for(j=0;j<l;j++)
 	{	var k= j+1;
-		//alert('k'+k);
+		alert('k'+k);
 		var q='#q'+k;
 		var qa=$('input[name=q'+k+']:checked').val();
 		$(q).append('<h2>Your answer was '+qa+' while the correct answer is '+key[j]+'</h2><br><hr><br>');
