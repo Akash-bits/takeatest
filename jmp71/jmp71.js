@@ -77,13 +77,13 @@ function evaluate(){
 	}
 	//alert(correct);
 	var score=(correct*4)-wrong*1;
-	$('#result').html('<h2>Your score is '+score+'</h2><br><br><h3 class="text-danger">Your incorrect attemts</h3>');
+	$('#result').html('<h2>Your score is '+score+'</h2><br><br><h3 class="text-danger">Negative Markers</h3>');
 	$('.question').hide();
 	$('#buttongroup').hide();
 	$('#timer').hide();
 	var l= wa.length;
 	for(j=0;j<l;j++)
-	{	var k= j+1;
+	{	var k= wa[j];
 		//alert('k'+k);
 		var q='#q'+k;
 		var qa=$('input[name=q'+k+']:checked').val();
