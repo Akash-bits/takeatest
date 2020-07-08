@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take A Test</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+	<style>
+	ul li {
+		list-style-type: none;
+	}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-dark" style="z-index: 0;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon bg-light">=</span></button>
+	<a class="navbar-brand text-light">Take<span style="font-size:1.8em; ">A</span>Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>	
+
+<div class="container bg-dark" style="visibility: hidden;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon"></span></button>
+	<a class="navbar-brand text-light">Take a Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>
+
+
+<br><br><br><br>
+<div id="instructions" class="container justify-content-center">
+	1)This test contains 75 questions.<br>
+	2)Each question gives 4 points when correct ; -1 when wrong and 0 when left unattempted.<br>
+	3)Test duration is 180 minutes.<br>
+	4)For the questions requiring you to type the answer, round the answer to 2 decimal places only and there is no negative marking for these questions.<br>
+	5)Do not ever reload the page or use back and forward history buttons. Use only the buttons in the webpage.<br>
+	6)You can submit your test at the last question otherwise the test gets submitted automatically after the test time runs out.<br>
+	<h2> All The Best Champ!!!</h2>
+
+
+	<button id="start">Start Test</button>
+</div>
+
+	<div class="row">
+		<div name="btngrp" class="col-md-3 col-12">
+			<div class="container" id="buttongroup">
+				<div class="row">
+
+				<button class="col-3" id="1">1</button>
+				<button class="col-3" id="2">2</button>
+				<button class="col-3" id="3">3</button>
+				<button class="col-3" id="4">4</button>
+				<button class="col-3" id="5">5</button>
+				<button class="col-3" id="6">6</button>
+				<button class="col-3" id="7">7</button>
+				<button class="col-3" id="8">8</button>
+				<button class="col-3" id="9">9</button>
+				<button class="col-3" id="10">10</button>
+				<button class="col-3" id="11">11</button>
+				<button class="col-3" id="12">12</button>
+				<button class="col-3" id="13">13</button>
+				<button class="col-3" id="14">14</button>
+				<button class="col-3" id="15">15</button>
+				<button class="col-3" id="16">16</button>
+				<button class="col-3" id="17">17</button>
+				<button class="col-3" id="18">18</button>
+				<button class="col-3" id="19">19</button>
+				<button class="col-3" id="20">20</button>
+				<button class="col-3" id="21">21</button>
+				<button class="col-3" id="22">22</button>
+				<button class="col-3" id="23">23</button>
+				<button class="col-3" id="24">24</button>
+				<button class="col-3" id="25">25</button>
+				<button class="col-3" id="26">26</button>
+				<button class="col-3" id="27">27</button>
+				<button class="col-3" id="28">28</button>
+				<button class="col-3" id="29">29</button>
+				<button class="col-3" id="30">30</button>
+				<button class="col-3" id="31">31</button>
+				<button class="col-3" id="32">32</button>
+				<button class="col-3" id="33">33</button>
+				<button class="col-3" id="34">34</button>
+				<button class="col-3" id="35">35</button>
+				<button class="col-3" id="36">36</button>
+				<button class="col-3" id="37">37</button>
+				<button class="col-3" id="38">38</button>
+				<button class="col-3">39</button>
+				<button class="col-3">40</button>
+				<button class="col-3">41</button>
+				<button class="col-3">42</button>
+				<button class="col-3">43</button>
+				<button class="col-3">44</button>
+				<button class="col-3">45</button>
+				<button class="col-3">46</button>
+				<button class="col-3">47</button>
+				<button class="col-3">48</button>
+				<button class="col-3">49</button>
+				<button class="col-3">50</button>
+				<button class="col-3">51</button>
+				<button class="col-3">52</button>
+				<button class="col-3">53</button>
+				<button class="col-3">54</button>
+				<button class="col-3">55</button>
+				<button class="col-3">56</button>
+				<button class="col-3">57</button>
+				<button class="col-3">58</button>
+				<button class="col-3">59</button>
+				<button class="col-3">60</button>
+				<button class="col-3">61</button>
+				<button class="col-3">62</button>
+				<button class="col-3">63</button>
+				<button class="col-3">64</button>
+				<button class="col-3">65</button>
+				<button class="col-3">66</button>
+				<button class="col-3">67</button>
+				<button class="col-3">68</button>
+				<button class="col-3">69</button>
+				<button class="col-3">70</button>
+				<button class="col-3">71</button>
+				<button class="col-3">72</button>
+				<button class="col-3">73</button>
+				<button class="col-3">74</button>
+				<button class="col-3">75</button>
+				<button class="col-3" id="1">76</button>
+				<button class="col-3" id="2">77</button>
+				<button class="col-3" id="3">78</button>
+				<button class="col-3" id="4">79</button>
+				<button class="col-3" id="5">80</button>
+				<button class="col-3" id="6">81</button>
+				<button class="col-3" id="7">82</button>
+				<button class="col-3" id="8">83</button>
+				<button class="col-3" id="9">84</button>
+				<button class="col-3" id="10">85</button>
+				<button class="col-3" id="11">86</button>
+				<button class="col-3" id="12">87</button>
+				<button class="col-3" id="13">88</button>
+				<button class="col-3" id="14">89</button>
+				<button class="col-3" id="15">90</button>
+				<button class="col-3" id="16">91</button>
+				<button class="col-3" id="17">92</button>
+				<button class="col-3" id="18">93</button>
+				<button class="col-3" id="19">94</button>
+				<button class="col-3" id="20">95</button>
+				<button class="col-3" id="21">96</button>
+				<button class="col-3" id="22">97</button>
+				<button class="col-3" id="23">98</button>
+				<button class="col-3" id="24">99</button>
+				<button class="col-3" id="25">100</button>
+				<button class="col-3" id="26">101</button>
+				<button class="col-3" id="27">102</button>
+				<button class="col-3" id="28">103</button>
+				<button class="col-3" id="29">104</button>
+				<button class="col-3" id="30">105</button>
+				<button class="col-3" id="31">106</button>
+				<button class="col-3" id="32">107</button>
+				<button class="col-3" id="33">108</button>
+				<button class="col-3" id="34">109</button>
+				<button class="col-3" id="35">110</button>
+				<button class="col-3" id="36">111</button>
+				<button class="col-3" id="37">112</button>
+				<button class="col-3" id="38">113</button>
+				<button class="col-3">114</button>
+				<button class="col-3">115</button>
+				<button class="col-3">116</button>
+				<button class="col-3">117</button>
+				<button class="col-3">118</button>
+				<button class="col-3">119</button>
+				<button class="col-3">120</button>
+				<button class="col-3">121</button>
+				<button class="col-3">122</button>
+				<button class="col-3">123</button>
+				<button class="col-3">124</button>
+				<button class="col-3">125</button>
+				<button class="col-3">126</button>
+				<button class="col-3">127</button>
+				<button class="col-3">128</button>
+				<button class="col-3">129</button>
+				<button class="col-3">130</button>
+				<button class="col-3">131</button>
+				<button class="col-3">132</button>
+				<button class="col-3">133</button>
+				<button class="col-3">134</button>
+				<button class="col-3">135</button>
+				<button class="col-3">136</button>
+				<button class="col-3">137</button>
+				<button class="col-3">138</button>
+				<button class="col-3">139</button>
+				<button class="col-3">140</button>
+				<button class="col-3">141</button>
+				<button class="col-3">142</button>
+				<button class="col-3">143</button>
+				<button class="col-3">144</button>
+				<button class="col-3">145</button>
+				<button class="col-3">146</button>
+				<button class="col-3">147</button>
+				<button class="col-3">148</button>
+				<button class="col-3">149</button>
+				<button class="col-3">150</button>
+				
+				</div>	
+			</div>	
+		</div>
+
+
+
+		<div class='col-md-6 col-12'>
+	<div class="timer ml-auto col-12" id="timer">Time remaining is <span id="time" class="text-danger"></span>minutes</div>
+
+		<div id="result" class="container justify-content-center">
+		</div>
+
+		<form class="question" id="q1" data-question="1">
+			<h3>1)In the formula X=3 YZ<sup>2</sup>, X and Z have dimensions of capacitance and magnetic induction respectively. The dimensions of Y in MKSA system are:</h3>
+			<ul>
+			<li><label><input name="q1" type="radio" value="a">(a)[M<sup>-3</sup>L<sup>-2</sup>T<sup>-2</sup>A<sup>-4</sup>]</label></li>
+			<li><label><input name="q1" type="radio" value="b">(b)[M<sup></sup>L<sup>-2</sup>]</label></li>
+			<li><label><input name="q1" type="radio" value="c">(c)[M<sup>-3</sup>L<sup>-2</sup>T<sup>8</sup>A<sup>4</sup>]</label></li>
+			<li><label><input name="q1" type="radio" value="d">(d)[M<sup>-3</sup>L<sup>2</sup>T<sup>4</sup>A<sup>-4</sup>]</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q2" data-question="2">
+			<h3>2)Two particles describe the same circle of radius 'a' in the same sense with same speed v. What is their relative angular velocity?</h3>
+			<ul>
+			<li><label><input name="q2" type="radio" value="a">a)v/a </label></li>
+			<li><label><input name="q2" type="radio" value="b">b)2v/a</label></li>
+			<li><label><input name="q2" type="radio" value="c">c)v/2a</label></li>
+			<li><label><input name="q2" type="radio" value="d">d) va</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q3" data-question="3">
+			<h3>3)The displacement of a particle is given by x = (t-2)<sup>2</sup>  where X is in metres and t in seconds the distance covered by the particle in first 4 seconds is</h3>
+			<ul>
+			<li><label><input name="q3" type="radio" value="a">a)4m</label></li>
+			<li><label><input name="q3" type="radio" value="b">b)8m</label></li>
+			<li><label><input name="q3" type="radio" value="c">c)12m</label></li>
+			<li><label><input name="q3" type="radio" value="d">d)16m</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q4" data-question="4">
+			<h3>4)Respective number of significant figures for the numbers 23.023 0.0003 0.0021</h3>
+			<ul>
+			<li><label><input name="q4" type="radio" value="a">a)5,1,2</label></li>
+			<li><label><input name="q4" type="radio" value="b">b)5,1,5</label></li>
+			<li><label><input name="q4" type="radio" value="c">c)5,5,2</label></li>
+			<li><label><input name="q4" type="radio" value="d">d)4,4,2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q5" data-question="5">
+			<h3>5)A car moves at 80 km per hour in the first half of total time of motion and at 40 km per hour in the latter half its average speed is</h3>
+			<ul>
+			<li><label><input name="q5" type="radio" value="a">a)60 kmph</label></li>
+			<li><label><input name="q5" type="radio" value="b">b)40 kmph</label></li>
+			<li><label><input name="q5" type="radio" value="c">c)120 kmph</label></li>
+			<li><label><input name="q5" type="radio" value="d">d)120kmph</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q6" data-question="6">
+			<h3>6)A projectile is thrown with initial velocity (ai + bj) metre per second if range of projection is twice the maximum height reached by it then</h3>
+			<ul>
+			<li><label><input name="q6" type="radio" value="a">a)b=.5a</label></li>
+			<li><label><input name="q6" type="radio" value="b">b)b=a</label></li>
+			<li><label><input name="q6" type="radio" value="c">c)b=2a</label></li>
+			<li><label><input name="q6" type="radio" value="d">d)b=4a</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q7" data-question="7">
+			<h3>7)Par sec is a unit of</h3>
+			<ul>
+			<li><label><input name="q7" type="radio" value="a">a)angle</label></li>
+			<li><label><input name="q7" type="radio" value="b">b)velocity</label></li>
+			<li><label><input name="q7" type="radio" value="c">c)time</label></li>
+			<li><label><input name="q7" type="radio" value="d">d)distance</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q8" data-question="8">
+			<h3>8)A 10 kg ball moving with velocity to m/s collides with a 20kg mass initially at rest. If  both of them coalesce the final velocity of the combined mass is</h3>
+			<ul>
+			<li><label><input name="q8" type="radio" value="a">a).75m/s</label></li>
+			<li><label><input name="q8" type="radio" value="b">b)1/3 m/s</label></li>
+			<li><label><input name="q8" type="radio" value="c">c)1.5 m/s</label></li>
+			<li><label><input name="q8" type="radio" value="d">d)2/3 m/s</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q9" data-question="9">
+			<h3>9)A body is projected at an angle 'a' with the horizontal when it when it is at the highest point the ratio of the potential and kinetic energies of the body is</h3>
+			<ul>
+			<li><label><input name="q9" type="radio" value="a">a)tan(a)</label></li>
+			<li><label><input name="q9" type="radio" value="b">b)tan<sup>2</sup>(a)</label></li>
+			<li><label><input name="q9" type="radio" value="c">c) cot(a)</label></li>
+			<li><label><input name="q9" type="radio" value="d">d)cot<sup>2</sup>(a)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q10" data-question="10">
+			<h3>10)The normal reaction on a body placed in a lift moving up with constant acceleration 2 m/s<sup>2</sup> is 120N and mass of the body is (take g = 10 m/s<sup>2</sup>)</h3>
+			<ul>
+			<li><label><input name="q10" type="radio" value="a">a)10 kg</label></li>
+			<li><label><input name="q10" type="radio" value="b">b)15 kg</label></li>
+			<li><label><input name="q10" type="radio" value="c">c)20 kg</label></li>
+			<li><label><input name="q10" type="radio" value="d">d)12 kg</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q11" data-question="11">
+			<h3>11)A stone of mass 0.3 kg attached to a 1.5 m long string is whirled around in a horizontal circle at a speed of 6 m/s the tension in the string is</h3>
+			<ul>
+			<li><label><input name="q11" type="radio" value="a">a)10N</label></li>
+			<li><label><input name="q11" type="radio" value="b">b)20N</label></li>
+			<li><label><input name="q11" type="radio" value="c">c)7.2N</label></li>
+			<li><label><input name="q11" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q12" data-question="12">
+			<h3>12) A car is moving in a circular horizontal track of radius 10 m with a constant speed of 10 m s. A plumb Bob is suspended from the roof of the car by a light rigid rod of length 1m. The angle made by the rod with the track is
+    </h3>
+			<ul>
+			<li><label><input name="q12" type="radio" value="a">a)zero</label></li>
+			<li><label><input name="q12" type="radio" value="b">b)30 degrees</label></li>
+			<li><label><input name="q12" type="radio" value="c"></label>c)45 degrees</li>
+			<li><label><input name="q12" type="radio" value="d"></label>d)90 degrees</li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q13" data-question="13">
+			<h3>13)A force f = - k(yi + xj), acts on a particle moving in the xy-plane. Starting from the origin the particle is taken along the positive x-axis to the point (a,0) and is then taken parallel to the y-axis to the point (a,a). The total work done by the force is</h3>
+			<ul>
+			<li><label><input name="q13" type="radio" value="a">a)-2ka<sup>2</sup> </label></li>
+			<li><label><input name="q13" type="radio" value="b">b)2ka<sup>2</sup> </label></li>
+			<li><label><input name="q13" type="radio" value="c">c)-ka<sup>2</sup> </label></li>
+			<li><label><input name="q13" type="radio" value="d">d)ka<sup>2</sup> </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q14" data-question="14">
+			<h3>14)Bucket tied to a string is lowered at a constant acceleration of g/4. if the mass of the bucket is m and is lowered by a distance d the work done by the string will be</h3>
+			<ul>
+			<li><label><input name="q14" type="radio" value="a">a)mgd/4 </label></li>
+			<li><label><input name="q14" type="radio" value="b">b)-3mgd/4</label></li>
+			<li><label><input name="q14" type="radio" value="c">c)-4mgd/3 </label></li>
+			<li><label><input name="q14" type="radio" value="d"> d)4mg/d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q15" data-question="15">
+			<h3>15)A body of mass M moving with a speed u has a head on collision with a body of mass m originally at rest. If M&gt;&gt;m then the speed of the body of mass m after collision will be nearly
+   </h3>
+			<ul>
+			<li><label><input name="q15" type="radio" value="a">a)(um)/M</label></li>
+			<li><label><input name="q15" type="radio" value="b">b)(uM)/m<abel></li>
+			<li><label><input name="q15" type="radio" value="c">c)u</label></li>
+			<li><label><input name="q15" type="radio" value="d">d) 2u</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q16" data-question="16">
+			<h3>16)The ratio of squares of radii of two spheres of the same mass having the same moment of inertia about their diameters one hollow and the other solid is</h3>
+			<ul>
+			<li><label><input name="q16" type="radio" value="a">a)3:5  </label></li>
+			<li><label><input name="q16" type="radio" value="b"> b)5:3</label></li>
+			<li><label><input name="q16" type="radio" value="c">c)25:9</label></li>
+			<li><label><input name="q16" type="radio" value="d">d)9:25</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q17" data-question="17">
+			<h3>17)A solid cylinder of radius r rolls down an inclined plane without slipping. The square of speed of the centre of mass when it reaches the bottom is
+   </h3>
+			<ul>
+			<li><label><input name="q17" type="radio" value="a">a)2gh</label></li>
+			<li><label><input name="q17" type="radio" value="b">b)4gh</label></li>
+			<li><label><input name="q17" type="radio" value="c">c)0.75gh</label></li>
+			<li><label><input name="q17" type="radio" value="d">d)(4gh)/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q18" data-question="18">
+			<h3>18)If the distance between the two particles is increased by 2% then the force of attraction between them will
+   </h3>
+			<ul>
+			<li><label><input name="q18" type="radio" value="a">a)decrease 6%</label></li>
+			<li><label><input name="q18" type="radio" value="b">b)decrease 4%</label></li>
+			<li><label><input name="q18" type="radio" value="c">c)increase 4%</label></li>
+			<li><label><input name="q18" type="radio" value="d">d)Increase 6%</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q19" data-question="19">
+			<h3>19)The surface tension of water is 7 x 10<sup>-2</sup>N/m. The weight of water supported by surface tension and capillary tube of 0.1 mm radius will be
+  </h3>
+			<ul>
+			<li><label><input name="q19" type="radio" value="a">a)44x10<sup>-6</sup>N </label></li>
+			<li><label><input name="q19" type="radio" value="b">b)22x10<sup>-6</sup>N</label></li>
+			<li><label><input name="q19" type="radio" value="c">c)33x10<sup>-6</sup>N</label></li>
+			<li><label><input name="q19" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q20" data-question="20">
+			<h3>20)Two stretched membranes of area 2 cm and 3 cm at placed in liquid at the same depth. The ratio of pressures on them is
+   </h3>
+			<ul>
+			<li><label><input name="q20" type="radio" value="a">a)2:3</label></li>
+			<li><label><input name="q20" type="radio" value="b">b)1:1</label></li>
+			<li><label><input name="q20" type="radio" value="c">c)3:2</label></li>
+			<li><label><input name="q20" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q21" data-question="21">
+		<h3>21)If a metal wire of length l, having area of cross section 'a' and Young's modulus 'y' behaves as a spring of spring constant k. The value of k is</h3>
+		<ul>
+			<li><label><input name="q21" type="radio" value="a">a)(ya)/l</label></li>
+			<li><label><input name="q21" type="radio" value="b">b)ya/(2l)</label></li>
+			<li><label><input name="q21" type="radio" value="c">c)(2ya)/l</label></li>
+			<li><label><input name="q21" type="radio" value="d">d)(yl)/a</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q22" data-question="22">
+		<h3>22)A spring of constant K is cut into two parts of length in the ratio 2:3.The spring constant of the largest spring is</h3>
+		<ul>
+			<li><label><input name="q22" type="radio" value="a">a)2k/5  </label></li>
+			<li><label><input name="q22" type="radio" value="b">b)5k/3</label></li>
+			<li><label><input name="q22" type="radio" value="c">c)k</label></li>
+			<li><label><input name="q22" type="radio" value="d"> d)3k/5</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q23" data-question="23">
+		<h3>23)The velocity of sound is not affected by change in 
+   </h3>
+		<ul>
+			<li><label><input name="q23" type="radio" value="a">a)temperature</label></li>
+			<li><label><input name="q23" type="radio" value="b">b)medium</label></li>
+			<li><label><input name="q23" type="radio" value="c">c)pressure</label></li>
+			<li><label><input name="q23" type="radio" value="d">d)wavelength</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q24" data-question="24">
+		<h3>24)Efficiency of a carnot engine is 50% when temperature of outlet is 500K. In order to increase the efficiency up to 60% keeping the temperature of intake the same what should be the temperature of outlet.
+  </h3>
+		<ul>
+			<li><label><input name="q24" type="radio" value="a">a)200K</label></li>
+			<li><label><input name="q24" type="radio" value="b">b)400K</label></li>
+			<li><label><input name="q24" type="radio" value="c">c)600K </label></li>
+			<li><label><input name="q24" type="radio" value="d">d)800K</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q25" data-question="25">
+		<h3>25)A gas has 
+   </h3>
+		<ul>
+			<li><label><input name="q25" type="radio" value="a">a) one specific heat</label></li>
+			<li><label><input name="q25" type="radio" value="b">b)two specific heats</label></li>
+			<li><label><input name="q25" type="radio" value="c">c)infinite specific heats</label></li>
+			<li><label><input name="q25" type="radio" value="d">d)no specific heat</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q26" data-question="26">
+			<h3>26)The temperature of an ideal gas is increased from 300 to 400 km then percentage increase in v<sub>rms</sub> is
+   </h3>
+			<ul>
+			<li><label><input name="q26" type="radio" value="a">a)15.5%</label></li>
+			<li><label><input name="q26" type="radio" value="b">b)37.7%</label></li>
+			<li><label><input name="q26" type="radio" value="c">c)11%</label></li>
+			<li><label><input name="q26" type="radio" value="d">d)30%</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q27" data-question="27">
+			<h3>27)At what angle should two Mirrors be placed so that there are 7 images formed of the object in between
+   </h3>
+			<ul>
+			<li><label><input name="q27" type="radio" value="a">a)54 degrees</label></li>
+			<li><label><input name="q27" type="radio" value="b">b)50 degrees</label></li>
+			<li><label><input name="q27" type="radio" value="c">c)60 degrees</label></li>
+			<li><label><input name="q27" type="radio" value="d">d)64degrees</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q28" data-question="28">
+			<h3>28)Calculate the time taken by the light to travel a distance of 500 m in water of refractive index 4/3 (given velocity of light in vacuum = 3x10<sup>8</sup>m/s)
+   </h3>
+			<ul>
+			<li><label><input name="q28" type="radio" value="a">a)3x10<sup>-10</sup>s</label></li>
+			<li><label><input name="q28" type="radio" value="b">b)2.22x10<sup>-6</sup>s</label></li>
+			<li><label><input name="q28" type="radio" value="c">c)4.3x10<sup>-5</sup>s</label></li>
+			<li><label><input name="q28" type="radio" value="d">d)3x10<sup>-6</sup>s</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q29" data-question="29">
+			<h3>29)The force between two charges situated in air is f. the force between the same charge if the distance between them is reduced to half and they are situated in a medium having dielectric constant 4 is
+  </h3>
+			<ul>
+			<li><label><input name="q29" type="radio" value="a">a)f</label></li>
+			<li><label><input name="q29" type="radio" value="b">b)f/4 </label></li>
+			<li><label><input name="q29" type="radio" value="c">c)2f</label></li>
+			<li><label><input name="q29" type="radio" value="d">d)16f</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q30" data-question="30">
+			<h3>30)Electric field at 20 cm from the centre of a uniformly conducting charged sphere of radius 10 cm is E. Then at a distance 5 cm from the centre it will be
+  </h3>
+			<ul>
+			<li><label><input name="q30" type="radio" value="a">a)16E</label></li>
+			<li><label><input name="q30" type="radio" value="b">b)4E</label></li>
+			<li><label><input name="q30" type="radio" value="c">c)2E </label></li>
+			<li><label><input name="q30" type="radio" value="d">d)0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q31" data-question="31">
+			<h3>31)The insulation property of air breaks down at intensity of electric field 3 x 10<sup>6</sup>V/m. The maximum charge that can be given to a sphere of diameter 5m is
+ 
+
+			<ul>
+			<li><label><input name="q31" type="radio" value="a">a)2x10<suo>-2</suo>C</label></li>
+			<li><label><input name="q31" type="radio" value="b">b)2x10<sup>-3</sup>C </label></li>
+			<li><label><input name="q31" type="radio" value="c">c)2x10<sup>-4</sup>C</label></li>
+			<li><label><input name="q31" type="radio" value="d">d)none</h3></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q32" data-question="32">
+			<h3>32)A point charge q is placed at the centre of a hemisphere. find the ratio of electric flux passing through the curved surface and the plane surface of the hemisphere
+   </h3>
+			<ul>
+			<li><label><input name="q32" type="radio" value="a">a)1:1</label></li>
+			<li><label><input name="q32" type="radio" value="b">b)1:2</label></li>
+			<li><label><input name="q32" type="radio" value="c">c)2pi:1</label></li>
+			<li><label><input name="q32" type="radio" value="d">d)4pi:1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q33" data-question="33">
+			<h3>33)How much electric flux will come out to a surface S=10j kept in an electrostatic field = 2i+4j+3K?
+   </h3>
+			<ul>
+			<li><label><input name="q33" type="radio" value="a">a)20 units</label></li>
+			<li><label><input name="q33" type="radio" value="b">b)40 units</label></li>
+			<li><label><input name="q33" type="radio" value="c">c)30 units</label></li>
+			<li><label><input name="q33" type="radio" value="d">d)90 units</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q34" data-question="34">
+			<h3>34)Electric flux entering and leaving an enclosed the surface is f1 and f2 respectively. the electric charge inside the enclosed the surface will be
+  
+</h3>
+			<ul>
+			<li><label><input name="q34" type="radio" value="a">a)(f1+f2)/&epsilon;</label></li>
+			<li><label><input name="q34" type="radio" value="b">b)(f1-f2)/&epsilon;</label></li>
+			<li><label><input name="q34" type="radio" value="c">c)(f1+f2)x&epsilon;</label></li>
+			<li><label><input name="q34" type="radio" value="d">d)(f2-f1)x&epsilon;</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q35" data-question="35">
+			<h3>35)Calculate the potential of the big drop if eight charged water drops with radius 1 mm and charge 10<sup>-10</sup>C merge into a single drop
+   </h3>
+			<ul>
+			<li><label><input name="q35" type="radio" value="a">a)3200V</label></li>
+			<li><label><input name="q35" type="radio" value="b">b)4000V</label></li>
+			<li><label><input name="q35" type="radio" value="c">c)3600V</label></li>
+			<li><label><input name="q35" type="radio" value="d">d)4200V</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q36" data-question="36">
+			<h3>36)The work done in placing a charge of  8 x10<sup>-18</sup> C on capacitor of 100 micro farad is
+   </h3>
+			<ul>
+			<li><label><input name="q36" type="radio" value="a">a)32x10<sup>-32</sup>J</label></li>
+			<li><label><input name="q36" type="radio" value="b">b)3.2x10<sup>-32</sup>J</label></li>
+			<li><label><input name="q36" type="radio" value="c">c)16x10<sup>-32</sup>J</label></li>
+			<li><label><input name="q36" type="radio" value="d">d)8x10<sup>-32</sup>J</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q37" data-question="37">
+			<h3>37)A 100 watt 200V bulb is connected to a 160V supply. The power consumption will be
+  </h3>
+			<ul>
+			<li><label><input name="q37" type="radio" value="a">a)64W</label></li>
+			<li><label><input name="q37" type="radio" value="b">b)80W</label></li>
+			<li><label><input name="q37" type="radio" value="c">c)100W </label></li>
+			<li><label><input name="q37" type="radio" value="d">d)150W</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q38" data-question="38">
+			<h3>38)The radius of curvature of the path of a charged particle in a uniform magnetic field is directly proportional to 
+			</h3>
+			<ul>
+			<li><label><input name="q38" type="radio" value="a">a)the charge on the particle </label></li>
+			<li><label><input name="q38" type="radio" value="b">b)the momentum of the particle </label></li>
+			<li><label><input name="q38" type="radio" value="c">c)the intensity of the field</label></li>
+			<li><label><input name="q38" type="radio" value="d">d)the energy of the particle</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q39" data-question="39">
+			<h3>39)A fan blade of length 2a a rotates with frequency f cycles per second perpendicular to the magnetic field B. Then the potential difference between the centre and end of the blade is
+  </h3>
+			<ul>
+			<li><label><input name="q39" type="radio" value="a">a)&pi;ba<sup>2</sup>f</label></li>
+			<li><label><input name="q39" type="radio" value="b">b)4&pi;baf </label></li>
+			<li><label><input name="q39" type="radio" value="c"></label>c)4&pi;ba<sup>2</sup>f</li>
+			<li><label><input name="q39" type="radio" value="d"></label>d)none</li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q40" data-question="40">
+			<h3>40)Zener breakdown in a semiconductor diode occurs when  
+			</h3>
+			<ul>
+			<li><label><input name="q40" type="radio" value="a">a)forward current exceeds a certain value </label></li>
+			<li><label><input name="q40" type="radio" value="b">b)reverse bias exceeds a certain value </label></li>
+			<li><label><input name="q40" type="radio" value="c">c)forward bias exceeds a certain value</label></li>
+			<li><label><input name="q40" type="radio" value="d">d)potential barrier is reduced to zero</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q41" data-question="41">
+			<h3>41)Formation of CO and CO<sub>2</sub> illustrates the law of 
+			</h3>
+			<ul>
+			<li><label><input name="q41" type="radio" value="a">a)conservation of mass </label></li>
+			<li><label><input name="q41" type="radio" value="b">b)multiple proportion</label></li>
+			<li><label><input name="q41" type="radio" value="c">c)reciprocal proportion </label></li>
+			<li><label><input name="q41" type="radio" value="d">d)constant proportion</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q42" data-question="42">
+			<h3>42)What will be the weight of CO having the same number of oxygen atoms present in 22g of CO2
+ 			</h3>
+			<ul>
+			<li><label><input name="q42" type="radio" value="a">a)28g</label></li>
+			<li><label><input name="q42" type="radio" value="b">b)22g</label></li>
+			<li><label><input name="q42" type="radio" value="c">c)44g</label></li>
+			<li><label><input name="q42" type="radio" value="d">d)72g</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q43" data-question="43">
+			<h3>43)The electron in hydrogen atom is excited to 5th orbit the number of spectral lines it is expected to emit is</h3>
+			<ul>
+			<li><label><input name="q43" type="radio" value="a">6</label></li>
+			<li><label><input name="q43" type="radio" value="b">10</label></li>
+			<li><label><input name="q43" type="radio" value="c">12</label></li>
+			<li><label><input name="q43" type="radio" value="d">20</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q44" data-question="44">
+			<h3>44)The wavelength of radiation emitted when the electron jumps from 4th shell to the second shell is    </h3>
+			<ul>
+			<li><label><input name="q44" type="radio" value="a">4862 angstrom</label></li>
+			<li><label><input name="q44" type="radio" value="b">2056 angstrom</label></li>
+			<li><label><input name="q44" type="radio" value="c">5241 angstrom</label></li>
+			<li><label><input name="q44" type="radio" value="d">109,700 cm</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q45" data-question="45">
+			<h3>45)Which is the most covalent
+   </h3>
+			<ul>
+			<li><label><input name="q45" type="radio" value="a">CF</label></li>
+			<li><label><input name="q45" type="radio" value="b">CO</label></li>
+			<li><label><input name="q45" type="radio" value="c">CS</label></li>
+			<li><label><input name="q45" type="radio" value="d">CBr</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q46" data-question="46">
+		<h3>46)The mass of a photon of wavelength 1.54 angstrom is
+		</h3>
+		<ul>
+			<li><label><input name="q46" type="radio" value="a">2.5x 10<sup>-32</sup>kg</label></li>
+			<li><label><input name="q46" type="radio" value="b">1.4x 10<sup>-32</sup>kg</label></li>
+			<li><label><input name="q46" type="radio" value="c">3.3x 10<sup>-32</sup>kg</label></li>
+			<li><label><input name="q46" type="radio" value="d">none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q47" data-question="47">
+		<h3>47)Which of the following is not linear</h3>
+		<ul>
+			<li><label><input name="q47" type="radio" value="a">BeCl2</label></li>
+			<li><label><input name="q47" type="radio" value="b">HCN</label></li>
+			<li><label><input name="q47" type="radio" value="c">ZnCl2</label></li>
+			<li><label><input name="q47" type="radio" value="d">H20</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q48" data-question="48">
+		<h3>48)The largest bond angle is present in</h3>
+		<ul>
+			<li><label><input name="q48" type="radio" value="a">AsH<sub>3</sub></label></li>
+			<li><label><input name="q48" type="radio" value="b">NH<sub>3</sub></label></li>
+			<li><label><input name="q48" type="radio" value="c">H20</label></li>
+			<li><label><input name="q48" type="radio" value="d">PH<sub>3</sub></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q49" data-question="49">
+		<h3>49)The pair of species with similar shape is</h3>
+		<ul>
+			<li><label><input name="q49" type="radio" value="a">a)PCl<sub>3</sub>,NH<sub>3</sub></label></li>
+			<li><label><input name="q49" type="radio" value="b">CF<sub>4</sub>,SF<sub>4</sub></label></li>
+			<li><label><input name="q49" type="radio" value="c">PbCl<sub>2</sub>,CO<sub>2</sub></label></li>
+			<li><label><input name="q49" type="radio" value="d">none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q50" data-question="50">
+		<h3>50)The number of unpaired electrons in nickel carbonyl are</h3>
+		<ul>
+			<li><label><input name="q50" type="radio" value="a">a)0</label></li>
+			<li><label><input name="q50" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q50" type="radio" value="c">c)4</label></li>
+			<li><label><input name="q50" type="radio" value="d">d)5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q51" data-question="51">
+			<h3>51)The element of second period which forms the most acidic oxide is  </h3>
+			<ul>
+			<li><label><input name="q51" type="radio" value="a">carbon</label></li>
+			<li><label><input name="q51" type="radio" value="b">boron</label></li>
+			<li><label><input name="q51" type="radio" value="c">flourine</label></li>
+			<li><label><input name="q51" type="radio" value="d">nitrogen</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q52" data-question="52">
+			<h3>52)The RMS speed of helium in m/s at 400K is</h3>
+			<ul>
+			<li><label><input name="q52" type="radio" value="a">16.8</label></li>
+			<li><label><input name="q52" type="radio" value="b">60</label></li>
+			<li><label><input name="q52" type="radio" value="c">168</label></li>
+			<li><label><input name="q52" type="radio" value="d">1580</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q53" data-question="53">
+			<h3>53)The vapour pressure of pure water at 25 degrees celsius is 23 torr.then the vapour pressure of hundred grams of water to which hundred grams of C6H12O6 has been added is</h3>
+			<ul>
+			<li><label><input name="q53" type="radio" value="a">15.6 torr</label></li>
+			<li><label><input name="q53" type="radio" value="b">21.3 torr</label></li>
+			<li><label><input name="q53" type="radio" value="c">26.7 torr</label></li>
+			<li><label><input name="q53" type="radio" value="d">24.8 torr</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q54" data-question="54">
+			<h3>54)Gas expands isothermally and reversibly the work done by the gas is   </h3>
+			<ul>
+			<li><label><input name="q54" type="radio" value="a">a) maximum</label></li>
+			<li><label><input name="q54" type="radio" value="b"></label>b)minimum</li>
+			<li><label><input name="q54" type="radio" value="c"></label>c)zero</li>
+			<li><label><input name="q54" type="radio" value="d"></label>d)data insufficient</li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q55" data-question="55">
+			<h3>The enthalpy of combustion of benzene is - 3264.64kJ/mol. The heat produced by burning 3.9 grams of benzene in kJ is</h3>
+			<ul>
+			<li><label><input name="q55" type="radio" value="a">-163.23</label></li>
+			<li><label><input name="q55" type="radio" value="b">-326.4</label></li>
+			<li><label><input name="q55" type="radio" value="c">-32.64</label></li>
+			<li><label><input name="q55" type="radio" value="d">-3.264</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q56" data-question="56">
+			<h3>The enthalpy of formation of two compounds a and b r - 84 kJ and - 156 kJ . Which one of the following statement is correct  </h3>
+			<ul>
+			<li><label><input name="q56" type="radio" value="a">a)a is less table than b</label></li>
+			<li><label><input name="q56" type="radio" value="b">b)both a and b are unstable</label></li>
+			<li><label><input name="q56" type="radio" value="c">c)a and b are endothermic compounds</label></li>
+			<li><label><input name="q56" type="radio" value="d">d)a is more stable than b</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q57" data-question="57">
+			<h3>The solubility product of silver chloride is 1.8 x 10<sup>-18</sup> at 298 k. The solubility of AgCl in 0.01 M HCL solution in mol/dm<sup>3</sup> is</h3>
+			<ul>
+			<li><label><input name="q57" type="radio" value="a">a)8.8x10<sup>-8</sup></label></li>
+			<li><label><input name="q57" type="radio" value="b">b)9x10<sup>-8</sup></label></li>
+			<li><label><input name="q57" type="radio" value="c">c)1.8x10<sup>-8</sup></label></li>
+			<li><label><input name="q57" type="radio" value="d">2.4xx10<sup>-8</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q58" data-question="58">
+			<h3>Half life of a hypothetical reaction is found to be inwardly proportional to the cube of initial concentration. The order of the reaction is</h3>
+			<ul>
+			<li><label><input name="q58" type="radio" value="a">a)4</label></li>
+			<li><label><input name="q58" type="radio" value="b">b)5</label></li>
+			<li><label><input name="q58" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q58" type="radio" value="d">d)2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q59" data-question="59">
+			<h3>The time for100% completion of zero order rxn is</h3>
+			<ul>
+			<li><label><input name="q59" type="radio" value="a">a)a/(2k)</label></li>
+			<li><label><input name="q59" type="radio" value="b">b)2a/k</label></li>
+			<li><label><input name="q59" type="radio" value="c">c)a/k</label></li>
+			<li><label><input name="q59" type="radio" value="d">none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q60" data-question="60">
+			<h3>Out of molarity molality normality and mole fraction those independent of temperature are</h3>
+			<ul>
+			<li><label><input name="q60" type="radio" value="a">a)molarity,mole fraction</label></li>
+			<li><label><input name="q60" type="radio" value="b">b)molality,normality</label></li>
+			<li><label><input name="q60" type="radio" value="c">c)molality,mole fraction </label></li>
+			<li><label><input name="q60" type="radio" value="d">d)molarity,normality</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q61" data-question="61">
+			<h3>Which is absorbed in minimum amount by activated charcoal</h3>
+			<ul>
+			<li><label><input name="q61" type="radio" value="a">a)H<sub>2</sub></label></li>
+			<li><label><input name="q61" type="radio" value="b">b)CO2</label></li>
+			<li><label><input name="q61" type="radio" value="c">c)SO3</label></li>
+			<li><label><input name="q61" type="radio" value="d">d)CO</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q62" data-question="62">
+			<h3>Vanishing cream is an example of </h3>
+			<ul>
+			<li><label><input name="q62" type="radio" value="a">a)solution </label></li>
+			<li><label><input name="q62" type="radio" value="b">b)foam</label></li>
+			<li><label><input name="q62" type="radio" value="c">c)lyophilic solution</label></li>
+			<li><label><input name="q62" type="radio" value="d">d)emulsion</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q63" data-question="63">
+			<h3>The quantity of electricity required to liberate 0.1 gram equivalent of an element at the electrode is</h3>
+			<ul>
+			<li><label><input name="q63" type="radio" value="a">a)96500C</label></li>
+			<li><label><input name="q63" type="radio" value="b">b)9650C</label></li>
+			<li><label><input name="q63" type="radio" value="c">c)965C</label></li>
+			<li><label><input name="q63" type="radio" value="d">d)96.5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q64" data-question="64">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q64" type="radio" value="a"></label></li>
+			<li><label><input name="q64" type="radio" value="b"></label></li>
+			<li><label><input name="q64" type="radio" value="c"></label></li>
+			<li><label><input name="q64" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q65" data-question="65">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q65" type="radio" value="a"></label></li>
+			<li><label><input name="q65" type="radio" value="b"></label></li>
+			<li><label><input name="q65" type="radio" value="c"></label></li>
+			<li><label><input name="q65" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q66" data-question="66">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q66" type="radio" value="a"></label></li>
+			<li><label><input name="q66" type="radio" value="b"></label></li>
+			<li><label><input name="q66" type="radio" value="c"></label></li>
+			<li><label><input name="q66" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q67" data-question="67">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q67" type="radio" value="a"></label></li>
+			<li><label><input name="q67" type="radio" value="b"></label></li>
+			<li><label><input name="q67" type="radio" value="c"></label></li>
+			<li><label><input name="q67" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q68" data-question="68">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q68" type="radio" value="a"></label></li>
+			<li><label><input name="q68" type="radio" value="b"></label></li>
+			<li><label><input name="q68" type="radio" value="c"></label></li>
+			<li><label><input name="q68" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q69" data-question="69">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q69" type="radio" value="a"></label></li>
+			<li><label><input name="q69" type="radio" value="b"></label></li>
+			<li><label><input name="q69" type="radio" value="c"></label></li>
+			<li><label><input name="q69" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q70" data-question="70">
+			<h3></h3>
+			<ul>
+			<li><label><input name="q70" type="radio" value="a"></label></li>
+			<li><label><input name="q70" type="radio" value="b"></label></li>
+			<li><label><input name="q70" type="radio" value="c"></label></li>
+			<li><label><input name="q70" type="radio" value="d"></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q71" data-question="71">
+		<h3></h3>
+		Answer<input type="text" name="q71">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q72" data-question="72">
+		<h3></h3>
+		Answer<input type="text" name="q72">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q73" data-question="73">
+		<h3></h3>
+		Answer<input type="text" name="q73">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q74" data-question="74">
+		<h3></h3>
+		Answer<input type="text" name="q74">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q75" data-question="75">
+		<h3></h3>
+		Answer<input type="text" name="q75">
+		<button id="next">Submit Test</button>	
+		</form>
+
+		</h3></h3></form></div>
+
+	</div>	
+</div>
+
+
+<div id="result" class="container justify-content-center">
+</div>
+
+
+<script src="jmp91.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
