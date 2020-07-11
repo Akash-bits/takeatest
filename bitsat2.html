@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take A Test</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+	<style>
+	ul li {
+		list-style-type: none;
+	}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-dark" style="z-index: 0;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon bg-light">=</span></button>
+	<a class="navbar-brand text-light">Take<span style="font-size:1.8em; ">A</span>Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>	
+
+<div class="container bg-dark" style="visibility: hidden;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon"></span></button>
+	<a class="navbar-brand text-light">Take a Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>
+
+
+<br><br><br><br>
+<div id="instructions" class="container justify-content-center">
+	1)This test contains 150 questions.<br>
+	2)Each question gives 3 points when correct ; -1 when wrong and 0 when left unattempted.<br>
+	3)Test duration is 180 minutes.<br>
+	4)Do not ever reload the page or use back and forward history buttons. Use only the buttons in the webpage.<br>
+	5)You can submit your test at the last question otherwise the test gets submitted automatically after the test time runs out.<br>
+	<h2> All The Best Champ!!!</h2>
+
+
+	<button id="start">Start Test</button>
+</div>
+
+	<div class="row">
+		<div name="btngrp" class="col-md-3 col-12">
+			<div class="container" id="buttongroup">
+				<div class="row">
+
+				<button class="col-3" id="1">1</button>
+				<button class="col-3" id="2">2</button>
+				<button class="col-3" id="3">3</button>
+				<button class="col-3" id="4">4</button>
+				<button class="col-3" id="5">5</button>
+				<button class="col-3" id="6">6</button>
+				<button class="col-3" id="7">7</button>
+				<button class="col-3" id="8">8</button>
+				<button class="col-3" id="9">9</button>
+				<button class="col-3" id="10">10</button>
+				<button class="col-3" id="11">11</button>
+				<button class="col-3" id="12">12</button>
+				<button class="col-3" id="13">13</button>
+				<button class="col-3" id="14">14</button>
+				<button class="col-3" id="15">15</button>
+				<button class="col-3" id="16">16</button>
+				<button class="col-3" id="17">17</button>
+				<button class="col-3" id="18">18</button>
+				<button class="col-3" id="19">19</button>
+				<button class="col-3" id="20">20</button>
+				<button class="col-3" id="21">21</button>
+				<button class="col-3" id="22">22</button>
+				<button class="col-3" id="23">23</button>
+				<button class="col-3" id="24">24</button>
+				<button class="col-3" id="25">25</button>
+				<button class="col-3" id="26">26</button>
+				<button class="col-3" id="27">27</button>
+				<button class="col-3" id="28">28</button>
+				<button class="col-3" id="29">29</button>
+				<button class="col-3" id="30">30</button>
+				<button class="col-3" id="31">31</button>
+				<button class="col-3" id="32">32</button>
+				<button class="col-3" id="33">33</button>
+				<button class="col-3" id="34">34</button>
+				<button class="col-3" id="35">35</button>
+				<button class="col-3" id="36">36</button>
+				<button class="col-3" id="37">37</button>
+				<button class="col-3" id="38">38</button>
+				<button class="col-3">39</button>
+				<button class="col-3">40</button>
+				<button class="col-3">41</button>
+				<button class="col-3">42</button>
+				<button class="col-3">43</button>
+				<button class="col-3">44</button>
+				<button class="col-3">45</button>
+				<button class="col-3">46</button>
+				<button class="col-3">47</button>
+				<button class="col-3">48</button>
+				<button class="col-3">49</button>
+				<button class="col-3">50</button>
+				<button class="col-3">51</button>
+				<button class="col-3">52</button>
+				<button class="col-3">53</button>
+				<button class="col-3">54</button>
+				<button class="col-3">55</button>
+				<button class="col-3">56</button>
+				<button class="col-3">57</button>
+				<button class="col-3">58</button>
+				<button class="col-3">59</button>
+				<button class="col-3">60</button>
+				<button class="col-3">61</button>
+				<button class="col-3">62</button>
+				<button class="col-3">63</button>
+				<button class="col-3">64</button>
+				<button class="col-3">65</button>
+				<button class="col-3">66</button>
+				<button class="col-3">67</button>
+				<button class="col-3">68</button>
+				<button class="col-3">69</button>
+				<button class="col-3">70</button>
+				<button class="col-3">71</button>
+				<button class="col-3">72</button>
+				<button class="col-3">73</button>
+				<button class="col-3">74</button>
+				<button class="col-3">75</button>
+				<button class="col-3" id="1">76</button>
+				<button class="col-3" id="2">77</button>
+				<button class="col-3" id="3">78</button>
+				<button class="col-3" id="4">79</button>
+				<button class="col-3" id="5">80</button>
+				<button class="col-3" id="6">81</button>
+				<button class="col-3" id="7">82</button>
+				<button class="col-3" id="8">83</button>
+				<button class="col-3" id="9">84</button>
+				<button class="col-3" id="10">85</button>
+				<button class="col-3" id="11">86</button>
+				<button class="col-3" id="12">87</button>
+				<button class="col-3" id="13">88</button>
+				<button class="col-3" id="14">89</button>
+				<button class="col-3" id="15">90</button>
+				<button class="col-3" id="16">91</button>
+				<button class="col-3" id="17">92</button>
+				<button class="col-3" id="18">93</button>
+				<button class="col-3" id="19">94</button>
+				<button class="col-3" id="20">95</button>
+				<button class="col-3" id="21">96</button>
+				<button class="col-3" id="22">97</button>
+				<button class="col-3" id="23">98</button>
+				<button class="col-3" id="24">99</button>
+				<button class="col-3" id="25">100</button>
+				<button class="col-3" id="26">101</button>
+				<button class="col-3" id="27">102</button>
+				<button class="col-3" id="28">103</button>
+				<button class="col-3" id="29">104</button>
+				<button class="col-3" id="30">105</button>
+				<button class="col-3" id="31">106</button>
+				<button class="col-3" id="32">107</button>
+				<button class="col-3" id="33">108</button>
+				<button class="col-3" id="34">109</button>
+				<button class="col-3" id="35">110</button>
+				<button class="col-3" id="36">111</button>
+				<button class="col-3" id="37">112</button>
+				<button class="col-3" id="38">113</button>
+				<button class="col-3">114</button>
+				<button class="col-3">115</button>
+				<button class="col-3">116</button>
+				<button class="col-3">117</button>
+				<button class="col-3">118</button>
+				<button class="col-3">119</button>
+				<button class="col-3">120</button>
+				<button class="col-3">121</button>
+				<button class="col-3">122</button>
+				<button class="col-3">123</button>
+				<button class="col-3">124</button>
+				<button class="col-3">125</button>
+				<button class="col-3">126</button>
+				<button class="col-3">127</button>
+				<button class="col-3">128</button>
+				<button class="col-3">129</button>
+				<button class="col-3">130</button>
+				<button class="col-3">131</button>
+				<button class="col-3">132</button>
+				<button class="col-3">133</button>
+				<button class="col-3">134</button>
+				<button class="col-3">135</button>
+				<button class="col-3">136</button>
+				<button class="col-3">137</button>
+				<button class="col-3">138</button>
+				<button class="col-3">139</button>
+				<button class="col-3">140</button>
+				<button class="col-3">141</button>
+				<button class="col-3">142</button>
+				<button class="col-3">143</button>
+				<button class="col-3">144</button>
+				<button class="col-3">145</button>
+				<button class="col-3">146</button>
+				<button class="col-3">147</button>
+				<button class="col-3">148</button>
+				<button class="col-3">149</button>
+				<button class="col-3">150</button>
+				
+				</div>	
+			</div>	
+		</div>
+
+
+
+		<div class='col-md-6 col-12'>
+	<div class="timer ml-auto col-12" id="timer">Time remaining is <span id="time" class="text-danger"></span>minutes</div>
+
+		<div id="result" class="container justify-content-center">
+		</div>
+
+		<form class="question" id="q1" data-question="1">
+			<h3>1)The particle experiences a constant acceleration for 20 seconds after starting from rest. It travels a distance S1 in the first ten seconds and distances to in the next 10 seconds then
+    </h3>
+			<ul>
+			<li><label><input name="q1" type="radio" value="a">a)s1=s2</label></li>
+			<li><label><input name="q1" type="radio" value="b">b)s1=2s2</label></li>
+			<li><label><input name="q1" type="radio" value="c">c)s1=3s2</label></li>
+			<li><label><input name="q1" type="radio" value="d">d)s1=4s2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q2" data-question="2">
+			<h3>2)A body of mass 1kg crosses a point S with the velocity 60 m/s. A force of 10N directed towards S begins to act on it. It will again cross s in
+   </h3>
+			<ul>
+			<li><label><input name="q2" type="radio" value="a">a)24s </label></li>
+			<li><label><input name="q2" type="radio" value="b">b)12s</label></li>
+			<li><label><input name="q2" type="radio" value="c">c)6s</label></li>
+			<li><label><input name="q2" type="radio" value="d">d)15s </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q3" data-question="3">
+			<h3>3)Cricketer hits the ball with velocity 25 m/s at 60 degree above horizontal . How far above the ground it passes over a fielder 50 m from the bat
+ /h3>
+			<ul>
+			<li><label><input name="q3" type="radio" value="a">a)8.2m</label></li>
+			<li><label><input name="q3" type="radio" value="b">b)9m</label></li>
+			<li><label><input name="q3" type="radio" value="c">c)11.6m</label></li>
+			<li><label><input name="q3" type="radio" value="d">d)12.7m</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q4" data-question="4">
+			<h3>With what minimum acceleration can a Fireman slide down a rope whose breaking strength is two thirds of his weight
+   </h3>
+			<ul>
+			<li><label><input name="q4" type="radio" value="a">a)g/3</label></li>
+			<li><label><input name="q4" type="radio" value="b">b)2g/3</label></li>
+			<li><label><input name="q4" type="radio" value="c">c)1.5g</label></li>
+			<li><label><input name="q4" type="radio" value="d">d)0.5g</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q5" data-question="5">
+			<h3>5)The mass m is placed on a body of mass M. There is no friction ,the force f is applied on M and it moves with with acceleration a then the force on the top body m is
+  </h3>
+			<ul>
+			<li><label><input name="q5" type="radio" value="a">a)f</label></li>
+			<li><label><input name="q5" type="radio" value="b">b)ma </label></li>
+			<li><label><input name="q5" type="radio" value="c">c)f-ma</label></li>
+			<li><label><input name="q5" type="radio" value="d">d)none of the above</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q6" data-question="6">
+			<h3>6)A projectile is projected at an angle 60° with horizontal with speed 10 m/s. The minimum radius of curvature of the trajectory described by the projectile is
+    </h3>
+			<ul>
+			<li><label><input name="q6" type="radio" value="a">a)2.55m</label></li>
+			<li><label><input name="q6" type="radio" value="b">b)2m</label></li>
+			<li><label><input name="q6" type="radio" value="c">c)10m</label></li>
+			<li><label><input name="q6" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q7" data-question="7">
+			<h3>7)A body of mass 10 kg is moving on an inclined plane of inclination 30° with an acceleration 2ms . The body starts from rest. Find the work done by force of gravity in 2 seconds.
+    </h3>
+			<ul>
+			<li><label><input name="q7" type="radio" value="a">a)10J</label></li>
+			<li><label><input name="q7" type="radio" value="b">b)zero</label></li>
+			<li><label><input name="q7" type="radio" value="c">c)98J</label></li>
+			<li><label><input name="q7" type="radio" value="d">d)196J</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q8" data-question="8">
+			<h3>8)Potential energy of a particle of mass 5 kg moving in xy plane is given by u=-(7 x + 24 y )J , X and y being in metre . If the particle starts from rest from origin then speed of particle at t = 2 s
+   </h3>
+			<ul>
+			<li><label><input name="q8" type="radio" value="a">a)5m/s</label></li>
+			<li><label><input name="q8" type="radio" value="b">b)14m/s</label></li>
+			<li><label><input name="q8" type="radio" value="c">c)17.5m/s</label></li>
+			<li><label><input name="q8" type="radio" value="d">d)10m/s</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q9" data-question="9">
+			<h3>9)If a ball is dropped from rest it bounces from from the floor.The coefficient of restitution is 0.5 and the speed just before the first bounce is 5m/s. the total time taken by the ball to come to rest is
+   </h3>
+			<ul>
+			<li><label><input name="q9" type="radio" value="a">a)2s</label></li>
+			<li><label><input name="q9" type="radio" value="b">b)1s</label></li>
+			<li><label><input name="q9" type="radio" value="c">c)0.5s</label></li>
+			<li><label><input name="q9" type="radio" value="d">d)0.25s</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q10" data-question="10">
+			<h3>10)A man of mass m stands at one end of a plank of length l which lies at the at rest on a frictionless surface. The man walks to the other end of the plank. If the mass of the plank is m/3 in the distance that the mass moves relative to the ground is
+   <sup>2</sup>)</h3>
+			<ul>
+			<li><label><input name="q10" type="radio" value="a">a)0.75l</label></li>
+			<li><label><input name="q10" type="radio" value="b">b)0.25l</label></li>
+			<li><label><input name="q10" type="radio" value="c">c)0.8l</label></li>
+			<li><label><input name="q10" type="radio" value="d">d)0.6l</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q11" data-question="11">
+			<h3>11)A machine gun fires 120 shots per minute. If the mass of each bullet is 10g and the muzzle velocity is 800m/s then the average recoil force on a machine gun is
+   </h3>
+			<ul>
+			<li><label><input name="q11" type="radio" value="a">a)120N</label></li>
+			<li><label><input name="q11" type="radio" value="b">b)8N</label></li>
+			<li><label><input name="q11" type="radio" value="c">c)16N</label></li>
+			<li><label><input name="q11" type="radio" value="d">d)12N</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q12" data-question="12">
+			<h3>12)Hoop of radius 2m and weight 100 kg rolls along horizontal floor so that its centre of mass has a speed of 20 cm/s, how much work has to be done to stop it
+
+    </h3>
+			<ul>
+			<li><label><input name="q12" type="radio" value="a">a)4.8J </label></li>
+			<li><label><input name="q12" type="radio" value="b">b)4J </label></li>
+			<li><label><input name="q12" type="radio" value="c">c)6.2J </label></li>
+			<li><label><input name="q12" type="radio" value="d">d)7.2J</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q13" data-question="13">
+			<h3>13)Small Steel sphere of mass m is tied to a string of length l and is whirled in a horizontal circle with a uniform angular velocity '2w'. the string is suddenly pulled so that the radius of the circle is halved the new angular velocity will be
+ </h3>
+			<ul>
+			<li><label><input name="q13" type="radio" value="a">a)2w </label></li>
+			<li><label><input name="q13" type="radio" value="b">b)4w</label></li>
+			<li><label><input name="q13" type="radio" value="c">c)6w </label></li>
+			<li><label><input name="q13" type="radio" value="d">d)8w</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q14" data-question="14">
+			<h3>14)Two bodies each of mass 1 kg at a distance of 1 m. the escape velocity of a body of mass 1 kg which is midway between them is
+   </h3>
+			<ul>
+			<li><label><input name="q14" type="radio" value="a">a)0.00008m/s</label></li>
+			<li><label><input name="q14" type="radio" value="b">b)0.0000231 m/s</label></li>
+			<li><label><input name="q14" type="radio" value="c">c)0.000042 m/s</label></li>
+			<li><label><input name="q14" type="radio" value="d"> d)Zero</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q15" data-question="15">
+			<h3>15)Particle of mass m is executing oscillation about the origin on the x-axis. Its potential energy is u(x)= k|x|<sup>3</sup> where k is a constant. The amplitude of oscillation is 'a' then it's time period is proportional to
+   
+   </h3>
+			<ul>
+			<li><label><input name="q15" type="radio" value="a">a)a<sup>-0.5</sup></label></li>
+			<li><label><input name="q15" type="radio" value="b">b)a<sup>0</sup></label></li>
+			<li><label><input name="q15" type="radio" value="c">c)a<sup>0.5</sup></label></li>
+			<li><label><input name="q15" type="radio" value="d">d)a<sup>1.5</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q16" data-question="16">
+			<h3>16)Particle starts oscillating simple harmonically from its equilibrium position. Then the ratio of kinetic and potential energy of the particle at T/12 is(where T is time period)
+   </h3>
+			<ul>
+			<li><label><input name="q16" type="radio" value="a">a)2:1  </label></li>
+			<li><label><input name="q16" type="radio" value="b"> b)3:1</label></li>
+			<li><label><input name="q16" type="radio" value="c">c)4:1</label></li>
+			<li><label><input name="q16" type="radio" value="d">d)1:4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q17" data-question="17">
+			<h3>If air of weight w is filled in an empty balloon which weighs w1 the weight of the balloon will become w2.Suppose the density of air inside and outside the balloon is same then
+ 
+   </h3>
+			<ul>
+			<li><label><input name="q17" type="radio" value="a">a)w2=w1+w</label></li>
+			<li><label><input name="q17" type="radio" value="b">b)w2=w1-w </label></li>
+			<li><label><input name="q17" type="radio" value="c">c)w2=w1 </label></li>
+			<li><label><input name="q17" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q18" data-question="18">
+			<h3>18)A closed rectangular tank 10 m long and 5m wide and 3 m deep is completely filled with an oil of specific gravity 0.92. find the pressure difference between the rear and front corners of the tank which moving with an acceleration of 3m/s<sup>2</sup> in horizontal direction
+ 
+   </h3>
+			<ul>
+			<li><label><input name="q18" type="radio" value="a">a)27.6kPa</label></li>
+			<li><label><input name="q18" type="radio" value="b">b)50kPa </label></li>
+			<li><label><input name="q18" type="radio" value="c">c)60kPa </label></li>
+			<li><label><input name="q18" type="radio" value="d">d)70kPa </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q19" data-question="19">
+			<h3>19)The Apparent coefficient of expansion of a liquid when heated in a copper vessel is C and when heated in the Silver vessel is S . If A is the linear coefficient of expansion of copper then the linear coefficient of expansion of silver is   
+  </h3>
+			<ul>
+			<li><label><input name="q19" type="radio" value="a">a)(C+S-3A)/3 </label></li>
+			<li><label><input name="q19" type="radio" value="b">b)(C+3A-S)/3</label></li>
+			<li><label><input name="q19" type="radio" value="c">c)(S+3A-c)/3 </label></li>
+			<li><label><input name="q19" type="radio" value="d">d)(S+3A+s)/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q20" data-question="20">
+			<h3>20)Tuning fork of frequency 512 Hz produces 4 beats per second when sounded with the tuning fork B. Due to filing of the prongs of the tuning fork be the number of of beat per second becomes 6. The  actual frequency of B is
+   </h3>
+			<ul>
+			<li><label><input name="q20" type="radio" value="a">a)516Hz </label></li>
+			<li><label><input name="q20" type="radio" value="b">b)508Hz </label></li>
+			<li><label><input name="q20" type="radio" value="c">c)512Hz </label></li>
+			<li><label><input name="q20" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q21" data-question="21">
+		<h3>21)Two rods of equal length and diameter but of thermal conductivities 2 and 3 units respectively are joined in series. Thermal conductivity of the combination is</h3>
+		<ul>
+			<li><label><input name="q21" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q21" type="radio" value="b">b)5</label></li>
+			<li><label><input name="q21" type="radio" value="c">c)6</label></li>
+			<li><label><input name="q21" type="radio" value="d">d)none</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q22" data-question="22">
+		<h3>22)The temperature of an ideal gas is increased from 300 to 400 km then percentage increase in v<sub>rms</sub> is
+   </h3>
+		<ul>
+			<li><label><input name="q22" type="radio" value="a">a)a)15.5%</label></li>
+			<li><label><input name="q22" type="radio" value="b">b)37.7%</label></li>
+			<li><label><input name="q22" type="radio" value="c">c)11%</label></li>
+			<li><label><input name="q22" type="radio" value="d"> d)30%</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q23" data-question="23">
+		<h3>23)What work will be done when 3 moles of an ideal gas are compressed to half the initial volume at a constant temperature of 300K
+   </h3>
+		<ul>
+			<li><label><input name="q23" type="radio" value="a">a)-5188J   </label></li>
+			<li><label><input name="q23" type="radio" value="b">b)5000J </label></li>
+			<li><label><input name="q23" type="radio" value="c">c)5188J</label></li>
+			<li><label><input name="q23" type="radio" value="d">d)-5000J</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q24" data-question="24">
+		<h3>The shortest height of a vertical mirror required to see the entire image of the man(height h) will be 
+  </h3>
+		<ul>
+			<li><label><input name="q24" type="radio" value="a">a)0.5h</label></li>
+			<li><label><input name="q24" type="radio" value="b">b)0.6h  </label></li>
+			<li><label><input name="q24" type="radio" value="c">c)0.3h</label></li>
+			<li><label><input name="q24" type="radio" value="d">d)data insufficient</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q25" data-question="25">
+		<h3> Find the position of 1 centimetre tall object  placed 8 cm in front of a concave mirror of radius of curvature 24cm.
+ 
+   </h3>
+		<ul>
+			<li><label><input name="q25" type="radio" value="a">a)24cm </label></li>
+			<li><label><input name="q25" type="radio" value="b">b)25cm </label></li>
+			<li><label><input name="q25" type="radio" value="c">c)26cm</label></li>
+			<li><label><input name="q25" type="radio" value="d">d)27cm</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q26" data-question="26">
+			<h3>If and coherent sources of intensity I are superimposed at a point the intensity of the point is 
+   </h3>
+			<ul>
+			<li><label><input name="q26" type="radio" value="a">a)nI </label></li>
+			<li><label><input name="q26" type="radio" value="b">b)n<sup>2</sup>I</label></li>
+			<li><label><input name="q26" type="radio" value="c">c)I</label></li>
+			<li><label><input name="q26" type="radio" value="d">d)I/n</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q27" data-question="27">
+			<h3>27)Two charges of value 2 microcoulomb and -50 microcoulomb are placed at a distance 80 cm apart. Calculate the distance of the point from the smaller charge where the intensity will be zero
+
+   </h3>
+			<ul>
+			<li><label><input name="q27" type="radio" value="a">a)20cm </label></li>
+			<li><label><input name="q27" type="radio" value="b">b)35cm </label></li>
+			<li><label><input name="q27" type="radio" value="c">c)30cm </label></li>
+			<li><label><input name="q27" type="radio" value="d">d)25cm</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q28" data-question="28">
+			<h3>28)The path of a charged particle entering perpendicularly in a uniform electric field will be
+
+   </h3>
+			<ul>
+			<li><label><input name="q28" type="radio" value="a">a)linear </label></li>
+			<li><label><input name="q28" type="radio" value="b">b)parabolic </label></li>
+			<li><label><input name="q28" type="radio" value="c">c)c)circular </label></li>
+			<li><label><input name="q28" type="radio" value="d">d)elliptical</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q29" data-question="29">
+			<h3>29)What should be the flux linked to the cube if a point charge q is placed at one corner of a cube?
+  </h3>
+			<ul>
+			<li><label><input name="q29" type="radio" value="a">a)q/&epsilon;  </label></li>
+			<li><label><input name="q29" type="radio" value="b">b)q/(2&epsilon;) </label></li>
+			<li><label><input name="q29" type="radio" value="c">c)q/(4&epsilon;)</label></li>
+			<li><label><input name="q29" type="radio" value="d">d)q/(8&epsilon;)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q30" data-question="30">
+			<h3>30)Find the minimum surface density of charge on the plate so that a body of mass 2kg may just be lifted.
+  </h3>
+			<ul>
+			<li><label><input name="q30" type="radio" value="a">a)2.84x10<sup>-5</sup>C/m<sup>2</sup></label></li>
+			<li><label><input name="q30" type="radio" value="b">b)2.25x10<sup>-5</sup>C/m<sup>2</sup></label></li>
+			<li><label><input name="q30" type="radio" value="c">c)1.86x10<sup>-5</sup>C/m<sup>2</sup> </label></li>
+			<li><label><input name="q30" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q31" data-question="31">
+			<h3>31)The potential energy of a system of three identical point charges of 3.3 micro coulomb each located at the vertices of an equilateral triangle with side of 1m is</h3>
+ 
+
+			<ul>
+			<li><label><input name="q31" type="radio" value="a">a)0.5J  </label></li>
+			<li><label><input name="q31" type="radio" value="b">b)0.4J</label></li>
+			<li><label><input name="q31" type="radio" value="c">c)0.3J</label></li>
+			<li><label><input name="q31" type="radio" value="d">d)3.3J</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q32" data-question="32">
+			<h3>32)Three capacitors of capacitance is 3micro farad, 9 microfarad and 18 microfarad are connected in series and then in parallel. Ratio of equivalent capacitance in the two cases will be
+   </h3>
+			<ul>
+			<li><label><input name="q32" type="radio" value="a">a)1:15 </label></li>
+			<li><label><input name="q32" type="radio" value="b">b)15:1 </label></li>
+			<li><label><input name="q32" type="radio" value="c">c)1:1 </label></li>
+			<li><label><input name="q32" type="radio" value="d">d)1:3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q33" data-question="33">
+			<h3>33)The emf of the cell is equal to the work done in moving a unit positive charge 
+   </h3>
+			<ul>
+			<li><label><input name="q33" type="radio" value="a">a)from the negative to the positive plate of the cell </label></li>
+			<li><label><input name="q33" type="radio" value="b">b)from the positive plate back to the positive plate</label></li>
+			<li><label><input name="q33" type="radio" value="c">c)from the negative plate back to the negative plate</label></li>
+			<li><label><input name="q33" type="radio" value="d">d)from any point in the circuit back to the same point</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q34" data-question="34">
+			<h3>34)If only 2% of the main current is to be passed through a galvanometer of resistance G the resistance of the shunt will be
+</h3>
+			<ul>
+			<li><label><input name="q34" type="radio" value="a">a)G/50 </label></li>
+			<li><label><input name="q34" type="radio" value="b">b)G/49 </label></li>
+			<li><label><input name="q34" type="radio" value="c">c)c)G </label></li>
+			<li><label><input name="q34" type="radio" value="d">d)100G</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q35" data-question="35">
+			<h3>35)The radius of curvature of the path of a charged particle in a uniform magnetic field is directly proportional to 
+   </h3>
+			<ul>
+			<li><label><input name="q35" type="radio" value="a">a)the charge on the particle </label></li>
+			<li><label><input name="q35" type="radio" value="b">b)the momentum of the particle</label></li>
+			<li><label><input name="q35" type="radio" value="c">c)the intensity of the field </label></li>
+			<li><label><input name="q35" type="radio" value="d">d)the energy of the particle</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q36" data-question="36">
+			<h3>36)Two parallel long wires a and b carry currents i1 and i2 (i2 less than i1).when i1 and i2 are the same direction the magnetic field at a point midway between the wires is 10 micro Tesla. If it was reversed the field becomes 30 microtesla the ratio i1/i2 is
+a)1 b)2 c)3 d)4
+   </h3>
+			<ul>
+			<li><label><input name="q36" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q36" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q36" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q36" type="radio" value="d">d)4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q37" data-question="37">
+			<h3>37)The impedance of a circuit consists of 3 ohm resistance and 4 ohm reactance. The power factor of the circuit is
+  </h3>
+			<ul>
+			<li><label><input name="q37" type="radio" value="a">a)0.4</label></li>
+			<li><label><input name="q37" type="radio" value="b">b)0.6</label></li>
+			<li><label><input name="q37" type="radio" value="c">c)0.8 </label></li>
+			<li><label><input name="q37" type="radio" value="d">d)1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q38" data-question="38">
+			<h3>38)An Alpha particle moves from east to west in a magnetic field perpendicular to the plane of the paper and into the paper. The particle is deflected towards 
+ 
+			</h3>
+			<ul>
+			<li><label><input name="q38" type="radio" value="a">a)east  </label></li>
+			<li><label><input name="q38" type="radio" value="b">b)West </label></li>
+			<li><label><input name="q38" type="radio" value="c">c)South</label></li>
+			<li><label><input name="q38" type="radio" value="d">d)North</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q39" data-question="39">
+			<h3>39)N capacitors each having capacitance C and breakdown voltage V are joined in series. The capacitance and the breakdown voltage of the combination is
+ 
+  </h3>
+			<ul>
+			<li><label><input name="q39" type="radio" value="a">a)C and V</label></li>
+			<li><label><input name="q39" type="radio" value="b">b)nC and nV  </label></li>
+			<li><label><input name="q39" type="radio" value="c">c)nC and V/n</label></li>
+			<li><label><input name="q39" type="radio" value="d">d)C/n and nV</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q40" data-question="40">
+			<h3>40)In uniform circular motion the factor that remains constant is   
+			</h3>
+			<ul>
+			<li><label><input name="q40" type="radio" value="a">a)acceleration  </label></li>
+			<li><label><input name="q40" type="radio" value="b">b)momentum</label></li>
+			<li><label><input name="q40" type="radio" value="c">c)kinetic energy </label></li>
+			<li><label><input name="q40" type="radio" value="d">d)linear velocity</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q41" data-question="41">
+			<h3>41)Tetraethyl lead is used as    
+			</h3>
+			<ul>
+			<li><label><input name="q41" type="radio" value="a">a)fire extinguisher </label></li>
+			<li><label><input name="q41" type="radio" value="b">b)mosquito repellent</label></li>
+			<li><label><input name="q41" type="radio" value="c">c)petroleum additive </label></li>
+			<li><label><input name="q41" type="radio" value="d">d)none of the above</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q42" data-question="42">
+			<h3>42)Isotones the atomic number and mass number are    
+ 			</h3>
+			<ul>
+			<li><label><input name="q42" type="radio" value="a">a)same</label></li>
+			<li><label><input name="q42" type="radio" value="b">b)different</label></li>
+			<li><label><input name="q42" type="radio" value="c">c)equals</label></li>
+			<li><label><input name="q42" type="radio" value="d">d)zero</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q43" data-question="43">
+			<h3>43)The interhalogen compound not opting is    . </h3>
+			<ul>
+			<li><label><input name="q43" type="radio" value="a">ICl</label></li>
+			<li><label><input name="q43" type="radio" value="b">IF<sub>5</sub></label></li>
+			<li><label><input name="q43" type="radio" value="c">BrF<sub>5</sub></label></li>
+			<li><label><input name="q43" type="radio" value="d">BrCl<sub>7</sub></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q44" data-question="44">
+			<h3>44)The paramagnetic element is
+  </h3>
+			<ul>
+			<li><label><input name="q44" type="radio" value="a">Ni<sup>2+</sup></label></li>
+			<li><label><input name="q44" type="radio" value="b">Sc<sup>3+</sup></label></li>
+			<li><label><input name="q44" type="radio" value="c">Cu<sup>+</sup></label></li>
+			<li><label><input name="q44" type="radio" value="d">Zn<sup>2+</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q45" data-question="45">
+			<h3>45)The solubility of Ag2S is (ksp=256x10<sup>-6</sup>)
+   </h3>
+			<ul>
+			<li><label><input name="q45" type="radio" value="a">4x10<sup>-2</sup></label></li>
+			<li><label><input name="q45" type="radio" value="b">4x10<sup>-3</sup></label></li>
+			<li><label><input name="q45" type="radio" value="c">4x10<sup>-1</sup></label></li>
+			<li><label><input name="q45" type="radio" value="d">4x10<sup>-4</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q46" data-question="46">
+		<h3>46)The mixture of gases used for asthma patients is
+		</h3>
+		<ul>
+			<li><label><input name="q46" type="radio" value="a">Oxygen + helium </label></li>
+			<li><label><input name="q46" type="radio" value="b">oxygen + neon </label></li>
+			<li><label><input name="q46" type="radio" value="c">oxygen + hydrogen</label></li>
+			<li><label><input name="q46" type="radio" value="d">oxygen + argon</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q47" data-question="47">
+		<h3>47)Nitroalkane which do not exhibit tautomerism is   </h3>
+		<ul>
+			<li><label><input name="q47" type="radio" value="a">tertiary nitroalkanes</label></li>
+			<li><label><input name="q47" type="radio" value="b">secondary nitroalkanes</label></li>
+			<li><label><input name="q47" type="radio" value="c">primary nitroalkanes</label></li>
+			<li><label><input name="q47" type="radio" value="d"> all of these</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q48" data-question="48">
+		<h3>48)The freezing point  depression of a 1 x 10^-3 m solution of Kx[Fe(CN)6] is 7.1 x 10^-3 K. Calculate the value of x</h3>
+		<ul>
+			<li><label><input name="q48" type="radio" value="a">2</label></li>
+			<li><label><input name="q48" type="radio" value="b">3</label></li>
+			<li><label><input name="q48" type="radio" value="c">4</label></li>
+			<li><label><input name="q48" type="radio" value="d">1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q49" data-question="49">
+		<h3><img class="img-fluid" src="49q.png"></h3>
+		<ul>
+			<li><label><input name="q49" type="radio" value="a">a)I>III>II</label></li>
+			<li><label><input name="q49" type="radio" value="b">b)II>III>I</label></li>
+			<li><label><input name="q49" type="radio" value="c">c)I>II>III</label></li>
+			<li><label><input name="q49" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q50" data-question="50">
+		<h3>50)A dye absorbs ray of wavelength 4530 angstrom and re emits radiation of wavelength 5080 angstrom. if we assume that 47% of energy absorbed is emitted the ratio of quanta admitted and absorb is
+</h3>
+		<ul>
+			<li><label><input name="q50" type="radio" value="a">a)0.231</label></li>
+			<li><label><input name="q50" type="radio" value="b">b)0.527</label></li>
+			<li><label><input name="q50" type="radio" value="c">c)0.412</label></li>
+			<li><label><input name="q50" type="radio" value="d">d)0.612</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q51" data-question="51">
+			<h3>51)Unit cell of sodium chloride has four formula units. calculate the density of sodium chloride if the edge length of the unit cell is 0.564 nm</h3>
+			<ul>
+			<li><label><input name="q51" type="radio" value="a">2.165 g/cm<sup>3</sup></label></li>
+			<li><label><input name="q51" type="radio" value="b">2.165g/m<sup>3</sup></label></li>
+			<li><label><input name="q51" type="radio" value="c">2.165 mg/cm<sup>3</sup></label></li>
+			<li><label><input name="q51" type="radio" value="d">4.81 g/cm<sup>3</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q52" data-question="52">
+			<h3>52)The number of electrons exchanged in the reaction given below
+Al + Fe3O4 ----->Al2O3 + Fe</h3>
+			<ul>
+			<li><label><input name="q52" type="radio" value="a">36</label></li>
+			<li><label><input name="q52" type="radio" value="b">20</label></li>
+			<li><label><input name="q52" type="radio" value="c">24</label></li>
+			<li><label><input name="q52" type="radio" value="d">32</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q53" data-question="53">
+			<h3>53)The artificial sweetener used in soft drinks is    </h3>
+			<ul>
+			<li><label><input name="q53" type="radio" value="a">fructose</label></li>
+			<li><label><input name="q53" type="radio" value="b">cellulose</label></li>
+			<li><label><input name="q53" type="radio" value="c">glucose</label></li>
+			<li><label><input name="q53" type="radio" value="d">aspartame</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q54" data-question="54">
+			<h3>54)Analysis of chlorophyll shows that it contains 2.68 percent magnesium. How many atoms of magnesium does 1 gram of chlorophyll contain </h3>
+			<ul>
+			<li><label><input name="q54" type="radio" value="a">a) 8.12x10<sup>21</sup></label></li>
+			<li><label><input name="q54" type="radio" value="b">b)5.92x 10<sup>21</sup></label></li>
+			<li><label><input name="q54" type="radio" value="c">c)6.72 x 10<sup>20</sup></label></li>
+			<li><label><input name="q54" type="radio" value="d">d)5.21x10<sup>20</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q55" data-question="55">
+			<h3>55)On heating 1.763 grams hydrated BaCl<sub>2</sub> 1.505 grams of anhydrous salt is obtained. The number of water molecules in BaCl<sub>2</sub> is</h3>
+			<ul>
+			<li><label><input name="q55" type="radio" value="a">a)3</label></li>
+			<li><label><input name="q55" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q55" type="radio" value="c">c)5</label></li>
+			<li><label><input name="q55" type="radio" value="d">d)1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q56" data-question="56">
+			<h3>56)0.3M H<sub>3</sub>PO<sub>4</sub> shows the normality of</h3>
+			<ul>
+			<li><label><input name="q56" type="radio" value="a">a)0.3</label></li>
+			<li><label><input name="q56" type="radio" value="b">b)0.6</label></li>
+			<li><label><input name="q56" type="radio" value="c">c)0.9</label></li>
+			<li><label><input name="q56" type="radio" value="d">d)0.1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q57" data-question="57">
+			<h3>57)Which compound of calcium is used for etching the glass
+</h3>
+			<ul>
+			<li><label><input name="q57" type="radio" value="a">a)CaF<sub>2</sub></label></li>
+			<li><label><input name="q57" type="radio" value="b">b)CaCl<sub>2</sub></label></li>
+			<li><label><input name="q57" type="radio" value="c">c)CaOCl<sub>2</sub></label></li>
+			<li><label><input name="q57" type="radio" value="d">None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q58" data-question="58">
+			<h3>58)Find the rate of a reaction in a first order reaction if its half life period is 693 seconds and its concentration is 2 mole per litre</h3>
+			<ul>
+			<li><label><input name="q58" type="radio" value="a">a)100</label></li>
+			<li><label><input name="q58" type="radio" value="b">b)0.002</label></li>
+			<li><label><input name="q58" type="radio" value="c">c)0.02</label></li>
+			<li><label><input name="q58" type="radio" value="d">d)200</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q59" data-question="59">
+			<h3>59)Composition of cuprite is </h3>
+			<ul>
+			<li><label><input name="q59" type="radio" value="a">a)Cu<sub>2</sub>S</label></li>
+			<li><label><input name="q59" type="radio" value="b">b)CuFeS<sub>2</sub></label></li>
+			<li><label><input name="q59" type="radio" value="c">c)MgO</label></li>
+			<li><label><input name="q59" type="radio" value="d">none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q60" data-question="60">
+			<h3>60)The pH of a solution whose hydrogen concentration is 2 x 10 ^ 4 is</h3>
+			<ul>
+			<li><label><input name="q60" type="radio" value="a">a)3</label></li>
+			<li><label><input name="q60" type="radio" value="b">b)3.4</label></li>
+			<li><label><input name="q60" type="radio" value="c">c)3.3 </label></li>
+			<li><label><input name="q60" type="radio" value="d">d)3.6</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q61" data-question="61">
+			<h3>61)Tyndall effect is shown by  </h3>
+			<ul>
+			<li><label><input name="q61" type="radio" value="a">a)precipitate</label></li>
+			<li><label><input name="q61" type="radio" value="b">b)sol</label></li>
+			<li><label><input name="q61" type="radio" value="c">c)plasma</label></li>
+			<li><label><input name="q61" type="radio" value="d">d)solution</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q62" data-question="62">
+			<h3>62)The conversion of benzaldehyde into benzyl alcohol takes place by    </h3>
+			<ul>
+			<li><label><input name="q62" type="radio" value="a">a)fittig reaction </label></li>
+			<li><label><input name="q62" type="radio" value="b">b)wurtz fittig reaction</label></li>
+			<li><label><input name="q62" type="radio" value="c">c)wurtz reaction</label></li>
+			<li><label><input name="q62" type="radio" value="d">d)cannizzaro's reaction</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q63" data-question="63">
+			<h3>63)A Gas has vapour density of 11.2. the volume occupied by 1 gram of the gas at ntp is</h3>
+			<ul>
+			<li><label><input name="q63" type="radio" value="a">a)1L</label></li>
+			<li><label><input name="q63" type="radio" value="b">b)22.4 L</label></li>
+			<li><label><input name="q63" type="radio" value="c">c)0.5 L</label></li>
+			<li><label><input name="q63" type="radio" value="d">d)11.2 L</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q64" data-question="64">
+			<h3>64)Mole fraction of solute in benzene is 0.2 then find the molality of solute
+</h3>
+			<ul>
+			<li><label><input name="q64" type="radio" value="a">a)3.2</label></li>
+			<li><label><input name="q64" type="radio" value="b">b)2.56</label></li>
+			<li><label><input name="q64" type="radio" value="c">c)4</label></li>
+			<li><label><input name="q64" type="radio" value="d">d)3.6</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q65" data-question="65">
+			<h3>65)The same osazone is formed by which of the following pairs 
+
+  </h3>
+			<ul>
+			<li><label><input name="q65" type="radio" value="a">a)glucose and fructose </label></li>
+			<li><label><input name="q65" type="radio" value="b">b)glucose and galactose </label></li>
+			<li><label><input name="q65" type="radio" value="c">c)glucose and arabinose</label></li>
+			<li><label><input name="q65" type="radio" value="d">d)lactose and maltose</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q66" data-question="66">
+			<h3>66)The vapour density of completely dissociated NH<sub>4</sub>Cl would be</h3>
+			<ul>
+			<li><label><input name="q66" type="radio" value="a">a)half of that of ammonium chloride</label></li>
+			<li><label><input name="q66" type="radio" value="b">b)double of that of ammonium chloride</label></li>
+			<li><label><input name="q66" type="radio" value="c">c)slightly less than half of that of ammonium chloride</label></li>
+			<li><label><input name="q66" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q67" data-question="67">
+			<h3>67)A Binary solid(A<sup>+</sup>B<sup>-</B<sup>) has a zinc blende structure with B- ions constituting the lattice and A+ ions occupying 25% tetrahedral holes then the formula of the solid is</h3>
+			<ul>
+			<li><label><input name="q67" type="radio" value="a">a)AB</label></li>
+			<li><label><input name="q67" type="radio" value="b">b)A<sub>2</sub>B</label></li>
+			<li><label><input name="q67" type="radio" value="c">c)AB<sub>2</sub></label></li>
+			<li><label><input name="q67" type="radio" value="d">d)AB<sub>4</sub></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q68" data-question="68">
+			<h3>68)Actinoids exhibit more number of oxidation States than lanthanoid. The main reason for this   
+</h3>
+			<ul>
+			<li><label><input name="q68" type="radio" value="a">a)more reactive nature of actinoids</label></li>
+			<li><label><input name="q68" type="radio" value="b">b)is  more energy difference between 5f and 6 d orbitals than between 4f and 5d orbitals.</label></li>
+			<li><label><input name="q68" type="radio" value="c">c)Lesser energy difference between 5f and 6d orbitals done between 4f and 5d orbitals.</label></li>
+			<li><label><input name="q68" type="radio" value="d">d)Greater metallic character of the lanthanides than that of the corresponding actinoids</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q69" data-question="69">
+			<h3>69)The geometry of xef4 is     </h3>
+			<ul>
+			<li><label><input name="q69" type="radio" value="a">a)square planar</label></li>
+			<li><label><input name="q69" type="radio" value="b"></label>b)tetrahedral</li>
+			<li><label><input name="q69" type="radio" value="c"></label>c)trigonal</li>
+			<li><label><input name="q69" type="radio" value="d"></label>d)trigonal bipyramida</li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q70" data-question="70">
+			<h3>70)6 x 10<sup>24</sup> atoms of an element weight 200 grams. If this element forms homeo diatomic gas then the molar mass of gas is</h3>
+			<ul>
+			<li><label><input name="q70" type="radio" value="a">a)30</label></li>
+			<li><label><input name="q70" type="radio" value="b">b)40</label></li>
+			<li><label><input name="q70" type="radio" value="c">c)20</label></li>
+			<li><label><input name="q70" type="radio" value="d">d)45</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q71" data-question="71">
+		<h3>71)<img src="71q.png" class="img-fluid"></h3>
+		<ul>
+			<li><label><input name="q71" type="radio" value="a">a)compound a </label></li>
+			<li><label><input name="q71" type="radio" value="b">b)compound b</li>
+			<li><label><input name="q71" type="radio" value="c">c)compound c</li>
+			<li><label><input name="q71" type="radio" value="d">d)compound d</li>
+			</ul><br>
+			<input type="reset" value="clear">
+		
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q72" data-question="72">
+		<h3>72)D glucose and d fructose can be differentiated by </h3>
+		<ul>
+			<li><label><input name="q72" type="radio" value="a">a)tollens reagent </label></li>
+			<li><label><input name="q72" type="radio" value="b">b)Benedict test </label></li>
+			<li><label><input name="q72" type="radio" value="c">c)Br2/H2O </label></li>
+			<li><label><input name="q72" type="radio" value="d">d)fehling solution</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q73" data-question="73">
+		<h3>73)Thyroxine produced in a thyroid gland is an iodinated derivative of </h3>
+		<ul>
+			<li><label><input name="q73" type="radio" value="a">a)acetic acid  </label></li>
+			<li><label><input name="q73" type="radio" value="b">b)lactic acid</label></li>
+			<li><label><input name="q73" type="radio" value="c">c)amino acid </label></li>
+			<li><label><input name="q73" type="radio" value="d">d)picric acid</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q74" data-question="74">
+		<h3>74)Irony contains four basis the first three bases are same as in DNA but the fourth one is   </h3>
+		<ul>
+			<li><label><input name="q74" type="radio" value="a">a)adenine</label></li>
+			<li><label><input name="q74" type="radio" value="b">b)thymine </label></li>
+			<li><label><input name="q74" type="radio" value="c">c)cytosine</label></li>
+			<li><label><input name="q74" type="radio" value="d">d)uracil</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q75" data-question="75">
+		<h3>75)&delta;u  of combustion of methane is -x kilo joule per mole. The value of  &delta;h is     </h3>
+		<ul>
+			<li><label><input name="q75" type="radio" value="a">a)=x  </label></li>
+			<li><label><input name="q75" type="radio" value="b">b)>x</label></li>
+			<li><label><input name="q75" type="radio" value="c">c)<x</label></li>
+			<li><label><input name="q75" type="radio" value="d">d)=0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q76" data-question="76">
+		<h3>76)In disulfide bond formation of protein the functional group that participates is   </h3>
+		<ul>
+			<li><label><input name="q76" type="radio" value="a">a)amino group, </label></li>
+			<li><label><input name="q76" type="radio" value="b">b)thio ether,</label></li>
+			<li><label><input name="q76" type="radio" value="c">c)thio ester,</label></li>
+			<li><label><input name="q76" type="radio" value="d">d)thio</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q77" data-question="77">
+		<h3>77)Which of the following is not a method of concentration of metal   </h3>
+		<ul>
+			<li><label><input name="q77" type="radio" value="a">a)smelting</label></li>
+			<li><label><input name="q77" type="radio" value="b">b)froth flotation </label></li>
+			<li><label><input name="q77" type="radio" value="c">c)distillation</label></li>
+			<li><label><input name="q77" type="radio" value="d">d)electromagnetic method</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q78" data-question="78">
+		<h3>78)Metal which can be extracted from all the three ores dolomite magnesite and carnallite is
+ </h3>
+		<ul>
+			<li><label><input name="q78" type="radio" value="a">a)Na </label></li>
+			<li><label><input name="q78" type="radio" value="b">b)Mg</label></li>
+			<li><label><input name="q78" type="radio" value="c">c)K</label></li>
+			<li><label><input name="q78" type="radio" value="d">d)Ca</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q79" data-question="79">
+		<h3>79)Transition elements are coloured
+</h3>
+		<ul>
+			<li><label><input name="q79" type="radio" value="a">a)due to unpaired electrons</label></li>
+			<li><label><input name="q79" type="radio" value="b">b)due to small size</label></li>
+			<li><label><input name="q79" type="radio" value="c">c)due to metallic structure</label></li>
+			<li><label><input name="q79" type="radio" value="d">d)all the above</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q80" data-question="80">
+		<h3>80)The difference in number of water molecules in gypsum and plaster of paris is
+</h3>
+		<ul>
+			<li><label><input name="q80" type="radio" value="a">a)2.5</label></li>
+			<li><label><input name="q80" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q80" type="radio" value="c">c)0.5</label></li>
+			<li><label><input name="q80" type="radio" value="d">d)1.5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q81" data-question="81">
+		<h3>81)Let X denote the number of times head occurs in n tosses of a fair coin. If P(x=4) , P(x=5),P(x=6) are in AP then the value of n is</h3>
+		<ul>
+			<li><label><input name="q81" type="radio" value="a">a)7,14</label></li>
+			<li><label><input name="q81" type="radio" value="b">b)10,14</label></li>
+			<li><label><input name="q81" type="radio" value="c">c)12,7</label></li>
+			<li><label><input name="q81" type="radio" value="d">d)14,12</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q82" data-question="82">
+		<h3>82)Maximum integral value of 2cosx(sinx - cosx) is
+		</h3>
+		<ul>
+			<li><label><input name="q82" type="radio" value="a">a)-2</label></li>
+			<li><label><input name="q82" type="radio" value="b">b)0</label></li>
+			<li><label><input name="q82" type="radio" value="c">c)1</label></li>
+			<li><label><input name="q82" type="radio" value="d">d)2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q83" data-question="83">
+		<h3>83)The interval in which 2x<sup>3</sup> + 5 increases less rapidly than 9x<sup>2</sup> - 12 x is</h3>
+		<ul>
+			<li><label><input name="q83" type="radio" value="a">a)(1,2)</label></li>
+			<li><label><input name="q83" type="radio" value="b">b)(-infinity, 1)</label></li>
+			<li><label><input name="q83" type="radio" value="c">c)(2, infinity)</label></li>
+			<li><label><input name="q83" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q84" data-question="84">
+		<h3>84)The value a of such that the sum of squares of the roots of the equation x<sup>2</sup> - (a-2)x - a+1=0 assume the least value is 
+.   </h3>
+		<ul>
+			<li><label><input name="q84" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q84" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q84" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q84" type="radio" value="d">d)0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q85" data-question="85">
+		<h3>85)The number of times the digit 5 will be written when listing the integers from 1 to 1000 is</h3>
+		<ul>
+			<li><label><input name="q85" type="radio" value="a">a)271</label></li>
+			<li><label><input name="q85" type="radio" value="b">b)272</label></li>
+			<li><label><input name="q85" type="radio" value="c">c)300</label></li>
+			<li><label><input name="q85" type="radio" value="d">d)325</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q86" data-question="86">
+		<h3>86)If xy + x<sup>2</sup>y<sup>2</sup> = c, then the value of dy/dx will be
+		</h3>
+		<ul>
+			<li><label><input name="q86" type="radio" value="a">a)x/y</label></li>
+			<li><label><input name="q86" type="radio" value="b">b)-y/x</label></li>
+			<li><label><input name="q86" type="radio" value="c">c)y/x</label></li>
+			<li><label><input name="q86" type="radio" value="d">d)-x/y</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q87" data-question="87">
+		<h3>87)Let s(k) = 1+3+5+..... +(2k-1)=3+k<sup>2</sup>Then which of the following is true
+</h3>
+		<ul>
+			<li><label><input name="q87" type="radio" value="a">a)Principle of mathematical induction can be used to prove the formula</label></li>
+			<li><label><input name="q87" type="radio" value="b">b)s(k)==>s(k+1)</label></li>
+			<li><label><input name="q87" type="radio" value="c">c)s(1) is correct</label></li>
+			<li><label><input name="q87" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q88" data-question="88">
+		<h3>88)If a<sub>n</sub> = 2n+1 and C<sub>r=<sup>n</sup>C<sub>r</sub> then <br>
+		a0(C<sub>0</sub>)<sup>2</sup> + a1(C<sub>1</sub>)<sup>2</sup> + a2(C<sub>2</sub>)<sup>2</sup>+.... an(C<sub>n</sub>)<sup>2</sup> =</h3> 
+		<ul>
+			<li><label><input name="q88" type="radio" value="a">a)(n-1)(<sup>2n</sup>C<sub>n</sub>)</label></li>
+			<li><label><input name="q88" type="radio" value="b">b)(n)(<sup>2n</sup>C<sub>n</sub>)</label></li>
+			<li><label><input name="q88" type="radio" value="c">c)(n+1)(<sup>2n</sup>C<sub>n</sub>)</label></li>
+			<li><label><input name="q88" type="radio" value="d">d)(n+1)(<sup>n</sup>C<sub>n/2</sub>)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q89" data-question="89">
+		<h3>89)<img src="89q.png" class="img-fluid">
+   </h3>
+		<ul>
+			<li><label><input name="q89" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q89" type="radio" value="b">b) 0</label></li>
+			<li><label><input name="q89" type="radio" value="c">c)2</label></li>
+			<li><label><input name="q89" type="radio" value="d">d)3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q90" data-question="90">
+		<h3>90)If a+b+c =180 degrees, then the value of (cot b+ cot c)(cot a+ cot c)(cot b+ cot a) will be
+</h3>
+		<ul>
+			<li><label><input name="q90" type="radio" value="a">a)sec(a)sec(b)sec(c) </label></li>
+			<li><label><input name="q90" type="radio" value="b">b)cosec(a)cosec(b)cosec(c)</label></li>
+			<li><label><input name="q90" type="radio" value="c">c)tan(a)tan(b)tan(c)</label></li>
+			<li><label><input name="q90" type="radio" value="d">d)1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		
+
+		
+
+		<form class="question" id="q91" data-question="91">
+		<h3>91)If f(x) = (a-x<sup>n</sup>)<sup>1/n</sup>, where x>0 and n is a natural number, then fof(x) is equal to
+</h3>
+		<ul>
+			<li><label><input name="q91" type="radio" value="a">a)ax</label></li>
+			<li><label><input name="q91" type="radio" value="b">b)x</label></li>
+			<li><label><input name="q91" type="radio" value="c">c)x<sup>n</sup></label></li>
+			<li><label><input name="q91" type="radio" value="d">d)x<sup>1/n</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q92" data-question="92">
+		<h3>92)The solution of the equation cos<sup>2</sup>t + sint + 1=0 lies in
+
+</h3>
+		<ul>
+			<li><label><input name="q92" type="radio" value="a">a)(-pi/4, pi/4)</label></li>
+			<li><label><input name="q92" type="radio" value="b">b)(pi/4, 3pi/4)</label></li>
+			<li><label><input name="q92" type="radio" value="c">c)(3pi/4, 5pi/4)</label></li>
+			<li><label><input name="q92" type="radio" value="d">d)(5pi/4,7pi/4)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q93" data-question="93">
+		<h3>93)The coefficient of x<sup>19</sup> in the polynomial  (x-1)(x-2).....(x-20) is
+</h3>
+		<ul>
+			<li><label><input name="q93" type="radio" value="a">a)210</label></li>
+			<li><label><input name="q93" type="radio" value="b">b)-210</label></li>
+			<li><label><input name="q93" type="radio" value="c">c)20!</label></li>
+			<li><label><input name="q93" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q94" data-question="94">
+		<h3>94)The arguement of (1 - i&radic;(3))/(1 + i&radic;(3))</h3>
+		<ul>
+			<li><label><input name="q94" type="radio" value="a">a)60 degrees</label></li>
+			<li><label><input name="q94" type="radio" value="b">b)120 degrees</label></li>
+			<li><label><input name="q94" type="radio" value="c">c)210 degrees</label></li>
+			<li><label><input name="q94" type="radio" value="d">d)240 degrees</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q95" data-question="95">
+		<h3>95)Let y=x<sup>x<sup>x<sup>...</sup></sup></sup>, then dy/dx is  </h3>
+		<ul>
+			<li><label><input name="q95" type="radio" value="a">a)yx<sup>y-1</sup></label></li>
+			<li><label><input name="q95" type="radio" value="b">b)(y<sup>2</sup>)/(x(1 - ylogx)) </label></li>
+			<li><label><input name="q95" type="radio" value="c">c)(y)/(x(1+ylogx))</label></li>
+			<li><label><input name="q95" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q96" data-question="96">
+		<h3>96)lim x-->0 [(e<sup>x</sup> - e<sup>sinx</sup>)/(x-sinx)] is equal to </h3>
+		<ul>
+			<li><label><input name="q96" type="radio" value="a">a)-1</label></li>
+			<li><label><input name="q96" type="radio" value="b">b)0</label></li>
+			<li><label><input name="q96" type="radio" value="c">c)1</label></li>
+			<li><label><input name="q96" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q97" data-question="97">
+		<h3>97)The area in the first quadrant enclosed by the x-axis the line x = y root 3 e and the circle X square + y square = 4 is    </h3>
+		<ul>
+			<li><label><input name="q97" type="radio" value="a">a)pi</label></li>
+			<li><label><input name="q97" type="radio" value="b">b)pi/2</label></li>
+			<li><label><input name="q97" type="radio" value="c">c)pi/4</label></li>
+			<li><label><input name="q97" type="radio" value="d">d)pi/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q98" data-question="98">
+		<h3>98)If the tangent to the curve x = a(t + sin t ), y = a(1+ cos t) at t = pi/3 makes an angle s with x axis then x is equal to
+</h3>
+		<ul>
+			<li><label><input name="q98" type="radio" value="a">a)pi/ 3 </label></li>
+			<li><label><input name="q98" type="radio" value="b">b)2pi/3</label></li>
+			<li><label><input name="q98" type="radio" value="c">c)pi/6</label></li>
+			<li><label><input name="q98" type="radio" value="d">d)5pi/6</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q99" data-question="99">
+		<h3>99)Let r = 2i + 2j + 5K and A, B the points (1,2,5) and (-1,-2,-3) then the z component of BA x r is
+</h3>
+		<ul>
+			<li><label><input name="q99" type="radio" value="a">a)-4</label></li>
+			<li><label><input name="q99" type="radio" value="b">b)-2</label></li>
+			<li><label><input name="q99" type="radio" value="c">c)-1</label></li>
+			<li><label><input name="q99" type="radio" value="d">d)0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q100" data-question="100">
+		<h3>100)Standard deviation of a set of observations is 32 and each observation is divided by -4 then the standard deviation of the new set is</h3>
+		<ul>
+			<li><label><input name="q100" type="radio" value="a">a)8</label></li>
+			<li><label><input name="q100" type="radio" value="b">b)-8</label></li>
+			<li><label><input name="q100" type="radio" value="c">c)32</label></li>
+			<li><label><input name="q100" type="radio" value="d">d)-32</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q101" data-question="101">
+		<h3>101)Amman running around race course notes that the sum of the distances of two flag post from him is always 10 metres and the distance between the flag post is 8 metres the area of the party encloses in square metres is
+
+
+
+</h3>
+		<ul>
+			<li><label><input name="q101" type="radio" value="a">a)15pi</label></li>
+			<li><label><input name="q101" type="radio" value="b">b)12pi</label></li>
+			<li><label><input name="q101" type="radio" value="c">c)18pi</label></li>
+			<li><label><input name="q101" type="radio" value="d">d)8pi</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q102" data-question="102">
+		<h3>102)There are 5 roads leading to a town from a village. The number of different ways in which a villager can go to the town and return back is 25 20 10 5</h3>
+		<ul>
+			<li><label><input name="q102" type="radio" value="a">a)25
+</label></li>
+			<li><label><input name="q102" type="radio" value="b">b)20</label></li>
+			<li><label><input name="q102" type="radio" value="c">c)10</label></li>
+			<li><label><input name="q102" type="radio" value="d">d)5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q103" data-question="103">
+		<h3>103)If a b c are in AP then a x + by + c = 0 will always pass through a fixed point whose coordinates are    </h3>
+		<ul>
+			<li><label><input name="q103" type="radio" value="a">a)(1, - 2 ).</label></li>
+			<li><label><input name="q103" type="radio" value="b">b)(-1,2).</label></li>
+			<li><label><input name="q103" type="radio" value="c">c)(1,2)</label></li>
+			<li><label><input name="q103" type="radio" value="d">d)(-1,-2)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q104" data-question="104">
+		<h3>104)If if is a root of the equation X2 + PX + q =0
+Where p and q are real then p and q are 
+</h3>
+		<ul>
+			<li><label><input name="q104" type="radio" value="a">a)(4,7)  </label></li>
+			<li><label><input name="q104" type="radio" value="b">b)(4,-7)</label></li>
+			<li><label><input name="q104" type="radio" value="c">c)(-4,7)</label></li>
+			<li><label><input name="q104" type="radio" value="d">d)(-4,-7)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q105" data-question="105">
+		<h3>105)The number of common tangents that can be drawn to the circle X<sup>2</sup> + Y<sup>2</sup> - 4x -6 y - 3 = 0 and x<sup>2</sup> + y<sup>2</sup> + 2 X + 2 y + 1 = 0
+</h3>
+		<ul>
+			<li><label><input name="q105" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q105" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q105" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q105" type="radio" value="d">d)4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q106" data-question="106">
+		<h3>106)Solution of the differential equation dy/dx = sin x + 2x is
+</h3>
+		<ul>
+			<li><label><input name="q106" type="radio" value="a">a)y=x<sup>2</sup> - cos x + c</label></li>
+			<li><label><input name="q106" type="radio" value="b">b)y= cosx + x<sup>2+ c</label></li>
+			<li><label><input name="q106" type="radio" value="c">c)y= cos x +2</label></li>
+			<li><label><input name="q106" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q107" data-question="107">
+		<h3>107)The curve y = x + sin x   </h3>
+		<ul>
+			<li><label><input name="q107" type="radio" value="a">a)has no maximum point</label></li>
+			<li><label><input name="q107" type="radio" value="b">b)some maximum point</label></li>
+			<li><label><input name="q107" type="radio" value="c">c)some minimum points </label></li>
+			<li><label><input name="q107" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q108" data-question="108">
+		<h3>108)If the length of a focal chord of a parabola y 2 = 4x is 25/4 and has positive slope then the slope will be</h3>
+		<ul>
+			<li><label><input name="q108" type="radio" value="a">a)&radic;(3)</label></li>
+			<li><label><input name="q108" type="radio" value="b">b)1/&radic;(3)</label></li>
+			<li><label><input name="q108" type="radio" value="c">c)1</label></li>
+			<li><label><input name="q108" type="radio" value="d">d)4/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q109" data-question="109">
+		<h3>109)The image of the point (1, 6 ,3 ) in the line x= (y-1)/2 = (z-2)/3 is 
+
+
+
+</h3>
+		<ul>
+			<li><label><input name="q109" type="radio" value="a">a)(-1, 0, 7)</label></li>
+			<li><label><input name="q109" type="radio" value="b">b)(-1,0,-7)</label></li>
+			<li><label><input name="q109" type="radio" value="c">c)(1,0,7)</label></li>
+			<li><label><input name="q109" type="radio" value="d">d)(2,0,7)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q110" data-question="110">
+		<h3>110)The total number of four digit numbers in which the digits are in descending order is   </h3>
+		<ul>
+			<li><label><input name="q110" type="radio" value="a">a)<sup>10</sup>C<sub>4</sub> x 4!</label></li>
+			<li><label><input name="q110" type="radio" value="b">b)<sup>10</sup>C<sub>4</sub></label></li>
+			<li><label><input name="q110" type="radio" value="c">c)<sup>10</sup>C<sub>4</sub>/(4!)</label></li>
+			<li><label><input name="q110" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q111" data-question="111">
+		<h3>111)The slope of the tangent to the curve y = e<sup>x</sup>cos x is minimum at x=
+ </h3>
+		<ul>
+			<li><label><input name="q111" type="radio" value="a">a)pi</label></li>
+			<li><label><input name="q111" type="radio" value="b">b)2pi</label></li>
+			<li><label><input name="q111" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q111" type="radio" value="d">d)1.5pi</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q112" data-question="112">
+		<h3>112)In three dimensional space the equation X2 - X - 2 = 0  </h3>
+		<ul>
+			<li><label><input name="q112" type="radio" value="a">a)pair of straight lines</label></li>
+			<li><label><input name="q112" type="radio" value="b">b)represents  a set containing two distinct points</label></li>
+			<li><label><input name="q112" type="radio" value="c">c)a pair of parallel planes </label></li>
+			<li><label><input name="q112" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q113" data-question="113">
+		<h3>113)The critical points of f(x) = |2-x|/x<sup>2</sup></h3>
+		<ul>
+			<li><label><input name="q113" type="radio" value="a">a)x = 0,2</label></li>
+			<li><label><input name="q113" type="radio" value="b">b)x =2,4</label></li>
+			<li><label><input name="q113" type="radio" value="c">c)x = 2,-4</label></li>
+			<li><label><input name="q113" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q114" data-question="114">
+		<h3>114)The length of the longest interval in which the function 3sin(x) - 4sin<sup>3</sup>(x) is increasing is </h3>
+		<ul>
+			<li><label><input name="q114" type="radio" value="a">a)pi/3</label></li>
+			<li><label><input name="q114" type="radio" value="b">b)0.5pi</label></li>
+			<li><label><input name="q114" type="radio" value="c">c)1.5pi</label></li>
+			<li><label><input name="q114" type="radio" value="d">d)pi</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q115" data-question="115">
+		<h3>115)The number of times and I must be toss the to obtain a six at least once with probability exceeding 0.9 is at least
+</h3>
+		<ul>
+			<li><label><input name="q115" type="radio" value="a">a)13</label></li>
+			<li><label><input name="q115" type="radio" value="b">b)19</label></li>
+			<li><label><input name="q115" type="radio" value="c">c)25</label></li>
+			<li><label><input name="q115" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q116" data-question="116">
+		<h3>116)<img class="img-fluid" src="116q.png">
+</h3>
+		<ul>
+			<li><label><input name="q116" type="radio" value="a">a)log(x) + f(x) +c</label></li>
+			<li><label><input name="q116" type="radio" value="b">b)-log(x) + f(x) +c</label></li>
+			<li><label><input name="q116" type="radio" value="c">c)log(x) - f(x) +c</label></li>
+			<li><label><input name="q116" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q117" data-question="117">
+		<h3>117)If sin t + cos t = 1 / 5 and 0 < t < pi then tan t is</h3>
+		<ul>
+			<li><label><input name="q117" type="radio" value="a">a)-4/3</label></li>
+			<li><label><input name="q117" type="radio" value="b">b)-3/4</label></li>
+			<li><label><input name="q117" type="radio" value="c">c)3/4</label></li>
+			<li><label><input name="q117" type="radio" value="d">d)4/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q118" data-question="118">
+		<h3>118)If y = |x - x2| then dy/dx at x = 1 is </h3>
+		<ul>
+			<li><label><input name="q118" type="radio" value="a">a)-1</label></li>
+			<li><label><input name="q118" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q118" type="radio" value="c">c)Does not exist</label></li>
+			<li><label><input name="q118" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q119" data-question="119">
+		<h3>119)The area bounded by x axis and the curve y = sin x and x=0, x= pi is
+1 2 0 4</h3>
+		<ul>
+			<li><label><input name="q119" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q119" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q119" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q119" type="radio" value="d">d)4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q120" data-question="120">
+		<h3>120)The value of tan9 - tan27 -tan63 + tan81 is</h3>
+		<ul>
+			<li><label><input name="q120" type="radio" value="a">a)2</label></li>
+			<li><label><input name="q120" type="radio" value="b">b)4</label></li>
+			<li><label><input name="q120" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q120" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q121" data-question="121">
+		<h3>121)If the roots of the quadratic equation X2 - 4 x  log 3a=0 are real then the least value of is
+</h3>
+		<ul>
+			<li><label><input name="q121" type="radio" value="a">a)81
+</label></li>
+			<li><label><input name="q121" type="radio" value="b">b)1/81</label></li>
+			<li><label><input name="q121" type="radio" value="c">c)1/64</label></li>
+			<li><label><input name="q121" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q122" data-question="122">
+		<h3>122)If 10n + 3(4n+2)+5 is divisible by</h3>
+		<ul>
+			<li><label><input name="q122" type="radio" value="a">a)7</label></li>
+			<li><label><input name="q122" type="radio" value="b">b)5</label></li>
+			<li><label><input name="q122" type="radio" value="c">c)9</label></li>
+			<li><label><input name="q122" type="radio" value="d">d)17</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q123" data-question="123">
+		<h3>123)If the system of equations x - k y - z = 0, 
+Kx - y - z = 0 and X + y - z =0  has a non zero solution then K is equal to</h3>
+		<ul>
+			<li><label><input name="q123" type="radio" value="a">a)0,1</label></li>
+			<li><label><input name="q123" type="radio" value="b">b)1,-1</label></li>
+			<li><label><input name="q123" type="radio" value="c">c)-1,2</label></li>
+			<li><label><input name="q123" type="radio" value="d">d)2,-2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q124" data-question="124">
+		<h3>124)The angle between the lines is &radic;(3)x + y=1 and x+&radic;(3)y =1 is </h3>
+		<ul>
+			<li><label><input name="q124" type="radio" value="a">a)30 degrees</label></li>
+			<li><label><input name="q124" type="radio" value="b">b)60 degrees</label></li>
+			<li><label><input name="q124" type="radio" value="c">c)90 degrees</label></li>
+			<li><label><input name="q124" type="radio" value="d">d)45 degrees</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q125" data-question="125">
+		<h3>125)If sin<sup>-1</sup>(x/5) + cosec<sup>-1</sup>(5/4) = pi/2 , then the value of x is</h3>
+		<ul>
+			<li><label><input name="q125" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q125" type="radio" value="b">b)3</label></li>
+			<li><label><input name="q125" type="radio" value="c">c)4</label></li>
+			<li><label><input name="q125" type="radio" value="d">d)5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q126" data-question="126">
+		<h3>126)Complete the sentences with suitable alternative<br>
+		She told me that _______ she English fluently and was very happy.</h3>
+		<ul>
+			<li><label><input name="q126" type="radio" value="a">a)could speak</label></li>
+			<li><label><input name="q126" type="radio" value="b">b)could have spoken</label></li>
+			<li><label><input name="q126" type="radio" value="c">c)can speak</label></li>
+			<li><label><input name="q126" type="radio" value="d">d)could have speak</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q127" data-question="127">
+		<h3>127)Complete the sentences with suitable alternative<br>You ______ him that gambling would ruin him.
+   </h3>
+		<ul>
+			<li><label><input name="q127" type="radio" value="a">a)Should warn</label></li>
+			<li><label><input name="q127" type="radio" value="b">b)should have warned</label></li>
+			<li><label><input name="q127" type="radio" value="c">c)must warn</label></li>
+			<li><label><input name="q127" type="radio" value="d">d)may warn</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q128" data-question="128">
+		<h3>128)Complete the sentences with suitable alternative<br>Strangely his name did not occur _____ me on the second meeting.
+   </h3>
+		<ul>
+			<li><label><input name="q128" type="radio" value="a">a)to</label></li>
+			<li><label><input name="q128" type="radio" value="b">b)on</label></li>
+			<li><label><input name="q128" type="radio" value="c">c)about</label></li>
+			<li><label><input name="q128" type="radio" value="d">d)into</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q129" data-question="129">
+		<h3>129)Complete the sentences with suitable alternative<br>At least he yielded ____ the temptation.
+    </h3>
+		<ul>
+			<li><label><input name="q129" type="radio" value="a">a)on</label></li>
+			<li><label><input name="q129" type="radio" value="b">b)off</label></li>
+			<li><label><input name="q129" type="radio" value="c">c)for</label></li>
+			<li><label><input name="q129" type="radio" value="d">d)to</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q130" data-question="130">
+		<h3>130)Find the part of sentence with error.<br>
+</h3>
+		<ul>
+			<li><label><input name="q130" type="radio" value="a">a)This film 
+</label></li>
+			<li><label><input name="q130" type="radio" value="b">b)is interesting </label></li>
+			<li><label><input name="q130" type="radio" value="c">c)and the previous one </label></li>
+			<li><label><input name="q130" type="radio" value="d">d)was boring</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q131" data-question="131">
+		<h3>131)Find the part of sentence with error.<br></h3>
+		<ul>
+			<li><label><input name="q131" type="radio" value="a">a)a)Mr Bose</label></li>
+			<li><label><input name="q131" type="radio" value="b">b)accompanied by his wife </label></li>
+			<li><label><input name="q131" type="radio" value="c">c)and children were</label></li>
+			<li><label><input name="q131" type="radio" value="d">d)present there.</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q132" data-question="132">
+		<h3>132)Find the part of sentence with error.<br>
+</h3>
+		<ul>
+			<li><label><input name="q132" type="radio" value="a">a)Whenever is the matter </label></li>
+			<li><label><input name="q132" type="radio" value="b">b)I shall </label></li>
+			<li><label><input name="q132" type="radio" value="c">c)do this work because I have </label></li>
+			<li><label><input name="q132" type="radio" value="d">d)been exposed my working capacity at any cost</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q133" data-question="133">
+		<h3>133)Find the part of sentence with error.<br></h3>
+		<ul>
+			<li><label><input name="q133" type="radio" value="a">a)His father advised him to forget the past
+</label></li>
+			<li><label><input name="q133" type="radio" value="b">b)and stop crying on split milk</label></li>
+			<li><label><input name="q133" type="radio" value="c">c)c) and work hard in the future</label></li>
+			<li><label><input name="q133" type="radio" value="d">d)avoiding the mistakes earlier committed.</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q134" data-question="134">
+		<h3>134)Sentence arrangement<br>But the vessel kept going away<br>
+a)He looked anxiously around<br>
+b)There was nothing to see but the water and empty sky<br>
+c)He could barely see her funnel and masts when heaved upon a high wave<br>
+
+d)He did not know for what<br>
+
+A breaking wave slapped him in the face choking him.</h3>
+		<ul>
+			<li><label><input name="q134" type="radio" value="a">a)adbc</label></li>
+			<li><label><input name="q134" type="radio" value="b">b)acdb</label></li>
+			<li><label><input name="q134" type="radio" value="c">c)cadb</label></li>
+			<li><label><input name="q134" type="radio" value="d">d)abcd</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q135" data-question="135">
+		<h3>135)Sentence arrangement<br>
+		Making people laugh is tricky<br>
+a)At times the internal humour may not simply not come off.<br>
+b)Making people laugh while trying to sell them something is a tougher challenge since the commercial can fall flat on two grounds<br>
+
+c)There are many advertisements which amuse but do not even begin to set the cash thrills ringing<br>
+
+d)Again it is really not sufficient for an advertiser simply to amuse the target audience in order to reap the sales benefit.<br>
+
+There are indications that in substituting the hard sell for more entertaining approach some agencies have rather thrown the baby with the bath water.</h3>
+		<ul>
+			<li><label><input name="q135" type="radio" value="a">a)cdba</label></li>
+			<li><label><input name="q135" type="radio" value="b">b)dbac</label></li>
+			<li><label><input name="q135" type="radio" value="c">c)badc</label></li>
+			<li><label><input name="q135" type="radio" value="d">d)dcba</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q136" data-question="136">
+		<h3>136)Sentence arrangement<br>a)Tasty and healthy food can help you bring out their best.<br>
+
+b)You are young ones seem to be growing so fast<br>
+
+c)Being the loving custodians you always want to see them doing well.<br>
+
+d)Their eyes sparkle with curiosity and endless questions on their tongues.</h3>
+		<ul>
+			<li><label><input name="q136" type="radio" value="a">a)cbda</label></li>
+			<li><label><input name="q136" type="radio" value="b">b)badc</label></li>
+			<li><label><input name="q136" type="radio" value="c">c)bdca</label></li>
+			<li><label><input name="q136" type="radio" value="d">d)abcd</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q137" data-question="137">
+		<h3>137)Antonym of the given word is<br>Vacillating
+ </h3>
+		<ul>
+			<li><label><input name="q137" type="radio" value="a">a)Fascinating</label></li>
+			<li><label><input name="q137" type="radio" value="b">b)fanaticism</label></li>
+			<li><label><input name="q137" type="radio" value="c">c)Indolence</label></li>
+			<li><label><input name="q137" type="radio" value="d">d)resolute</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q138" data-question="138">
+		<h3>138)Antonym of the given word is<br>Hinder
+
+   </h3>
+		<ul>
+			<li><label><input name="q138" type="radio" value="a">a)Expidite</label></li>
+			<li><label><input name="q138" type="radio" value="b">b)Protect</label></li>
+			<li><label><input name="q138" type="radio" value="c">c)devote</label></li>
+			<li><label><input name="q138" type="radio" value="d">d)create.</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q139" data-question="139">
+		<h3>139)Antonym of the given word is<br>Sumptuous
+ 
+   </h3>
+		<ul>
+			<li><label><input name="q139" type="radio" value="a">a)Irritable </label></li>
+			<li><label><input name="q139" type="radio" value="b">b)meagre</label></li>
+			<li><label><input name="q139" type="radio" value="c">c)fancy </label></li>
+			<li><label><input name="q139" type="radio" value="d">d)sad</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q140" data-question="140">
+		<h3>140)Antonym of the given word is<br>Naive
+   </h3>
+		<ul>
+			<li><label><input name="q140" type="radio" value="a">a)Subtle</label></li>
+			<li><label><input name="q140" type="radio" value="b">b)energise</label></li>
+			<li><label><input name="q140" type="radio" value="c">c)spotless</label></li>
+			<li><label><input name="q140" type="radio" value="d">d) clever</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q141" data-question="141">
+		<h3>141)Choose the odd one out</h3>
+		<ul>
+			<li><label><input name="q141" type="radio" value="a">a)BEH
+</label></li>
+			<li><label><input name="q141" type="radio" value="b">b)CFI</label></li>
+			<li><label><input name="q141" type="radio" value="c">c)DGJ</label></li>
+			<li><label><input name="q141" type="radio" value="d">d)EHL</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q142" data-question="142">
+		<h3>142)Choose the odd one out</h3>
+		<ul>
+			<li><label><input name="q142" type="radio" value="a">a)BCYZ</label></li>
+			<li><label><input name="q142" type="radio" value="b">b)EFVW</label></li>
+			<li><label><input name="q142" type="radio" value="c">c)HIUV</label></li>
+			<li><label><input name="q142" type="radio" value="d">d)JKQR</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q143" data-question="143">
+		<h3>143)Choose the odd one out
+   </h3>
+		<ul>
+			<li><label><input name="q143" type="radio" value="a">a)NMLK
+</label></li>
+			<li><label><input name="q143" type="radio" value="b">b)RQPO</label></li>
+			<li><label><input name="q143" type="radio" value="c">c)UTSR</label></li>
+			<li><label><input name="q143" type="radio" value="d">d)WXUV</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q144" data-question="144">
+		<h3>144)Complete the series: 2,6,12,20,30,__
+   </h3>
+		<ul>
+			<li><label><input name="q144" type="radio" value="a">a)42</label></li>
+			<li><label><input name="q144" type="radio" value="b">b)45</label></li>
+			<li><label><input name="q144" type="radio" value="c">c)48</label></li>
+			<li><label><input name="q144" type="radio" value="d">d)50</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q145" data-question="145">
+		<h3>145)Complete the series:  dcxw, fevu, hgts, ___ 
+</h3>
+		<ul>
+			<li><label><input name="q145" type="radio" value="a">a)lkpo  </label></li>
+			<li><label><input name="q145" type="radio" value="b">b)abyz </label></li>
+			<li><label><input name="q145" type="radio" value="c">c)jirq</label></li>
+			<li><label><input name="q145" type="radio" value="d">d)lmrs</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q146" data-question="146">
+		<h3>146)What is the next number in the sequence
+5, 16, 51, 158
+     </h3>
+		<ul>
+			<li><label><input name="q146" type="radio" value="a">a)1452</label></li>
+			<li><label><input name="q146" type="radio" value="b">b)483</label></li>
+			<li><label><input name="q146" type="radio" value="c">c)481</label></li>
+			<li><label><input name="q146" type="radio" value="d">d)1454</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q147" data-question="147">
+		<h3>147)<img class="img-fluid" src="147q.png"></h3>
+		<ul>
+			<li><label><input name="q147" type="radio" value="a">a)121</label></li>
+			<li><label><input name="q147" type="radio" value="b">b)61</label></li>
+			<li><label><input name="q147" type="radio" value="c">c)72</label></li>
+			<li><label><input name="q147" type="radio" value="d">d)100</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q148" data-question="148">
+		<h3>148)<img class="img-fluid" src="148q.png"></h3>
+		<ul>
+			<li><label><input name="q148" type="radio" value="a">a)10</label></li>
+			<li><label><input name="q148" type="radio" value="b">b)11</label></li>
+			<li><label><input name="q148" type="radio" value="c">c)12</label></li>
+			<li><label><input name="q148" type="radio" value="d">d)13</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q149" data-question="149">
+		<h3>149)<img class="img-fluid" src="149q.png"></h3>
+		<ul>
+			<li><label><input name="q149" type="radio" value="a">a)figure a</label></li>
+			<li><label><input name="q149" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q149" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q149" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q150" data-question="150">
+		<h3>150)<img class="img-fluid" src="150q.png"></h3>
+		<ul>
+			<li><label><input name="q150" type="radio" value="a">a)figure a</label></li>
+			<li><label><input name="q150" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q150" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q150" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Submit Test</button>	
+		</form>
+
+
+
+		</h3></h3></form></div>
+
+	</div>	
+</div>
+
+
+<div id="result" class="container justify-content-center">
+</div>
+
+
+<script src="bitsat2.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
