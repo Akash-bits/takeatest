@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take A Test</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+	<style>
+	ul li {
+		list-style-type: none;
+	}
+	</style>
+
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-dark" style="z-index: 0;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon bg-light">=</span></button>
+	<a class="navbar-brand text-light">Take<span style="font-size:1.8em; ">A</span>Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" style="border: .5px solid white;" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>	
+
+<div class="container bg-dark" style="visibility: hidden;">
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark">
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#header"><span class="navbar-toggler-icon"></span></button>
+	<a class="navbar-brand text-light">Take a Test</a>
+	<div class="collapse navbar-collapse"  id="header">
+	<ul class="navbar-nav ml-auto list-unstyled">
+		<li class="navbar-item"><a class="nav-link" href="">Home</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Blog</a></li>
+		<li class="navbar-item"><a class="nav-link" href="">Contact Us</a></li>
+	</ul></div>
+	</nav>
+</div>
+
+
+<br><br><br><br>
+<div id="instructions" class="container justify-content-center">
+	1)This test contains 150 questions.<br>
+	2)Each question gives 3 points when correct ; -1 when wrong and 0 when left unattempted.<br>
+	3)Test duration is 180 minutes.<br>
+	4)Do not ever reload the page or use back and forward history buttons. Use only the buttons in the webpage.<br>
+	5)You can submit your test at the last question otherwise the test gets submitted automatically after the test time runs out.<br>
+	<h2> All The Best Champ!!!</h2>
+
+
+	<button id="start">Start Test</button>
+</div>
+
+	<div class="row">
+		<div name="btngrp" class="col-md-3 col-12">
+			<div class="container" id="buttongroup">
+				<div class="row">
+
+				<button class="col-3" id="1">1</button>
+				<button class="col-3" id="2">2</button>
+				<button class="col-3" id="3">3</button>
+				<button class="col-3" id="4">4</button>
+				<button class="col-3" id="5">5</button>
+				<button class="col-3" id="6">6</button>
+				<button class="col-3" id="7">7</button>
+				<button class="col-3" id="8">8</button>
+				<button class="col-3" id="9">9</button>
+				<button class="col-3" id="10">10</button>
+				<button class="col-3" id="11">11</button>
+				<button class="col-3" id="12">12</button>
+				<button class="col-3" id="13">13</button>
+				<button class="col-3" id="14">14</button>
+				<button class="col-3" id="15">15</button>
+				<button class="col-3" id="16">16</button>
+				<button class="col-3" id="17">17</button>
+				<button class="col-3" id="18">18</button>
+				<button class="col-3" id="19">19</button>
+				<button class="col-3" id="20">20</button>
+				<button class="col-3" id="21">21</button>
+				<button class="col-3" id="22">22</button>
+				<button class="col-3" id="23">23</button>
+				<button class="col-3" id="24">24</button>
+				<button class="col-3" id="25">25</button>
+				<button class="col-3" id="26">26</button>
+				<button class="col-3" id="27">27</button>
+				<button class="col-3" id="28">28</button>
+				<button class="col-3" id="29">29</button>
+				<button class="col-3" id="30">30</button>
+				<button class="col-3" id="31">31</button>
+				<button class="col-3" id="32">32</button>
+				<button class="col-3" id="33">33</button>
+				<button class="col-3" id="34">34</button>
+				<button class="col-3" id="35">35</button>
+				<button class="col-3" id="36">36</button>
+				<button class="col-3" id="37">37</button>
+				<button class="col-3" id="38">38</button>
+				<button class="col-3">39</button>
+				<button class="col-3">40</button>
+				<button class="col-3">41</button>
+				<button class="col-3">42</button>
+				<button class="col-3">43</button>
+				<button class="col-3">44</button>
+				<button class="col-3">45</button>
+				<button class="col-3">46</button>
+				<button class="col-3">47</button>
+				<button class="col-3">48</button>
+				<button class="col-3">49</button>
+				<button class="col-3">50</button>
+				<button class="col-3">51</button>
+				<button class="col-3">52</button>
+				<button class="col-3">53</button>
+				<button class="col-3">54</button>
+				<button class="col-3">55</button>
+				<button class="col-3">56</button>
+				<button class="col-3">57</button>
+				<button class="col-3">58</button>
+				<button class="col-3">59</button>
+				<button class="col-3">60</button>
+				<button class="col-3">61</button>
+				<button class="col-3">62</button>
+				<button class="col-3">63</button>
+				<button class="col-3">64</button>
+				<button class="col-3">65</button>
+				<button class="col-3">66</button>
+				<button class="col-3">67</button>
+				<button class="col-3">68</button>
+				<button class="col-3">69</button>
+				<button class="col-3">70</button>
+				<button class="col-3">71</button>
+				<button class="col-3">72</button>
+				<button class="col-3">73</button>
+				<button class="col-3">74</button>
+				<button class="col-3">75</button>
+				<button class="col-3" id="1">76</button>
+				<button class="col-3" id="2">77</button>
+				<button class="col-3" id="3">78</button>
+				<button class="col-3" id="4">79</button>
+				<button class="col-3" id="5">80</button>
+				<button class="col-3" id="6">81</button>
+				<button class="col-3" id="7">82</button>
+				<button class="col-3" id="8">83</button>
+				<button class="col-3" id="9">84</button>
+				<button class="col-3" id="10">85</button>
+				<button class="col-3" id="11">86</button>
+				<button class="col-3" id="12">87</button>
+				<button class="col-3" id="13">88</button>
+				<button class="col-3" id="14">89</button>
+				<button class="col-3" id="15">90</button>
+				<button class="col-3" id="16">91</button>
+				<button class="col-3" id="17">92</button>
+				<button class="col-3" id="18">93</button>
+				<button class="col-3" id="19">94</button>
+				<button class="col-3" id="20">95</button>
+				<button class="col-3" id="21">96</button>
+				<button class="col-3" id="22">97</button>
+				<button class="col-3" id="23">98</button>
+				<button class="col-3" id="24">99</button>
+				<button class="col-3" id="25">100</button>
+				<button class="col-3" id="26">101</button>
+				<button class="col-3" id="27">102</button>
+				<button class="col-3" id="28">103</button>
+				<button class="col-3" id="29">104</button>
+				<button class="col-3" id="30">105</button>
+				<button class="col-3" id="31">106</button>
+				<button class="col-3" id="32">107</button>
+				<button class="col-3" id="33">108</button>
+				<button class="col-3" id="34">109</button>
+				<button class="col-3" id="35">110</button>
+				<button class="col-3" id="36">111</button>
+				<button class="col-3" id="37">112</button>
+				<button class="col-3" id="38">113</button>
+				<button class="col-3">114</button>
+				<button class="col-3">115</button>
+				<button class="col-3">116</button>
+				<button class="col-3">117</button>
+				<button class="col-3">118</button>
+				<button class="col-3">119</button>
+				<button class="col-3">120</button>
+				<button class="col-3">121</button>
+				<button class="col-3">122</button>
+				<button class="col-3">123</button>
+				<button class="col-3">124</button>
+				<button class="col-3">125</button>
+				<button class="col-3">126</button>
+				<button class="col-3">127</button>
+				<button class="col-3">128</button>
+				<button class="col-3">129</button>
+				<button class="col-3">130</button>
+				<button class="col-3">131</button>
+				<button class="col-3">132</button>
+				<button class="col-3">133</button>
+				<button class="col-3">134</button>
+				<button class="col-3">135</button>
+				<button class="col-3">136</button>
+				<button class="col-3">137</button>
+				<button class="col-3">138</button>
+				<button class="col-3">139</button>
+				<button class="col-3">140</button>
+				<button class="col-3">141</button>
+				<button class="col-3">142</button>
+				<button class="col-3">143</button>
+				<button class="col-3">144</button>
+				<button class="col-3">145</button>
+				<button class="col-3">146</button>
+				<button class="col-3">147</button>
+				<button class="col-3">148</button>
+				<button class="col-3">149</button>
+				<button class="col-3">150</button>
+				
+				</div>	
+			</div>	
+		</div>
+
+
+
+		<div class='col-md-6 col-12'>
+	<div class="timer ml-auto col-12" id="timer">Time remaining is <span id="time" class="text-danger"></span>minutes</div>
+
+		<div id="result" class="container justify-content-center">
+		</div>
+
+		<form class="question" id="q1" data-question="1">
+			<h3>1)A car is moving in a circular path of radius 500m the speed of 30 m/s. If the speed is increasing at the rate of 2 metre per second square the resultant acceleration will be
+
+    </h3>
+			<ul>
+			<li><label><input name="q1" type="radio" value="a">a)2 m/s<sup>2</sup> </label></li>
+			<li><label><input name="q1" type="radio" value="b">b)2.5m/s<sup>2</sup> </label></li>
+			<li><label><input name="q1" type="radio" value="c">c)2.7m/s<sup>2</sup> </label></li>
+			<li><label><input name="q1" type="radio" value="d">d)4m/s<sup>2</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q2" data-question="2">
+			<h3>2)If a car at rest  accelerates uniformly and attains a speed of 72 km/hr in 10 seconds then it covers a distance of
+   </h3>
+			<ul>
+			<li><label><input name="q2" type="radio" value="a">a)50m </label></li>
+			<li><label><input name="q2" type="radio" value="b">b)100m </label></li>
+			<li><label><input name="q2" type="radio" value="c">c)200m </label></li>
+			<li><label><input name="q2" type="radio" value="d">d)400m </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q3" data-question="3">
+			<h3>3)When the body is in rest in the condition of a horizontal applied force, then the slope of the force and friction from graph is
+ </h3>
+			<ul>
+			<li><label><input name="q3" type="radio" value="a">a)1 </label></li>
+			<li><label><input name="q3" type="radio" value="b">b)0 </label></li>
+			<li><label><input name="q3" type="radio" value="c">c)-1 </label></li>
+			<li><label><input name="q3" type="radio" value="d">d)coefficient of friction</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q4" data-question="4">
+			<h3>Two buses a and b are moving around concentric circular paths of radii c and d. If the two buses complete the circular paths in the same time the ratio of their linear speeds is
+   </h3>
+			<ul>
+			<li><label><input name="q4" type="radio" value="a">a)1 </label></li>
+			<li><label><input name="q4" type="radio" value="b">b)c/d </label></li>
+			<li><label><input name="q4" type="radio" value="c">c)d/c </label></li>
+			<li><label><input name="q4" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q5" data-question="5">
+			<h3>5)Particle is moving with velocity (5i - 3 j+ 6k)m/s under the influence of a constant force (10i + 10j+ 20k)N. The instantaneous power applied to the particle is
+  </h3>
+			<ul>
+			<li><label><input name="q5" type="radio" value="a">a)200J/s </label></li>
+			<li><label><input name="q5" type="radio" value="b">b)40J/s </label></li>
+			<li><label><input name="q5" type="radio" value="c">c)140J/s </label></li>
+			<li><label><input name="q5" type="radio" value="d">d)170J/s</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q6" data-question="6">
+			<h3>The ratio of squares of radii of two spheres of the same mass having the same moment of inertia about their diameters one hollow and the other solid is
+    </h3>
+			<ul>
+			<li><label><input name="q6" type="radio" value="a">a)3:5 </label></li>
+			<li><label><input name="q6" type="radio" value="b">b)5:3 </label></li>
+			<li><label><input name="q6" type="radio" value="c">c)25:9 </label></li>
+			<li><label><input name="q6" type="radio" value="d">d)9:25</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q7" data-question="7">
+			<h3>7)A juggler keeps on moving four balls in the air, throws the balls in regular intervals of time. When one ball leaves(with velocity 20m/s, take g=10m/s<sup>2</sup>) and the position of the other balls will be
+
+    </h3>
+			<ul>
+			<li><label><input name="q7" type="radio" value="a">a)10m, 20m, 10m </label></li>
+			<li><label><input name="q7" type="radio" value="b">b)15m,20m, 15m </label></li>
+			<li><label><input name="q7" type="radio" value="c">c)5m 15m 20m </label></li>
+			<li><label><input name="q7" type="radio" value="d">d)5m 10m 20m</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q8" data-question="8">
+			<h3>8)Two rings of radius r and n are made of same material have the ratio of moment of inertia about an Axis passing through the centre as 1:8. The value of n is
+   </h3>
+			<ul>
+			<li><label><input name="q8" type="radio" value="a">a)2 </label></li>
+			<li><label><input name="q8" type="radio" value="b">b)4 </label></li>
+			<li><label><input name="q8" type="radio" value="c">c)0.5 </label></li>
+			<li><label><input name="q8" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q9" data-question="9">
+			<h3>9)A satellite is orbiting closely to earth and having kinetic energy 'K'. The kinetic energy required by it to just overcome the gravitational pull of the Earth is
+   </h3>
+			<ul>
+			<li><label><input name="q9" type="radio" value="a">a)2K </label></li>
+			<li><label><input name="q9" type="radio" value="b">b)&radic;(2)K </label></li>
+			<li><label><input name="q9" type="radio" value="c">c)2&radic;(2)K </label></li>
+			<li><label><input name="q9" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q10" data-question="10">
+			<h3>10)The work done in stretching a wire by 1 mm is w then the work required to stretch another wire of the same material but with half the radius of cross section and double the length, by 2 mm is
+   <sup>2</sup>)</h3>
+			<ul>
+			<li><label><input name="q10" type="radio" value="a">a)4w </label></li>
+			<li><label><input name="q10" type="radio" value="b">b)w </label></li>
+			<li><label><input name="q10" type="radio" value="c">c)0.25w </label></li>
+			<li><label><input name="q10" type="radio" value="d">d)0.5w</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q11" data-question="11">
+			<h3>11)Temperature of H<sub>2</sub> at which The RMS velocity of the molecules is 7 times The RMS velocity of the molecules of Nitrogen at 300 K is
+ 
+   </h3>
+			<ul>
+			<li><label><input name="q11" type="radio" value="a">a)2100K </label></li>
+			<li><label><input name="q11" type="radio" value="b">b)1700K </label></li>
+			<li><label><input name="q11" type="radio" value="c">c)1350K</label></li>
+			<li><label><input name="q11" type="radio" value="d">d)1050K</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q12" data-question="12">
+			<h3>12)Temperature of an ideal gas is 300 K. The change in temperature of the gas when its volume changes from V to 2V in the process P = aV, where a is a positive constant, is
+    </h3>
+			<ul>
+			<li><label><input name="q12" type="radio" value="a">a)900K  </label></li>
+			<li><label><input name="q12" type="radio" value="b">b)1200K </label></li>
+			<li><label><input name="q12" type="radio" value="c">c)600K  </label></li>
+			<li><label><input name="q12" type="radio" value="d">d)300K</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q13" data-question="13">
+			<h3>13)At what angle should two Mirrors be placed so that there are 5 images formed of the object in between 
+ </h3>
+			<ul>
+			<li><label><input name="q13" type="radio" value="a">a)60degrees </label></li>
+			<li><label><input name="q13" type="radio" value="b">b)65 degrees </label></li>
+			<li><label><input name="q13" type="radio" value="c">c)30 degrees </label></li>
+			<li><label><input name="q13" type="radio" value="d">d)45 degrees</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q14" data-question="14">
+			<h3>14)Find the refractive index of the material of prism if a thin prism of angle A = 6 degrees produce a deviation = 3 degrees
+   </h3>
+			<ul>
+			<li><label><input name="q14" type="radio" value="a">a)1.5  </label></li>
+			<li><label><input name="q14" type="radio" value="b">b)1.2 </label></li>
+			<li><label><input name="q14" type="radio" value="c">c)1.1</label></li>
+			<li><label><input name="q14" type="radio" value="d">d)1.25</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q15" data-question="15">
+			<h3>15)Two non coherent sources emit light beam of intensities I and 4I. The maximum and minimum intensity and resulting beam are
+
+   
+   </h3>
+			<ul>
+			<li><label><input name="q15" type="radio" value="a">a)9I,I </label></li>
+			<li><label><input name="q15" type="radio" value="b">b)9I,3I </label></li>
+			<li><label><input name="q15" type="radio" value="c">c)5I,I </label></li>
+			<li><label><input name="q15" type="radio" value="d">d)d)5I,3I</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q16" data-question="16">
+			<h3>16)The ratio of forces between two tiny body is a constant charges in air and in an insulating medium of dielectric constant k is
+
+   </h3>
+			<ul>
+			<li><label><input name="q16" type="radio" value="a">a)k:1 </label></li>
+			<li><label><input name="q16" type="radio" value="b">b)1:k </label></li>
+			<li><label><input name="q16" type="radio" value="c">c)1:1 </label></li>
+			<li><label><input name="q16" type="radio" value="d">d)K<sup>2</sup>:1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q17" data-question="17">
+			<h3>The electric potential at the surface of an atomic nucleus (z =50) of radius 9x10<sup>-13</sup> cm is 
+ 
+   </h3>
+			<ul>
+			<li><label><input name="q17" type="radio" value="a">a)900,000V</label></li>
+			<li><label><input name="q17" type="radio" value="b">b)8,000,000V  </label></li>
+			<li><label><input name="q17" type="radio" value="c">c)80V </label></li>
+			<li><label><input name="q17" type="radio" value="d">d)9V</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q18" data-question="18">
+			<h3>18)Two charged particles of charge 2q and q have masses m and 2m respectively.They are kept in uniform electric field and allowed to move for the same time find the ratio of their Kinetic energies   </h3>
+			<ul>
+			<li><label><input name="q18" type="radio" value="a">a)1:8 </label></li>
+			<li><label><input name="q18" type="radio" value="b">b)16:1 </label></li>
+			<li><label><input name="q18" type="radio" value="c">c)2:1 </label></li>
+			<li><label><input name="q18" type="radio" value="d">d)3:1 </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q19" data-question="19">
+			<h3>19)The work done in increasing the voltage across the plates of a capacitor from 5V to 10V is w. The work done in increasing the voltage from 10V to 15V will be 
+  </h3>
+			<ul>
+			<li><label><input name="q19" type="radio" value="a">a)w</label></li>
+			<li><label><input name="q19" type="radio" value="b">b)1.667w </label></li>
+			<li><label><input name="q19" type="radio" value="c">c)1.33w  </label></li>
+			<li><label><input name="q19" type="radio" value="d">d)2w</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q20" data-question="20">
+			<h3>20)Is a copper wire is stretched to make its radius decrease by 0.1 % then the percentage increase in resistance is approximately   </h3>
+			<ul>
+			<li><label><input name="q20" type="radio" value="a">a)0.1%  </label></li>
+			<li><label><input name="q20" type="radio" value="b">b)0.2%  </label></li>
+			<li><label><input name="q20" type="radio" value="c">c)0.4% </label></li>
+			<li><label><input name="q20" type="radio" value="d">d)0.8%</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q21" data-question="21">
+		<h3>21)A piece of copper and another of germanium are cooled from room temperature to 80K. The resistance of  
+ </h3>
+		<ul>
+			<li><label><input name="q21" type="radio" value="a">a)each of them increases </label></li>
+			<li><label><input name="q21" type="radio" value="b">b)each of them decreases </label></li>
+			<li><label><input name="q21" type="radio" value="c">c) copper increases germanium decreases</label></li>
+			<li><label><input name="q21" type="radio" value="d">d)copper decreases germanium increases</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q22" data-question="22">
+		<h3>22)If r1 and r2 respectively the filament resistance of a 600W bulb and 300W bulb designed to operate on the same voltage then 
+   </h3>
+		<ul>
+			<li><label><input name="q22" type="radio" value="a">a)r1=r2 </label></li>
+			<li><label><input name="q22" type="radio" value="b">b)r1==0.5r2 </label></li>
+			<li><label><input name="q22" type="radio" value="c">c)r2=4r1</label></li>
+			<li><label><input name="q22" type="radio" value="d"> d)r1=4r2</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q23" data-question="23">
+		<h3>23)A galvanometer having a coil resistance of 100 ohm gives a full scale deflection when a current of 1 milliampere is passed through it. what is the value of resistance which can convert this galvanometer into an ammeter giving full scale deflection for current of 10A?
+   </h3>
+		<ul>
+			<li><label><input name="q23" type="radio" value="a">a)0.001 ohm  </label></li>
+			<li><label><input name="q23" type="radio" value="b">b)1ohm  </label></li>
+			<li><label><input name="q23" type="radio" value="c">c)0.01 ohm </label></li>
+			<li><label><input name="q23" type="radio" value="d">d)10ohm</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q24" data-question="24">
+		<h3>A current of 1 ampere flows in a wire of length 0.1 metre in a magnetic field of 0.5 T. The force acting on the wire when it makes an angle of 90° with this field is  
+  </h3>
+		<ul>
+			<li><label><input name="q24" type="radio" value="a">a)0</label></li>
+			<li><label><input name="q24" type="radio" value="b">b)0.05N  </label></li>
+			<li><label><input name="q24" type="radio" value="c">c)1N </label></li>
+			<li><label><input name="q24" type="radio" value="d">d)0.5N</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q25" data-question="25">
+		<h3> Two straight parallel conductors are kept horizontally one above the other. if the upper wire suspends in air without any support then the direction of flow of  current in the wires should be  
+   </h3>
+		<ul>
+			<li><label><input name="q25" type="radio" value="a">a)In the same direction </label></li>
+			<li><label><input name="q25" type="radio" value="b">b)in the opposite direction </label></li>
+			<li><label><input name="q25" type="radio" value="c">c)mutually perpendicular </label></li>
+			<li><label><input name="q25" type="radio" value="d">d)none</label></li>
+			</ul><br>
+		<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q26" data-question="26">
+			<h3>In electromagnetic induction the induced EMF in a coil is independent of 
+   </h3>
+			<ul>
+			<li><label><input name="q26" type="radio" value="a">a)resistance of the circuit</label></li>
+			<li><label><input name="q26" type="radio" value="b">b)magnetic induction </label></li>
+			<li><label><input name="q26" type="radio" value="c">c)area of the coil </label></li>
+			<li><label><input name="q26" type="radio" value="d">d)orientation of the coil</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q27" data-question="27">
+			<h3>A proton ,a deuteron and an Alpha particle having the same kinetic energy are moving in circular trajectories in a constant magnetic field. If p,d,a denote respectively the radii of trajectories of these particles then   </h3>
+			<ul>
+			<li><label><input name="q27" type="radio" value="a">a)a=p&lt;d  </label></li>
+			<li><label><input name="q27" type="radio" value="b">b)a&gt;d&gt;p  </label></li>
+			<li><label><input name="q27" type="radio" value="c">c)a=d&gt;p  </label></li>
+			<li><label><input name="q27" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q28" data-question="28">
+			<h3>28)Find the displacement of a particle, executing SHM with amplitude a, from its mean position when its kinetic energy equals its potential energy.
+
+   </h3>
+			<ul>
+			<li><label><input name="q28" type="radio" value="a">a)a/3 </label></li>
+			<li><label><input name="q28" type="radio" value="b">b)a/2 </label></li>
+			<li><label><input name="q28" type="radio" value="c">c)a/(&radic;(2)) </label></li>
+			<li><label><input name="q28" type="radio" value="d">d)a/4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q29" data-question="29">
+			<h3>29)What should be the flux linked to the cube if a point charge q is placed at one corner of a cube?
+  </h3>
+			<ul>
+			<li><label><input name="q29" type="radio" value="a">a)q/&epsilon;  </label></li>
+			<li><label><input name="q29" type="radio" value="b">b)q/(2&epsilon;) </label></li>
+			<li><label><input name="q29" type="radio" value="c">c)q/(4&epsilon;)</label></li>
+			<li><label><input name="q29" type="radio" value="d">d)q/(8&epsilon;)</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q30" data-question="30">
+			<h3>30)A source of sound is moving away from a stationary observer with a speed equal to the speed of sound. The apparent frequency heard by the observer is
+  </h3>
+			<ul>
+			<li><label><input name="q30" type="radio" value="a">a)n<sup>2</sup></label></li>
+			<li><label><input name="q30" type="radio" value="b">b)2n</label></li>
+			<li><label><input name="q30" type="radio" value="c">c)n/2 </label></li>
+			<li><label><input name="q30" type="radio" value="d">d)n</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q31" data-question="31">
+			<h3>31)A particle is moving with a velocity v = k(ai + bj) where k is a constant the general equation for its path is
+  </h3>
+ 
+
+			<ul>
+			<li><label><input name="q31" type="radio" value="a">a)y=x<sup>2</sup> + constant  </label></li>
+			<li><label><input name="q31" type="radio" value="b">b)y<sup>2</sup>=x+constant</label></li>
+			<li><label><input name="q31" type="radio" value="c">c)xy=constant</label></li>
+			<li><label><input name="q31" type="radio" value="d">d)Y<sup>2</sup>=x<sup>2</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q32" data-question="32">
+			<h3>32)The minimum value of resistance obtained using 5 , 0.25 ohm resistors is
+   </h3>
+			<ul>
+			<li><label><input name="q32" type="radio" value="a">a)0.05 ohm </label></li>
+			<li><label><input name="q32" type="radio" value="b">b)1 ohm </label></li>
+			<li><label><input name="q32" type="radio" value="c">c)0.2 ohm </label></li>
+			<li><label><input name="q32" type="radio" value="d">d)0.02 ohm</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q33" data-question="33">
+			<h3>33)A wire has frequency f. If its length is doubled by stretching , the new frequency will be
+   </h3>
+			<ul>
+			<li><label><input name="q33" type="radio" value="a">a)f </label></li>
+			<li><label><input name="q33" type="radio" value="b">b)0.7f</label></li>
+			<li><label><input name="q33" type="radio" value="c">c)2f</label></li>
+			<li><label><input name="q33" type="radio" value="d">d)1.4f</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q34" data-question="34">
+			<h3>34)Principle used in making hydrogen bombs is
+</h3>
+			<ul>
+			<li><label><input name="q34" type="radio" value="a">a)fission</label></li>
+			<li><label><input name="q34" type="radio" value="b">b)fusion </label></li>
+			<li><label><input name="q34" type="radio" value="c">c)both</label></li>
+			<li><label><input name="q34" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q35" data-question="35">
+			<h3>35)The radius of curvature of the path of a charged particle in a uniform magnetic field is directly proportional to 
+   </h3>
+			<ul>
+			<li><label><input name="q35" type="radio" value="a">a)the charge on the particle </label></li>
+			<li><label><input name="q35" type="radio" value="b">b)the momentum of the particle</label></li>
+			<li><label><input name="q35" type="radio" value="c">c)the intensity of the field </label></li>
+			<li><label><input name="q35" type="radio" value="d">d)the energy of the particle</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q36" data-question="36">
+			<h3>36)The normal reaction on a body placed in a lift moving up with constant acceleration 2 m/s<sup>2</sup> is 120N and mass of the body is (take g = 10 m/s<sup>2</sup>)
+ 
+   </h3>
+			<ul>
+			<li><label><input name="q36" type="radio" value="a">a)10 kg </label></li>
+			<li><label><input name="q36" type="radio" value="b">b)15kg</label></li>
+			<li><label><input name="q36" type="radio" value="c">c)12kg </label></li>
+			<li><label><input name="q36" type="radio" value="d">d)5kg</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q37" data-question="37">
+			<h3>37)Water rises in a capillary tube upto a length of 10cm . if the tube is inclined at 30 degrees , length of the water column is
+  </h3>
+			<ul>
+			<li><label><input name="q37" type="radio" value="a">a)15cm</label></li>
+			<li><label><input name="q37" type="radio" value="b">b)20cm</label></li>
+			<li><label><input name="q37" type="radio" value="c">c)20/1.732 cm </label></li>
+			<li><label><input name="q37" type="radio" value="d">d)20x1.732 cm</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q38" data-question="38">
+			<h3>38)To increase the period of oscillation of a pendulum by 10% , the increase in length should be (in %)
+ 
+			</h3>
+			<ul>
+			<li><label><input name="q38" type="radio" value="a">a)21  </label></li>
+			<li><label><input name="q38" type="radio" value="b">b)5 </label></li>
+			<li><label><input name="q38" type="radio" value="c">c)20</label></li>
+			<li><label><input name="q38" type="radio" value="d">d)10</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q39" data-question="39">
+			<h3>39)The minimum force required to move a body of mass m upwards is
+ 
+  </h3>
+			<ul>
+			<li><label><input name="q39" type="radio" value="a">a)mg</label></li>
+			<li><label><input name="q39" type="radio" value="b">b)more than mg  </label></li>
+			<li><label><input name="q39" type="radio" value="c">c)2mg</label></li>
+			<li><label><input name="q39" type="radio" value="d">d)mg/2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q40" data-question="40">
+			<h3>40)The magnitude of acceleration of particle executing SHM at the position of maximum displacement is    
+			</h3>
+			<ul>
+			<li><label><input name="q40" type="radio" value="a">a)maximum   </label></li>
+			<li><label><input name="q40" type="radio" value="b">b)minimum</label></li>
+			<li><label><input name="q40" type="radio" value="c">c)zero </label></li>
+			<li><label><input name="q40" type="radio" value="d">d)none of these</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q41" data-question="41">
+			<h3>41)Identify the reaction which does not liberate hydrogen			</h3>
+			<ul>
+			<li><label><input name="q41" type="radio" value="a">a)Allowing a solution of sodium in liquid ammonia to stand </label></li>
+			<li><label><input name="q41" type="radio" value="b">b)Reaction of Zn with aqueous Alkali</label></li>
+			<li><label><input name="q41" type="radio" value="c">c)Reaction of lithium hydride with B<sub>2</sub>H<sub>6</sub></label></li>
+			<li><label><input name="q41" type="radio" value="d">d)Electrolysis of acidified water using platinum electrode</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q42" data-question="42">
+			<h3>42)For chromium how many electrons can have n + l + |m| = 4 with clockwise spin in ground state  
+ 			</h3>
+			<ul>
+			<li><label><input name="q42" type="radio" value="a">a)2</label></li>
+			<li><label><input name="q42" type="radio" value="b">b)4</label></li>
+			<li><label><input name="q42" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q42" type="radio" value="d">d)6</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q43" data-question="43">
+			<h3>43)There are four solvents a b c and d. The dielectric constant of the solvents follow the order c < d < a = b. Among them only b and c are capable of forming hydrogen bonds. Which of the solvents will be most suitable for SN1 reaction
+a b c d </h3>
+			<ul>
+			<li><label><input name="q43" type="radio" value="a">a</label></li>
+			<li><label><input name="q43" type="radio" value="b">b</label></li>
+			<li><label><input name="q43" type="radio" value="c">c</label></li>
+			<li><label><input name="q43" type="radio" value="d">d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q44" data-question="44">
+			<h3>44)Which of the following on hydrolysis gives only glucose 
+  </h3>
+			<ul>
+			<li><label><input name="q44" type="radio" value="a">sucrose   </label></li>
+			<li><label><input name="q44" type="radio" value="b">raffinose</label></li>
+			<li><label><input name="q44" type="radio" value="c">maltose</label></li>
+			<li><label><input name="q44" type="radio" value="d">galactose
+</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q45" data-question="45">
+			<h3>45)Zone refining has been employed for preparing ultra pure sample of  
+   </h3>
+			<ul>
+			<li><label><input name="q45" type="radio" value="a">copper</label></li>
+			<li><label><input name="q45" type="radio" value="b">zinc </label></li>
+			<li><label><input name="q45" type="radio" value="c">germanium </label></li>
+			<li><label><input name="q45" type="radio" value="d">silver</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q46" data-question="46">
+		<h3>46)Calgon is
+		</h3>
+		<ul>
+			<li><label><input name="q46" type="radio" value="a">Na<sub>2</sub>[Na<sub>4</sub>(PO<sub>3</sub>)<sub>6</sub>] </label></li>
+			<li><label><input name="q46" type="radio" value="b">Na<sub></sub>[Na<sub>2</sub>(PO<sub>3</sub>)<sub>6</sub>] </label></li>
+			<li><label><input name="q46" type="radio" value="c">Na<sub>2</sub>[Na<sub>4</sub>(PO<sub>4</sub>)<sub>6</sub>] </label></li>
+			<li><label><input name="q46" type="radio" value="d">Na<sub>4</sub>[Na<sub>2</sub>(PO<sub>4</sub>)<sub>6</sub>] </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q47" data-question="47">
+		<h3>47)Which of the following metal carbonyls produce the corresponding metal on strong heating</h3>
+		<ul>
+			<li><label><input name="q47" type="radio" value="a">FeCO<sub>3</sub></label></li>
+			<li><label><input name="q47" type="radio" value="b">Li<sub>2</sub>CO<sub>3</sub></label></li>
+			<li><label><input name="q47" type="radio" value="c">SrCO<sub>3</sub></label></li>
+			<li><label><input name="q47" type="radio" value="d">Ag<sub>2</sub>CO<sub>3</sub></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q48" data-question="48">
+		<h3>48)Hydrolysis of alkyl isocyanide yields</h3>
+		<ul>
+			<li><label><input name="q48" type="radio" value="a">Primary amine</label></li>
+			<li><label><input name="q48" type="radio" value="b">tertiary amine</label></li>
+			<li><label><input name="q48" type="radio" value="c">alcohol</label></li>
+			<li><label><input name="q48" type="radio" value="d">aldehyde</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q49" data-question="49">
+		<h3>Glucose can be differentiated from lactose by    </h3>
+		<ul>
+			<li><label><input name="q49" type="radio" value="a">a)fehling solution</label></li>
+			<li><label><input name="q49" type="radio" value="b">b)Benedict solution</label></li>
+			<li><label><input name="q49" type="radio" value="c">c)tollens reagent</label></li>
+			<li><label><input name="q49" type="radio" value="d">d)none of these</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q50" data-question="50">
+		<h3>50)20 grams of an ideal gas contains only atoms of Sulphur and oxygen and occupies 5.6 litre at NTP. What is its molar weight
+</h3>
+		<ul>
+			<li><label><input name="q50" type="radio" value="a">a)64</label></li>
+			<li><label><input name="q50" type="radio" value="b">b)80</label></li>
+			<li><label><input name="q50" type="radio" value="c">c)96</label></li>
+			<li><label><input name="q50" type="radio" value="d">d)100</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q51" data-question="51">
+			<h3>51)Adsorption is multilayer in case of  </h3>
+			<ul>
+			<li><label><input name="q51" type="radio" value="a">physical adsorption  </label></li>
+			<li><label><input name="q51" type="radio" value="b">chemical adsorption</label></li>
+			<li><label><input name="q51" type="radio" value="c">both</label></li>
+			<li><label><input name="q51" type="radio" value="d">none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q52" data-question="52">
+			<h3>52)In the body centred unit cell the lattice points are present at</h3>
+			<ul>
+			<li><label><input name="q52" type="radio" value="a">corners of the unit cell only</label></li>
+			<li><label><input name="q52" type="radio" value="b">Corners and centre of the unit cell.</label></li>
+			<li><label><input name="q52" type="radio" value="c">Corners and centre of each face of the unit cell.</label></li>
+			<li><label><input name="q52" type="radio" value="d">Corners and at one set of faces of unit cell</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q53" data-question="53">
+			<h3>53)The one which has no co-ordinate bond is
+  </h3>
+			<ul>
+			<li><label><input name="q53" type="radio" value="a">HNO<sub>3</sub></label></li>
+			<li><label><input name="q53" type="radio" value="b">CO</label></li>
+			<li><label><input name="q53" type="radio" value="c">CO<sub>3</sub> <sup>2-</sup></label></li>
+			<li><label><input name="q53" type="radio" value="d">CH<sub>3</sub>NC</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q54" data-question="54">
+			<h3>54)The structure of IF<sub>7</sub> is    </h3>
+			<ul>
+			<li><label><input name="q54" type="radio" value="a">a)square pyramidal</label></li>
+			<li><label><input name="q54" type="radio" value="b">b)trigonal bipyramidal</label></li>
+			<li><label><input name="q54" type="radio" value="c">c)octahedral</label></li>
+			<li><label><input name="q54" type="radio" value="d">d)pentagonal bipyramidal </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q55" data-question="55">
+			<h3>55)What will be the IUPAC name of element having atomic number = 106
+</h3>
+			<ul>
+			<li><label><input name="q55" type="radio" value="a">a)Unnilquadium</label></li>
+			<li><label><input name="q55" type="radio" value="b">b)Unnilhexium</label></li>
+			<li><label><input name="q55" type="radio" value="c">c)Unnilheptium</label></li>
+			<li><label><input name="q55" type="radio" value="d">d)Ununhexium</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q56" data-question="56">
+			<h3>56)Internal energy and pressure of a gas of unit volume are related as
+</h3>
+			<ul>
+			<li><label><input name="q56" type="radio" value="a">a)P= 0.5E</label></li>
+			<li><label><input name="q56" type="radio" value="b">b)P=1.5 E</label></li>
+			<li><label><input name="q56" type="radio" value="c">c)P=2E</label></li>
+			<li><label><input name="q56" type="radio" value="d">d)P= 2E/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q57" data-question="57">
+			<h3>57)When ammonium chloride is dissolved in water the solution becomes cold. The change is   
+</h3>
+			<ul>
+			<li><label><input name="q57" type="radio" value="a">a)endothermic</label></li>
+			<li><label><input name="q57" type="radio" value="b">b)exothermic</label></li>
+			<li><label><input name="q57" type="radio" value="c">c)supercooling </label></li>
+			<li><label><input name="q57" type="radio" value="d">none of these</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q58" data-question="58">
+			<h3>58)The active mass of 10 grams of calcium carbonate is
+</h3>
+			<ul>
+			<li><label><input name="q58" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q58" type="radio" value="b">b)10</label></li>
+			<li><label><input name="q58" type="radio" value="c">c)100</label></li>
+			<li><label><input name="q58" type="radio" value="d">d)0.1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q59" data-question="59">
+			<h3>59)Slope between PV and P graphs at constant temperature is  </h3>
+			<ul>
+			<li><label><input name="q59" type="radio" value="a">a)0</label></li>
+			<li><label><input name="q59" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q59" type="radio" value="c">c)0.5</label></li>
+			<li><label><input name="q59" type="radio" value="d">-1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q60" data-question="60">
+			<h3>60)CH<sub>3</sub>-CH<sub>2</sub>-O-CH<sub>2</sub>-CH<sub>3</sub> reacts with hot and excess HI to produce </h3>
+			<ul>
+			<li><label><input name="q60" type="radio" value="a">a)CH<sub>3</sub>-CH<sub>2</sub>-OH and I-CH<sub>2</sub>-CH<sub>3</sub></label></li>
+			<li><label><input name="q60" type="radio" value="b">b)CH<sub>3</sub>-CH<sub>2</sub>-OH</label></li>
+			<li><label><input name="q60" type="radio" value="c">c)I-CH<sub>2</sub>-CH<sub>3</sub> </label></li>
+			<li><label><input name="q60" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q61" data-question="61">
+			<h3>61)The solubility of a gas in liquid depends upon</h3>
+			<ul>
+			<li><label><input name="q61" type="radio" value="a">a)the nature of gas</label></li>
+			<li><label><input name="q61" type="radio" value="b">b)the temperature </label></li>
+			<li><label><input name="q61" type="radio" value="c">c)the nature of solvent </label></li>
+			<li><label><input name="q61" type="radio" value="d">d)all of these</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q62" data-question="62">
+			<h3>62)An emulsion is a colloidal dispersion of    </h3>
+			<ul>
+			<li><label><input name="q62" type="radio" value="a">a)a liquid in a gas </label></li>
+			<li><label><input name="q62" type="radio" value="b">b)liquid in a liquid </label></li>
+			<li><label><input name="q62" type="radio" value="c">c)a solid in a liquid </label></li>
+			<li><label><input name="q62" type="radio" value="d">d)a gas in a solid</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q63" data-question="63">
+			<h3>63)Nitration of benzene is    </h3>
+			<ul>
+			<li><label><input name="q63" type="radio" value="a">a)electrophilic substitution</label></li>
+			<li><label><input name="q63" type="radio" value="b">b)electrophilic addition</label></li>
+			<li><label><input name="q63" type="radio" value="c">c)nucleophilic substitution</label></li>
+			<li><label><input name="q63" type="radio" value="d">d)nucleophilic addition</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q64" data-question="64">
+			<h3>64)Condensation product of caprolactam is 
+</h3>
+			<ul>
+			<li><label><input name="q64" type="radio" value="a">a) nylon 6</label></li>
+			<li><label><input name="q64" type="radio" value="b">b)nylon 66 </label></li>
+			<li><label><input name="q64" type="radio" value="c">c)nylon 60</label></li>
+			<li><label><input name="q64" type="radio" value="d">d)nylon 6 ,10</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q65" data-question="65">
+			<h3>65)Purification of aluminium by electrolysis method is called  
+
+
+ 
+
+  </h3>
+			<ul>
+			<li><label><input name="q65" type="radio" value="a">a)Hall process </label></li>
+			<li><label><input name="q65" type="radio" value="b">b)Baeyer process </label></li>
+			<li><label><input name="q65" type="radio" value="c">c)Ostwald process</label></li>
+			<li><label><input name="q65" type="radio" value="d">d)Hoopes process</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q66" data-question="66">
+			<h3>66)Which of the element forms coloured compounds</h3>
+			<ul>
+			<li><label><input name="q66" type="radio" value="a">a)K</label></li>
+			<li><label><input name="q66" type="radio" value="b">b)SC</label></li>
+			<li><label><input name="q66" type="radio" value="c">c)Na</label></li>
+			<li><label><input name="q66" type="radio" value="d">d)Cl</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q67" data-question="67">
+			<h3>67)When phenol is is treated with excess bromine water it gives
+</h3>
+			<ul>
+			<li><label><input name="q67" type="radio" value="a">a)m bromo phenol </label></li>
+			<li><label><input name="q67" type="radio" value="b">b)o bromo phenol </label></li>
+			<li><label><input name="q67" type="radio" value="c">c)2 4 6 tribromophenol</label></li>
+			<li><label><input name="q67" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q68" data-question="68">
+			<h3>68)H<sub>3</sub>PO<sub>3</sub> is</h3>
+			<ul>
+			<li><label><input name="q68" type="radio" value="a">a)Dibasic</label></li>
+			<li><label><input name="q68" type="radio" value="b">b)Monobasic</label></li>
+			<li><label><input name="q68" type="radio" value="c">c)Tribasic</label></li>
+			<li><label><input name="q68" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q69" data-question="69">
+			<h3>69)Lindlar's catalyst is </h3>
+			<ul>
+			<li><label><input name="q69" type="radio" value="a">Pd supported over barium carbonate</label></li>
+			<li><label><input name="q69" type="radio" value="b">Hg supported over lead sulfate</label></li>
+			<li><label><input name="q69" type="radio" value="c">Nickel supported over copper sulphate</label></li>
+			<li><label><input name="q69" type="radio" value="d">Nickel supported over cadmium sulphate</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q70" data-question="70">
+			<h3>70)Bond order of O<sub>2</sub><sup>+</sup></h3>
+			<ul>
+			<li><label><input name="q70" type="radio" value="a">a)2.5</label></li>
+			<li><label><input name="q70" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q70" type="radio" value="c">c)1.5</label></li>
+			<li><label><input name="q70" type="radio" value="d">d)3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+			<button id="next" class="ml-auto">Next</button>	
+		</form>
+
+		<form class="question" id="q71" data-question="71">
+		<h3>71)Which is the correct electronic configuration of Cr</h3>
+		<ul>
+			<li><label><input name="q71" type="radio" value="a">a)1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>5</sup> </label></li>
+			<li><label><input name="q71" type="radio" value="b">b)1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>4</sup></label></li>
+			<li><label><input name="q71" type="radio" value="c">c)1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>6</sup></label></li>
+			<li><label><input name="q71" type="radio" value="d">d)1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>8</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q72" data-question="72">
+		<h3>72)The energy of an electron in the first bohr orbit of hydrogen is -13.6 electron volt then find the energy of Li + 2 in the same orbit
+ </h3>
+		<ul>
+			<li><label><input name="q72" type="radio" value="a">a)122.4 ev </label></li>
+			<li><label><input name="q72" type="radio" value="b">b)54.4 ev </label></li>
+			<li><label><input name="q72" type="radio" value="c">c)-122.4 ev </label></li>
+			<li><label><input name="q72" type="radio" value="d">d)-54.4 ev</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q73" data-question="73">
+		<h3>73)The time taken for 90% of a first order reaction to be completed is approximately   </h3>
+		<ul>
+			<li><label><input name="q73" type="radio" value="a">a)1.1 times that of half life </label></li>
+			<li><label><input name="q73" type="radio" value="b">b)2.2 times that of half life</label></li>
+			<li><label><input name="q73" type="radio" value="c">c)3.3 times that of half life </label></li>
+			<li><label><input name="q73" type="radio" value="d">d)4.4 times that of half life</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q74" data-question="74">
+		<h3>74)The van't Hoff factor for very dilute solution of Fe2(SO4)3 is </h3>
+		<ul>
+			<li><label><input name="q74" type="radio" value="a">a)9</label></li>
+			<li><label><input name="q74" type="radio" value="b">b)5 </label></li>
+			<li><label><input name="q74" type="radio" value="c">c)6</label></li>
+			<li><label><input name="q74" type="radio" value="d">d)17</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q75" data-question="75">
+		<h3>75)Colligative properties of a solution depends upon 
+ 
+     </h3>
+		<ul>
+			<li><label><input name="q75" type="radio" value="a">a)nature of solute only   </label></li>
+			<li><label><input name="q75" type="radio" value="b">b)nature of both solute and solvent</label></li>
+			<li><label><input name="q75" type="radio" value="c">c)number of solute particles</label></li>
+			<li><label><input name="q75" type="radio" value="d">d)number of solvent particles</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q76" data-question="76">
+		<h3>76)On passing 3 ampere of electricity for 50 minutes 1.8 grams of metal deposits. The equivalent mass of metal is</h3>
+		<ul>
+			<li><label><input name="q76" type="radio" value="a">a)20.5 </label></li>
+			<li><label><input name="q76" type="radio" value="b">b)25.8</label></li>
+			<li><label><input name="q76" type="radio" value="c">c)19.3</label></li>
+			<li><label><input name="q76" type="radio" value="d">d)30.7</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q77" data-question="77">
+		<h3>77)Boiling point of heavy water is      </h3>
+		<ul>
+			<li><label><input name="q77" type="radio" value="a">a)hundred degree Celsius</label></li>
+			<li><label><input name="q77" type="radio" value="b">b)99 degree Celsius  </label></li>
+			<li><label><input name="q77" type="radio" value="c">c)101.4 degree Celsius</label></li>
+			<li><label><input name="q77" type="radio" value="d">d)110 degree Celsius</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q78" data-question="78">
+		<h3>78)The ore of potassium is 
+ </h3>
+		<ul>
+			<li><label><input name="q78" type="radio" value="a">a)bauxite   </label></li>
+			<li><label><input name="q78" type="radio" value="b">b)dolomite</label></li>
+			<li><label><input name="q78" type="radio" value="c">c)carnallite </label></li>
+			<li><label><input name="q78" type="radio" value="d">d)cryolite</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q79" data-question="79">
+		<h3>79)A sample of wustite is Fe0.93 O1 . The percentage of iron present in form of Fe(III) is
+</h3>
+		<ul>
+			<li><label><input name="q79" type="radio" value="a">a)15.05</label></li>
+			<li><label><input name="q79" type="radio" value="b">b)17.5</label></li>
+			<li><label><input name="q79" type="radio" value="c">c)19.05</label></li>
+			<li><label><input name="q79" type="radio" value="d">d)8</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q80" data-question="80">
+		<h3>80)By theAddition of 0.035 grams of stars the coagulation of 10 ml of gold SOL is completely prevented. The gold number of starch is</h3>
+		<ul>
+			<li><label><input name="q80" type="radio" value="a">a)35</label></li>
+			<li><label><input name="q80" type="radio" value="b">b)0.35</label></li>
+			<li><label><input name="q80" type="radio" value="c">c)0.035</label></li>
+			<li><label><input name="q80" type="radio" value="d">d)0.0035</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q81" data-question="81">
+		<h3>81)The area between the curve y=2x<sup>4</sup>-x<sup>2</sup>, the X axis and the ordinates of two minima of the curve is</h3>
+		<ul>
+			<li><label><input name="q81" type="radio" value="a">a)7/120</label></li>
+			<li><label><input name="q81" type="radio" value="b">b)9/120</label></li>
+			<li><label><input name="q81" type="radio" value="c">c)11/120</label></li>
+			<li><label><input name="q81" type="radio" value="d">d)13/120</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q82" data-question="82">
+		<h3>82)Let a=i+j+k and r be a vector such that r.i, r.j, r.k are positive.If r.a <= 12, then the number of such vectors is
+		</h3>
+		<ul>
+			<li><label><input name="q82" type="radio" value="a">a)<sup>12</sup>C<sub>3</sub></label></li>
+			<li><label><input name="q82" type="radio" value="b">b)<sup>12</sup>C<sub>4</sub></label></li>
+			<li><label><input name="q82" type="radio" value="c">c)<sup>12</sup>C<sub>9</sub></label></li>
+			<li><label><input name="q82" type="radio" value="d">d)2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q83" data-question="83">
+		<h3>83)The area of the parallelogram contained by the lines
+4y-3x-a =0, 3y-4x+a=0, 4y-3x-3a=0 and 3y-4x+2a=0 is</h3>
+		<ul>
+			<li><label><input name="q83" type="radio" value="a">a)2a<sup>2</sup>/7</label></li>
+			<li><label><input name="q83" type="radio" value="b">b)3a<sup>2</sup>/8</label></li>
+			<li><label><input name="q83" type="radio" value="c">c)2a<sup>2</sup></label></li>
+			<li><label><input name="q83" type="radio" value="d">d)1.25a<sup>2</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q84" data-question="84">
+		<h3>84)The two circles which pass through ( 0,a ) and ( 0 , -a) touch the line y = mx+c will intersect each other at right angle if.   </h3>
+		<ul>
+			<li><label><input name="q84" type="radio" value="a">a)a<sup>2</sup>=c<sup>2</sup>(2m+1)</label></li>
+			<li><label><input name="q84" type="radio" value="b">b)a<sup>2</sup>=c<sup>2</sup>(2+m<sup>2</sup>)</label></li>
+			<li><label><input name="q84" type="radio" value="c">c)c<sup>2</sup>=a<sup>2</sup>(2+m<sup>2</sup>)</label></li>
+			<li><label><input name="q84" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q85" data-question="85">
+		<h3>85)Given the two ends of latus rectum the maximum number of parabola that can be drawn is
+</h3>
+		<ul>
+			<li><label><input name="q85" type="radio" value="a">a)2</label></li>
+			<li><label><input name="q85" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q85" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q85" type="radio" value="d">d)Infinite</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q86" data-question="86">
+		<h3>86)If xy + x<sup>2</sup>y<sup>2</sup> = c, then the value of dy/dx will be
+		</h3>
+		<ul>
+			<li><label><input name="q86" type="radio" value="a">a)x/y</label></li>
+			<li><label><input name="q86" type="radio" value="b">b)-y/x</label></li>
+			<li><label><input name="q86" type="radio" value="c">c)y/x</label></li>
+			<li><label><input name="q86" type="radio" value="d">d)-x/y</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q87" data-question="87">
+		<h3>87)Find the value of lim n ---> infinity (&pi;n)^2/n
+
+
+</h3>
+		<ul>
+			<li><label><input name="q87" type="radio" value="a">a)e</label></li>
+			<li><label><input name="q87" type="radio" value="b">b)0</label></li>
+			<li><label><input name="q87" type="radio" value="c">c)1</label></li>
+			<li><label><input name="q87" type="radio" value="d">d)e<sup>2</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q88" data-question="88">
+		<h3>88)A sum of money is rounded off to the nearest rupee the probability that the round of error is at least 10 paise is</h3> 
+		<ul>
+			<li><label><input name="q88" type="radio" value="a">a)0.81</label></li>
+			<li><label><input name="q88" type="radio" value="b">b)0.5</label></li>
+			<li><label><input name="q88" type="radio" value="c">c)0.9</label></li>
+			<li><label><input name="q88" type="radio" value="d">d)0.1</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q89" data-question="89">
+		<h3>89)Which of the following statements is not correct
+   </h3>
+		<ul>
+			<li><label><input name="q89" type="radio" value="a">a)(AB)<sup>T</sup> = A<sup>T</sup>B<sup>T</sup></label></li>
+			<li><label><input name="q89" type="radio" value="b">b) (A<sup>T</sup>)<sup>T</sup> = A</label></li>
+			<li><label><input name="q89" type="radio" value="c">c)(A+B)<sup>T</sup> = A<sup>T</sup>+B<sup>T</sup></label></li>
+			<li><label><input name="q89" type="radio" value="d">d)(kA)<sup>T</sup> = kA<sup>T</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		
+
+		<form class="question" id="q90" data-question="90">
+		<h3>90)The volume of the tetrahedron formed by the coterminous edges a,b,c is 3. then the volume of the parallelepiped formed by the coterminous edges (a+b), (b+c) , (c+a) is
+</h3>
+		<ul>
+			<li><label><input name="q90" type="radio" value="a">a)36 </label></li>
+			<li><label><input name="q90" type="radio" value="b">b)18</label></li>
+			<li><label><input name="q90" type="radio" value="c">c)6</label></li>
+			<li><label><input name="q90" type="radio" value="d">d)9</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		
+
+		
+
+		<form class="question" id="q91" data-question="91">
+		<h3>91)Let a b c vectors of length 3 4 5 respectively. Let a be perpendicular to b + c,  b to a+c and c to a+b . Then |a+b+c|^2=
+</h3>
+		<ul>
+			<li><label><input name="q91" type="radio" value="a">a)20</label></li>
+			<li><label><input name="q91" type="radio" value="b">b)8</label></li>
+			<li><label><input name="q91" type="radio" value="c">c)50</label></li>
+			<li><label><input name="q91" type="radio" value="d">d)100</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q92" data-question="92">
+		<h3>92)The number of 6 digit numbers that can be formed from the digits 1 2 3 4 5 6 and 7 so that the digits do not repeat and the terminal digits are even is 144 72 288 720
+
+</h3>
+		<ul>
+			<li><label><input name="q92" type="radio" value="a">a)144</label></li>
+			<li><label><input name="q92" type="radio" value="b">b)72</label></li>
+			<li><label><input name="q92" type="radio" value="c">c)288</label></li>
+			<li><label><input name="q92" type="radio" value="d">d)720</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q93" data-question="93">
+		<h3>93)If the line y-2 = m(x+1) intersects the circle x2+Y2+2x-4y-3=0 at two real distinct points the number of possible values of m is
+</h3>
+		<ul>
+			<li><label><input name="q93" type="radio" value="a">a)4</label></li>
+			<li><label><input name="q93" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q93" type="radio" value="c">c)2</label></li>
+			<li><label><input name="q93" type="radio" value="d">d)any real value of m</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q94" data-question="94">
+		<h3>94)Family y = ax+a3 of curves is represented by the differential equation of degree </h3>
+		<ul>
+			<li><label><input name="q94" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q94" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q94" type="radio" value="c">c)3</label></li>
+			<li><label><input name="q94" type="radio" value="d">d)4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q95" data-question="95">
+		<h3>95)The period of the function f (x) = sin(sin x/5) is 
+</h3>
+		<ul>
+			<li><label><input name="q95" type="radio" value="a">a)10pi</label></li>
+			<li><label><input name="q95" type="radio" value="b">b)0.4 pi</label></li>
+			<li><label><input name="q95" type="radio" value="c">c)2pi</label></li>
+			<li><label><input name="q95" type="radio" value="d">d)5pi</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q96" data-question="96">
+		<h3>96)The variance of first 20 natural numbers is
+ </h3>
+		<ul>
+			<li><label><input name="q96" type="radio" value="a">a)133/4</label></li>
+			<li><label><input name="q96" type="radio" value="b">b)133/2</label></li>
+			<li><label><input name="q96" type="radio" value="c">c)399/4</label></li>
+			<li><label><input name="q96" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q97" data-question="97">
+		<h3>97)10 unbiased coins are thrown simultaneously the probability of getting at least 7 heads is  </h3>
+		<ul>
+			<li><label><input name="q97" type="radio" value="a">a)3/64</label></li>
+			<li><label><input name="q97" type="radio" value="b">b)5/64</label></li>
+			<li><label><input name="q97" type="radio" value="c">c)11/64</label></li>
+			<li><label><input name="q97" type="radio" value="d">d)7/64</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q98" data-question="98">
+		<h3>98)The points a, b, c and d in a complex plane are the vertices of a parallelogram taken in order then</h3>
+		<ul>
+			<li><label><input name="q98" type="radio" value="a">a)a+c=b+d </label></li>
+			<li><label><input name="q98" type="radio" value="b">b)a+b=c+d</label></li>
+			<li><label><input name="q98" type="radio" value="c">c)a+d=c+b</label></li>
+			<li><label><input name="q98" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q99" data-question="99">
+		<h3>99)The minimum value of (5+x)(2+x)/(1+x)  for non negative real x is
+</h3>
+		<ul>
+			<li><label><input name="q99" type="radio" value="a">a)12</label></li>
+			<li><label><input name="q99" type="radio" value="b">b)10</label></li>
+			<li><label><input name="q99" type="radio" value="c">c)9</label></li>
+			<li><label><input name="q99" type="radio" value="d">d)8</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q100" data-question="100">
+		<h3>100)If 1, w, w<sup>2</sup> , w<sup>3</sup> ..... w<sup>n</sup>-1 are n th roots of unity then
+(1-w)(1-w<sup>2</sup>)...(1-w<sup>n</sup>-1) equals
+</h3>
+		<ul>
+			<li><label><input name="q100" type="radio" value="a">a)0</label></li>
+			<li><label><input name="q100" type="radio" value="b">b)n</label></li>
+			<li><label><input name="q100" type="radio" value="c">c)1</label></li>
+			<li><label><input name="q100" type="radio" value="d">d)m<sup>2</sup></label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q101" data-question="101">
+		<h3>101)The ratio in which the line 3 x + 4 y + 2 =0 device is the distance between 3 x + 4 y + 5 =0 and 3 x + 4 y + -5 =0 is</h3>
+		<ul>
+			<li><label><input name="q101" type="radio" value="a">a)7:3</label></li>
+			<li><label><input name="q101" type="radio" value="b">b)3:7</label></li>
+			<li><label><input name="q101" type="radio" value="c">c)2:5</label></li>
+			<li><label><input name="q101" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q102" data-question="102">
+		<h3>102)Three numbers are in geometric progression such that their sum is 38 and their product is 1728. The greatest number among them is  </h3>
+		<ul>
+			<li><label><input name="q102" type="radio" value="a">a)18
+</label></li>
+			<li><label><input name="q102" type="radio" value="b">b)14</label></li>
+			<li><label><input name="q102" type="radio" value="c">c)16</label></li>
+			<li><label><input name="q102" type="radio" value="d">d)20</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q103" data-question="103">
+		<h3>103)If df/dx = ( x+sin x)/(1+cos x) then f is
+  </h3>
+		<ul>
+			<li><label><input name="q103" type="radio" value="a">a)xtan(x/2)+c</label></li>
+			<li><label><input name="q103" type="radio" value="b">b)tan(x/2)+c</label></li>
+			<li><label><input name="q103" type="radio" value="c">c)xtan(x)+c </label></li>
+			<li><label><input name="q103" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q104" data-question="104">
+		<h3>104)The real roots of the equation x2/3 + x1/3 -2=0 are</h3>
+		<ul>
+			<li><label><input name="q104" type="radio" value="a">a)1,8  </label></li>
+			<li><label><input name="q104" type="radio" value="b">b)-1,-8</label></li>
+			<li><label><input name="q104" type="radio" value="c">c)-1,8</label></li>
+			<li><label><input name="q104" type="radio" value="d">d)1,-8</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q105" data-question="105">
+		<h3>105)The equation of the directrix of the parabola x2+8y-2x=7 is</h3>
+		<ul>
+			<li><label><input name="q105" type="radio" value="a">a)y=3</label></li>
+			<li><label><input name="q105" type="radio" value="b">b)y=-3</label></li>
+			<li><label><input name="q105" type="radio" value="c">c)y=2</label></li>
+			<li><label><input name="q105" type="radio" value="d">d)y=0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q106" data-question="106">
+		<h3>106)The harmonic mean between two numbers is 14.4 and geometric mean 24. The largest of the two numbers is
+</h3>
+		<ul>
+			<li><label><input name="q106" type="radio" value="a">a)8</label></li>
+			<li><label><input name="q106" type="radio" value="b">b)72</label></li>
+			<li><label><input name="q106" type="radio" value="c">c)80</label></li>
+			<li><label><input name="q106" type="radio" value="d">d)40</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q107" data-question="107">
+		<h3>107)The area in the first quadrant enclosed by the x axis the line x = &radic;(3) y and the circle X2 + Y2 = 4 is  </h3>
+		<ul>
+			<li><label><input name="q107" type="radio" value="a">a)pi</label></li>
+			<li><label><input name="q107" type="radio" value="b">b)pi/2</label></li>
+			<li><label><input name="q107" type="radio" value="c">c)pi/4 </label></li>
+			<li><label><input name="q107" type="radio" value="d">d)pi/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q108" data-question="108">
+		<h3>108)<img class="img-fluid" src="108q.png"></h3>
+		<ul>
+			<li><label><input name="q108" type="radio" value="a">a)2i</label></li>
+			<li><label><input name="q108" type="radio" value="b">b)-2i</label></li>
+			<li><label><input name="q108" type="radio" value="c">c)-2</label></li>
+			<li><label><input name="q108" type="radio" value="d">d)2</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q109" data-question="109">
+		<h3>109)<img class="img-fluid" src="109q.png"></h3>
+		<ul>
+			<li><label><input name="q109" type="radio" value="a">a)1/8&radic;(3)</label></li>
+			<li><label><input name="q109" type="radio" value="b">b)1/4&radic;(3)</label></li>
+			<li><label><input name="q109" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q109" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q110" data-question="110">
+		<h3>110)Number of tangents that can be drawn from (1,2) to x2 + Y2 = 5 is  </h3>
+		<ul>
+			<li><label><input name="q110" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q110" type="radio" value="b">b)3</label></li>
+			<li><label><input name="q110" type="radio" value="c">c)2</label></li>
+			<li><label><input name="q110" type="radio" value="d">d)0</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q111" data-question="111">
+		<h3>111)Three dice are thrown simultaneously the probability of obtaining a total of 18 is </h3>
+		<ul>
+			<li><label><input name="q111" type="radio" value="a">a)1/216</label></li>
+			<li><label><input name="q111" type="radio" value="b">b)1/36</label></li>
+			<li><label><input name="q111" type="radio" value="c">c)1/6</label></li>
+			<li><label><input name="q111" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q112" data-question="112">
+		<h3>112)<img class="img-fluid" src="112q.png"> </h3>
+		<ul>
+			<li><label><input name="q112" type="radio" value="a">a)-2</label></li>
+			<li><label><input name="q112" type="radio" value="b">b)2</label></li>
+			<li><label><input name="q112" type="radio" value="c">c)4 </label></li>
+			<li><label><input name="q112" type="radio" value="d">d)-4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q113" data-question="113">
+		<h3>113)If a and b be the eccentricities of a hyperbola and its conjugate then a-2 + b-2  is equal to   </h3>
+		<ul>
+			<li><label><input name="q113" type="radio" value="a">a)0</label></li>
+			<li><label><input name="q113" type="radio" value="b">b)1</label></li>
+			<li><label><input name="q113" type="radio" value="c">c)2</label></li>
+			<li><label><input name="q113" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q114" data-question="114">
+		<h3>114)The angles of a triangle are in the ratio of 2:3:7 then the  sides are in the ratio 
+ </h3>
+		<ul>
+			<li><label><input name="q114" type="radio" value="a">a)&radic;(2):2:&radic;(3)+1</label></li>
+			<li><label><input name="q114" type="radio" value="b">b)2:&radic;(2):&radic;(3)+1</label></li>
+			<li><label><input name="q114" type="radio" value="c">c)&radic;(2):&radic;(3)+1:2</label></li>
+			<li><label><input name="q114" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q115" data-question="115">
+		<h3>115)Given f(x) is a polynomial function of x, satisfying f(x).f(y)= f(x)+f(y)+f(xy)-2 and that f(2)=5. Then f(3) is equal to</h3>
+		<ul>
+			<li><label><input name="q115" type="radio" value="a">a)10</label></li>
+			<li><label><input name="q115" type="radio" value="b">b)24</label></li>
+			<li><label><input name="q115" type="radio" value="c">c)15</label></li>
+			<li><label><input name="q115" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q116" data-question="116">
+		<h3>116)The number of ways in which we can arrange n ladies and n gentlemen at round table so that two ladies or two gentleman may not sit next to one another is 86400, then the value of n is</h3>
+		<ul>
+			<li><label><input name="q116" type="radio" value="a">a)8</label></li>
+			<li><label><input name="q116" type="radio" value="b">b)7</label></li>
+			<li><label><input name="q116" type="radio" value="c">c)6</label></li>
+			<li><label><input name="q116" type="radio" value="d">d)5</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q117" data-question="117">
+		<h3>117)<img class="img-fluid" src="117q.png"></h3>
+		<ul>
+			<li><label><input name="q117" type="radio" value="a">a)0.5 ln3</label></li>
+			<li><label><input name="q117" type="radio" value="b">b)ln3</label></li>
+			<li><label><input name="q117" type="radio" value="c">c)2 ln3</label></li>
+			<li><label><input name="q117" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q118" data-question="118">
+		<h3>118)Is the median of 25 observations is 45 and if the observations greater than the median are increased by 4 then the median of the new data is </h3>
+		<ul>
+			<li><label><input name="q118" type="radio" value="a">a)45</label></li>
+			<li><label><input name="q118" type="radio" value="b">b)49</label></li>
+			<li><label><input name="q118" type="radio" value="c">c)41</label></li>
+			<li><label><input name="q118" type="radio" value="d">d)40</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q119" data-question="119">
+		<h3>119)If a b c d are positive real numbers such that a + b + c + d = 2 then m = (a + b) (c + d) satisfies the relation
+</h3>
+		<ul>
+			<li><label><input name="q119" type="radio" value="a">a)0 <= m <= 1 </label></li>
+			<li><label><input name="q119" type="radio" value="b">b)0 <= m <= 2 </label></li>
+			<li><label><input name="q119" type="radio" value="c">c)1 <= m <= 2 </label></li>
+			<li><label><input name="q119" type="radio" value="d">d)1 <= m <= 3 </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q120" data-question="120">
+		<h3>120)The graph of the equation X2 + Y2 = 0 in three dimensional space is
+</h3>
+		<ul>
+			<li><label><input name="q120" type="radio" value="a">a)Z axis</label></li>
+			<li><label><input name="q120" type="radio" value="b">b)xy plane</label></li>
+			<li><label><input name="q120" type="radio" value="c">c)X axis</label></li>
+			<li><label><input name="q120" type="radio" value="d">d)Y axis</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q121" data-question="121">
+		<h3>121)Let z be a complex number such that the imaginary part of z is non zero and a= z2+z+1 is real. Then a cannot take the value</h3>
+		<ul>
+			<li><label><input name="q121" type="radio" value="a">a)-1
+</label></li>
+			<li><label><input name="q121" type="radio" value="b">b)1/3</label></li>
+			<li><label><input name="q121" type="radio" value="c">c)1/1</label></li>
+			<li><label><input name="q121" type="radio" value="d">d)3/4</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q122" data-question="122">
+		<h3>122)<img src="122q.png" class="img-fluid"></h3>
+		<ul>
+			<li><label><input name="q122" type="radio" value="a">a)1/3</label></li>
+			<li><label><input name="q122" type="radio" value="b">b)-1/3</label></li>
+			<li><label><input name="q122" type="radio" value="c">c)2/3</label></li>
+			<li><label><input name="q122" type="radio" value="d">d)-2/3</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q123" data-question="123">
+		<h3>123)<img src="123q.png" class="img-fluid"></h3>
+		<ul>
+			<li><label><input name="q123" type="radio" value="a">a)0,2</label></li>
+			<li><label><input name="q123" type="radio" value="b">b)2,4</label></li>
+			<li><label><input name="q123" type="radio" value="c">c)2,-4</label></li>
+			<li><label><input name="q123" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q124" data-question="124">
+		<h3>124)<img src="124q.png" class="img-fluid"> </h3>
+		<ul>
+			<li><label><input name="q124" type="radio" value="a">a)1</label></li>
+			<li><label><input name="q124" type="radio" value="b">b)-1</label></li>
+			<li><label><input name="q124" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q124" type="radio" value="d">d)does not exist</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q125" data-question="125">
+		<h3>125)<img src="125q.png" class="img-fluid"></h3>
+		<ul>
+			<li><label><input name="q125" type="radio" value="a">a)100</label></li>
+			<li><label><input name="q125" type="radio" value="b">b)100-tan(1)</label></li>
+			<li><label><input name="q125" type="radio" value="c">c)0</label></li>
+			<li><label><input name="q125" type="radio" value="d">d)none</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q126" data-question="126">
+		<h3>126)Mark the synonym<br>Adversity
+</h3>
+		<ul>
+			<li><label><input name="q126" type="radio" value="a">a)Poverty</label></li>
+			<li><label><input name="q126" type="radio" value="b">b)Darkness</label></li>
+			<li><label><input name="q126" type="radio" value="c">c)Trouble</label></li>
+			<li><label><input name="q126" type="radio" value="d">d)Unfriendly</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q127" data-question="127">
+		<h3>127)Mark the synonym<br>Obliging
+   </h3>
+		<ul>
+			<li><label><input name="q127" type="radio" value="a">a)Helpful</label></li>
+			<li><label><input name="q127" type="radio" value="b">b)Nice</label></li>
+			<li><label><input name="q127" type="radio" value="c">c)Thankful</label></li>
+			<li><label><input name="q127" type="radio" value="d">d)Compelling</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q128" data-question="128">
+		<h3>128)Mark the synonym<br>Annex</h3>
+		<ul>
+			<li><label><input name="q128" type="radio" value="a">a)Add</label></li>
+			<li><label><input name="q128" type="radio" value="b">b)Copy</label></li>
+			<li><label><input name="q128" type="radio" value="c">c)Start</label></li>
+			<li><label><input name="q128" type="radio" value="d">d)Recover</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q129" data-question="129">
+		<h3>129)Mark the synonym<br>Exempt</h3>
+		<ul>
+			<li><label><input name="q129" type="radio" value="a">a)Duty</label></li>
+			<li><label><input name="q129" type="radio" value="b">b)Provide</label></li>
+			<li><label><input name="q129" type="radio" value="c">c)Relieve</label></li>
+			<li><label><input name="q129" type="radio" value="d">d)Forgive</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q130" data-question="130">
+		<h3>130)Fill in the blanks<br>Ravi was always ____ of the good fortune of others.    
+</h3>
+		<ul>
+			<li><label><input name="q130" type="radio" value="a">a)Insurable
+</label></li>
+			<li><label><input name="q130" type="radio" value="b">b)irritable </label></li>
+			<li><label><input name="q130" type="radio" value="c">c)greedy </label></li>
+			<li><label><input name="q130" type="radio" value="d">d)envious</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q131" data-question="131">
+		<h3>131)Fill in the blanks<br>Few countries can ____ India in variety colour and richness of dance forms.
+   </h3>
+		<ul>
+			<li><label><input name="q131" type="radio" value="a">a)rival</label></li>
+			<li><label><input name="q131" type="radio" value="b">b)depict </label></li>
+			<li><label><input name="q131" type="radio" value="c">c)fight</label></li>
+			<li><label><input name="q131" type="radio" value="d">d)difference</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q132" data-question="132">
+		<h3>132)Fill in the blanks<br>Despite her _____ she is still managed to to to find time for her hobbies.    
+</h3>
+		<ul>
+			<li><label><input name="q132" type="radio" value="a">a)Occupations </label></li>
+			<li><label><input name="q132" type="radio" value="b">b)preoccupations </label></li>
+			<li><label><input name="q132" type="radio" value="c">c)predilections </label></li>
+			<li><label><input name="q132" type="radio" value="d">d)businesses</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q133" data-question="133">
+		<h3>133)Fill in the blanks<br>His residence is on the _____ of Hyderabad.
+   </h3>
+		<ul>
+			<li><label><input name="q133" type="radio" value="a">a)rim
+</label></li>
+			<li><label><input name="q133" type="radio" value="b">b)core</label></li>
+			<li><label><input name="q133" type="radio" value="c">c)periferi</label></li>
+			<li><label><input name="q133" type="radio" value="d">d)outskirts</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q134" data-question="134">
+		<h3>134)One word for many<br>Accidental solving of a crime  </h3>
+		<ul>
+			<li><label><input name="q134" type="radio" value="a">a)Investigation </label></li>
+			<li><label><input name="q134" type="radio" value="b">b)detection</label></li>
+			<li><label><input name="q134" type="radio" value="c">c)sixth sense</label></li>
+			<li><label><input name="q134" type="radio" value="d">d)serendipity</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q135" data-question="135">
+		<h3>135)One word for many<br>A happening that cannot be altered </h3>
+		<ul>
+			<li><label><input name="q135" type="radio" value="a">a)Invincible </label></li>
+			<li><label><input name="q135" type="radio" value="b">b)fate </label></li>
+			<li><label><input name="q135" type="radio" value="c">c)congruence</label></li>
+			<li><label><input name="q135" type="radio" value="d">d)franchise</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q136" data-question="136">
+		<h3>136)One word for many<br>One who hates marriage
+  </h3>
+		<ul>
+			<li><label><input name="q136" type="radio" value="a">a)misogamist </label></li>
+			<li><label><input name="q136" type="radio" value="b">b)misogynist</label></li>
+			<li><label><input name="q136" type="radio" value="c">c)polygamist</label></li>
+			<li><label><input name="q136" type="radio" value="d">d)atheist</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q137" data-question="137">
+		<h3>137)One word for many<br>A government by the rich   
+ </h3>
+		<ul>
+			<li><label><input name="q137" type="radio" value="a">a)aristocracy</label></li>
+			<li><label><input name="q137" type="radio" value="b">b)monarchy</label></li>
+			<li><label><input name="q137" type="radio" value="c">c)plutocracy </label></li>
+			<li><label><input name="q137" type="radio" value="d">d)democracy</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q138" data-question="138">
+		<h3>138)Convert the voice<br>My uncle promised me a present.</h3>
+		<ul>
+			<li><label><input name="q138" type="radio" value="a">a)A present was promised by my uncle to me.</label></li>
+			<li><label><input name="q138" type="radio" value="b">b)I was promised a present by my uncle.</label></li>
+			<li><label><input name="q138" type="radio" value="c">c)I had been promised a present by uncle.</label></li>
+			<li><label><input name="q138" type="radio" value="d">d)I was promised by my uncle a present.</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q139" data-question="139">
+		<h3>139)Convert the voice<br>They were laughing at the Clown.</h3>
+		<ul>
+			<li><label><input name="q139" type="radio" value="a">a)The Clown was being laughed at. </label></li>
+			<li><label><input name="q139" type="radio" value="b">b)The Clown had been laughing at.</label></li>
+			<li><label><input name="q139" type="radio" value="c">c)The Clown was laughed at by them. </label></li>
+			<li><label><input name="q139" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q140" data-question="140">
+		<h3>140)Convert the voice<br>A Lion may be helped even by a little mouse.</h3>
+		<ul>
+			<li><label><input name="q140" type="radio" value="a">a)A little mouse may even help a lion.</label></li>
+			<li><label><input name="q140" type="radio" value="b">b)Even a little mouse may help a  lion.</label></li>
+			<li><label><input name="q140" type="radio" value="c">c)A little mouse can even help lion.</label></li>
+			<li><label><input name="q140" type="radio" value="d">d)None</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q141" data-question="141">
+		<h3>141)Paper folding</h3><img class="img-fluid" src="141q.png">
+		<ul>
+			<li><label><input name="q141" type="radio" value="a">a)figure a</label></li>
+			<li><label><input name="q141" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q141" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q141" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q142" data-question="142">
+		<h3>142)Paper folding</h3><img class="img-fluid" src="142q.png">
+		<ul>
+			<li><label><input name="q142" type="radio" value="a">a)figure a</label></li>
+			<li><label><input name="q142" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q142" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q142" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q143" data-question="143">
+		<h3>143)Paper folding</h3><img class="img-fluid" src="143q.png">
+		<ul>
+			<li><label><input name="q143" type="radio" value="a">a)figure a
+</label></li>
+			<li><label><input name="q143" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q143" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q143" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q144" data-question="144">
+		<h3>144)Today is Thursday. The day after 60 days will be  
+   </h3>
+		<ul>
+			<li><label><input name="q144" type="radio" value="a">a)Sunday</label></li>
+			<li><label><input name="q144" type="radio" value="b">b)Monday </label></li>
+			<li><label><input name="q144" type="radio" value="c">c)Tuesday </label></li>
+			<li><label><input name="q144" type="radio" value="d">d)Wednesday</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q145" data-question="145">
+		<h3>145)Give the next term in the series
+G4T, J9R, M20P, P43N, S90L ...
+</h3>
+		<ul>
+			<li><label><input name="q145" type="radio" value="a">a)R100N   </label></li>
+			<li><label><input name="q145" type="radio" value="b">b)V185J  </label></li>
+			<li><label><input name="q145" type="radio" value="c">c)W195J </label></li>
+			<li><label><input name="q145" type="radio" value="d">d)P143L</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q146" data-question="146">
+		<h3>146)What is the next number in the sequence<br>3,4,7,7,13,13,21,22,...     </h3>
+		<ul>
+			<li><label><input name="q146" type="radio" value="a">a)31</label></li>
+			<li><label><input name="q146" type="radio" value="b">b)35</label></li>
+			<li><label><input name="q146" type="radio" value="c">c)42</label></li>
+			<li><label><input name="q146" type="radio" value="d">d)32</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q147" data-question="147">
+		<h3>147)QAR, RAS, SAT, TAU,...
+ </h3>
+		<ul>
+			<li><label><input name="q147" type="radio" value="a">a)UAV </label></li>
+			<li><label><input name="q147" type="radio" value="b">b)UAT</label></li>
+			<li><label><input name="q147" type="radio" value="c">c)TAS</label></li>
+			<li><label><input name="q147" type="radio" value="d">d)TAT </label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q148" data-question="148">
+		<h3>148)Find the odd one<br></h3>
+		<ul>
+			<li><label><input name="q148" type="radio" value="a">a)KHEB</label></li>
+			<li><label><input name="q148" type="radio" value="b">b)WTQN</label></li>
+			<li><label><input name="q148" type="radio" value="c">c)MKHE</label></li>
+			<li><label><input name="q148" type="radio" value="d">d)MIDA</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q149" data-question="149">
+		<h3>149)Find the odd one<br><img src="149q.png" class="img-fluid"></h3>
+		<ul>
+			<li><label><input name="q149" type="radio" value="a">a)figure a</label></li>
+			<li><label><input name="q149" type="radio" value="b">b)figure b</label></li>
+			<li><label><input name="q149" type="radio" value="c">c)figure c</label></li>
+			<li><label><input name="q149" type="radio" value="d">d)figure d</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Next</button>	
+		</form>
+
+		<form class="question" id="q150" data-question="150">
+		<h3>150)Analogy<br>
+Funk : Vitamins :: Curie:
+  </h3>
+		<ul>
+			<li><label><input name="q150" type="radio" value="a">a)Uranium </label></li>
+			<li><label><input name="q150" type="radio" value="b">b)radioactivity</label></li>
+			<li><label><input name="q150" type="radio" value="c">c)photography</label></li>
+			<li><label><input name="q150" type="radio" value="d">d)radium</label></li>
+			</ul><br>
+			<input type="reset" value="clear">
+		<button id="next">Submit Test</button>	
+		</form>
+
+
+
+		</h3></h3></form></div>
+
+	</div>	
+</div>
+
+
+<div id="result" class="container justify-content-center">
+</div>
+
+
+<script src="bitsat3.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
